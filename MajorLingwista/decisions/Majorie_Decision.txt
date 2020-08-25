@@ -1,0 +1,42 @@
+country_decisions = {
+
+	form_majorie_decision = {
+		potential = {
+			ai = no
+			NOT = { tag = LGW }
+		}
+		effect = {
+			country_event = {
+				id = majorie_events.1
+				days = 0
+			}
+		}
+	}
+
+	adopt_majorie_faith = {
+		potential = {
+			tag = LGW
+			NOT = { religion = catholic }
+		}
+		effect = {
+			country_event = {
+				id = majorie_events.3
+				days = 0
+			}
+		}
+	}
+
+	adopt_majorie_culture = {
+		potential = {
+			tag = LGW
+			NOT = { primary_culture = aquitaine }
+		}
+		effect = {
+			country_event = {
+				id = majorie_events.4
+				days = 0
+			}
+		}
+	}
+	
+}

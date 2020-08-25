@@ -1,0 +1,14 @@
+country_decisions = {
+
+	twitch_decision = {
+		potential = {
+			ai = no
+		}
+		effect = {
+			country_event = {
+				id = twitch_events.1
+				days = 0
+			}
+		}
+	}
+}

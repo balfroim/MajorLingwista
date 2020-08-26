@@ -1,0 +1,19 @@
+major_discipline1 = {
+	discipline = 0.05
+}
+
+major_discipline2 = {
+	discipline = 0.05
+}
+
+major_discipline3 = {
+	discipline = 0.05
+}
+
+major_discipline4 = {
+	discipline = 0.05
+}
+
+major_discipline5 = {
+	discipline = 0.05
+}

@@ -1,0 +1,78 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 229  129  45 }
+
+revolutionary_colors = { 1 0 1 }
+
+historical_score = 25
+
+historical_idea_groups = {
+	naval_ideas
+	trade_ideas
+	religious_ideas
+	exploration_ideas
+	diplomatic_ideas
+	economic_ideas
+	innovativeness_ideas
+	offensive_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	chevauchee
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	french_caracolle
+	anglofrench_line
+	french_dragoon
+	french_bluecoat
+	french_cuirassier
+	french_impulse
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Lingwista #1" = 60
+	"Monté #0" = 40
+	"Bourageur #0" = 30
+	"Jean-Pierre #0" = 20
+	"Hans-Pierre #0" = 20
+	"Jean-Michel #0" = 10
+	"Majurnior #0" = 8
+	"Nesblog #0" = 5
+	"Vortex #0" = 5
+
+	"Lingwistanne #0" = -10	
+	"Bourageuse #0" = -10
+	"Truitelle #0" = -10
+	"Fougeraise #0" = -1
+	"Forestanne #0" = -1
+}
+
+leader_names = {
+	Nançon Couesnon "de Michel" "du futur" "pas du futur" "du désert" "de Landéan" "le perdu" "l'acolyte des illustres" "de Nes"
+	"du château" "de la casse" "qui vit vers le Zozan" "de la chesnedet" Guéhenno "du rocher coupé" "du Grenier" "le sans papiers"
+	"le voyageur temporel" "du temple de la lune" "l'illuminato" "de Lécousse" "des Cotterêts" "du forum de la gare" "le gallo"
+	"le bretonneux" "le social traitre" "le myope" Spidreuneur Groslay "qui a sub" "le tipeur" "l'inflitré du futur"
+}
+
+ship_names = {
+	"le Mauvais" "Le Raoult" "le Grammarnazi" "le Templiste" "le Futuriste" "le Passéiste"
+	"la Faille temporelle" "l'Académiste" "le Zozan" "le Major" "le Monté" "le Breton"
+	"le Gallo" "le Bretonneux" "le Nançon" "le Couesnon" "le Jardiland" "le Bricomarché" "le Gifi"
+	"le Carrefour market" "le chateau" "le SuperU Drive" "le Buffalo Grill" "le Vidéaste" "l'Ingérent"
+	"le Tipeur" "le Utipeur" "le Sub" "le Don" "le Bit" "l'Abonné" "le Foloeur" "le Kenavo"
+}
+
+army_names = {
+	 "Armée de la forêt"     "Armée de Fougères"     "Armée du Nançon"	 
+	 "Armée du Ruisseau"     "Armée du Futur"        "Armée de l'Internet"
+	 "Armée perso du Major"  "Armée des subs"        "Armée des abonnés"
+	 "Armée de $PROVINCE$" 
+}

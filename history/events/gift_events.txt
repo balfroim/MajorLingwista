@@ -1,0 +1,124 @@
+namespace = gift_events
+
+# Un don pour la Major ! (100 bits)
+# Inspiré par l'événement "Gift to the State" (https://eu4.paradoxwikis.com/Prestige_events)
+country_event = {
+	id = gift_events.1
+	title = "gift_event.1.title"
+	desc = "gift_event.1.desc"
+	picture = CORRUPTION_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		random_owned_province = {
+			save_event_target_as = to_develop_province
+		}
+	}
+
+	option = {
+		name = "gift_event.1.a"
+		add_years_of_income = 0.5
+	}
+	option = {
+		name = "gift_event.1.b"
+		add_prestige = 5
+	}
+	option = {
+		name = "gift_event.1.c"
+		event_target:to_develop_province = {
+			random_list = {
+				50 = { add_base_tax = 1 }
+				50 = { add_base_production = 1 }
+			}
+		}
+	}
+}
+
+# Un généreux don pour la Major ! (500 bits)
+# Inspiré par l'événement "Gift to the State" (https://eu4.paradoxwikis.com/Prestige_events)
+country_event = {
+	id = gift_events.2
+	title = "gift_event.2.title"
+	desc = "gift_event.2.desc"
+	picture = CORRUPTION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "gift_event.2.a"
+		add_years_of_income = 2
+	}
+	option = {
+		name = "gift_event.2.b"
+		if = {
+			limit = { NOT = { stability = 3 } }
+			add_stability = 1
+		}
+		else = {
+			add_adm_power = 100
+		}
+	}
+	option = {
+		name = "gift_event.2.c"
+		random_owned_province = {
+			add_base_tax = 1
+		}
+		random_owned_province = {
+			add_base_tax = 1
+		}
+		random_owned_province = {
+			add_base_tax = 1
+		}
+		random_owned_province = {
+			add_base_tax = 1
+		}
+		random_owned_province = {
+			add_base_tax = 1
+		}
+	}
+}
+
+# Un énorme don pour la Major ! (1000 bits)
+# Inspiré par l'événement "Gift to the State" (https://eu4.paradoxwikis.com/Prestige_events)
+country_event = {
+	id = gift_events.3
+	title = "gift_event.3.title"
+	desc = "gift_event.3.desc"
+	picture = CORRUPTION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "gift_event.3.a"
+		add_years_of_income = 10
+	}
+	option = {
+		name = "gift_event.3.b"
+		if = {
+			limit = { NOT = { stability = 1 }  }
+			add_stability = 3
+		}
+		else = {
+			add_adm_power = 300
+		}
+	}
+	option = {
+		name = "gift_event.3.c"
+		random_owned_province = {
+			add_base_tax = 5
+		}
+		random_owned_province = {
+			add_base_tax = 5
+		}
+		random_owned_province = {
+			add_base_tax = 5
+		}
+		random_owned_province = {
+			add_base_tax = 5
+		}
+		random_owned_province = {
+			add_base_tax = 5
+		}
+	}
+}

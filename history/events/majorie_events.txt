@@ -1,0 +1,83 @@
+namespace = majorie_events
+
+country_event = {
+	id = majorie_events.1
+	title = "majorie_event.1t"
+	desc = "majorie_event.1d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes	
+	option = {
+		name = "Majorie"
+		change_tag = LGW
+		add_permanent_claim = 192
+		add_permanent_claim = 4384
+		if = {
+			limit = {
+				NOT = { government = monarchy }
+			}
+			change_government = monarchy
+		}
+		country_event = {
+			id = majorie_events.2
+			days = 1
+		}
+	}
+}
+		
+country_event = {
+	id = majorie_events.2
+	title = "majorie_event.2t"
+	desc = "majorie_event.2d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes	
+	option = {
+		name = "Lingwista_took_control"
+		add_government_reform = lingwista_reform
+		kill_ruler = yes
+		add_stability = 1
+		define_ruler = {
+			name = "Major"
+			dynasty = "Lingwista"
+			adm = 6
+			dip = 6
+			mil = 6
+			age = 20
+			claim = 100
+		}
+	}
+}
+
+country_event = {
+	id = majorie_events.3
+	title = "majorie_event.3t"
+	desc = "majorie_event.3d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes	
+	option = {
+		name = "Lingwista_new_faith"
+		change_religion = catholic
+	}
+}
+
+country_event = {
+	id = majorie_events.4
+	title = "majorie_event.4t"
+	desc = "majorie_event.4d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes	
+	option = {
+		name = "Lingwista_new_culture"
+		change_primary_culture = aquitaine
+		set_ruler_culture = aquitaine
+	}
+}
+
+

@@ -15166,7 +15166,7 @@ ICE_ideas = {
 	}
 }
 
-LGW_ideas = {
+MAJ_ideas = {
 	start = {
 		land_morale = 0.05
 		hostile_attrition = 1
@@ -15177,31 +15177,31 @@ LGW_ideas = {
 	}	
 
 	trigger = {
-		tag = LGW
+		tag = MAJ
 	}
 	free = yes
 	
-	LGW_idea1 = {
+	MAJ_idea1 = {
 		global_unrest = -1
 		liberty_desire_from_subject_development = 0.15
 	}
-	LGW_idea2 = {
+	MAJ_idea2 = {
 		global_manpower_modifier = 0.2
 	}
-	LGW_idea3 = {
+	MAJ_idea3 = {
 		global_missionary_strength = 0.05
 	}
-	LGW_idea4 = {
+	MAJ_idea4 = {
 		infantry_power = 0.15
 	}
-	LGW_idea5 = {
+	MAJ_idea5 = {
 		discipline = 0.05
 	}
-	LGW_idea6 = {
+	MAJ_idea6 = {
 		build_cost = -0.1
 		development_cost = -0.10
 	}
-	LGW_idea7 = {
+	MAJ_idea7 = {
 		culture_conversion_cost = -0.2
 	}
 }

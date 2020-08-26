@@ -18,7 +18,7 @@ monarchy_mechanic = {
 lingwista_reform = {
 	icon = "indian_sultanate"
 	allow_normal_conversion = yes
-	potential = {	tag = LGW	}
+	potential = {	tag = MAJ	}
 	valid_for_nation_designer = no
 
 	modifiers = {

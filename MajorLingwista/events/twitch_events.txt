@@ -4,7 +4,7 @@ country_event = {
 	id = twitch_events.1
 	title = "twitch_event.1t"
 	desc = "twitch_event.1d"
-	picture = ANGRY_MOB_eventPicture
+	picture = CONQUEST_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -69,21 +69,21 @@ country_event = {
 		trigger = {
 			NOT = { adm_tech = 32 }
 		}
-		add_adm_tech = 1
+		add_adm_power = 100
 	}
 	option = {
 		name = "choix_7"
 		trigger = {
 			NOT = { dip_tech = 32 }
 		}
-		add_dip_tech = 1
+		add_dip_power = 100
 	}
 	option = {
 		name = "choix_8"
 		trigger = {
 			NOT = { mil_tech = 32 }
 		}
-		add_mil_tech = 1
+		add_mil_power = 100
 	}
 	option = {
 		name = "choix_9"

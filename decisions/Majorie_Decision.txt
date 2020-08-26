@@ -3,7 +3,7 @@ country_decisions = {
 	form_majorie_decision = {
 		potential = {
 			ai = no
-			NOT = { tag = LGW }
+			NOT = { tag = MAJ }
 		}
 		effect = {
 			country_event = {

@@ -1,12 +1,57 @@
 country_decisions = {
 
-	twitch_decision = {
+	sub_decision = {
+		allow = {
+			ai = no
+		}
 		potential = {
 			ai = no
 		}
 		effect = {
 			country_event = {
 				id = twitch_events.1
+				days = 0
+			}
+		}
+	}
+	gift_decision1 = {
+		allow = {
+			ai = no
+		}
+		potential = {
+			ai = no
+		}
+		effect = {
+			country_event = {
+				id = gift_events.1
+				days = 0
+			}
+		}
+	}
+	gift_decision2 = {
+		allow = {
+			ai = no
+		}
+		potential = {
+			ai = no
+		}
+		effect = {
+			country_event = {
+				id = gift_events.2
+				days = 0
+			}
+		}
+	}
+	gift_decision3 = {
+		allow = {
+			ai = no
+		}
+		potential = {
+			ai = no
+		}
+		effect = {
+			country_event = {
+				id = gift_events.3
 				days = 0
 			}
 		}

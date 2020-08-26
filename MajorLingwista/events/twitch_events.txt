@@ -1,10 +1,12 @@
 namespace = twitch_events
 
+
+
 country_event = {
 	id = twitch_events.1
 	title = "twitch_event.1t"
 	desc = "twitch_event.1d"
-	picture = CONQUEST_eventPicture
+	picture = CORRUPTION_eventPicture
 	
 	is_triggered_only = yes
 	

@@ -2637,7 +2637,7 @@ LIB = {
 
 
 # Majorie
-LGW = {
+MAJ = {
     color1= { 200 100 50  }
     color2= { 8 8 8  }
     color3= { 200 100 50  }

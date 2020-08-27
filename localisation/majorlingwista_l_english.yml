@@ -1,5 +1,5 @@
 ﻿l_english:
- MAJ:0 "Majorie"
+ LGW:0 "Majorie"
  MAJ_ADJ:0 "Majorois"
  form_majorie_decision_title:0 "Former la Majorie"
  form_majorie_decision:0 "Former la Majorie"
@@ -75,3 +75,12 @@
     gift_event.3.a:0 "Mettons ça dans la trésorie."
     gift_event.3.b:0 "Dépensons ça généreusement."
     gift_event.3.c:0 "Investissons dans nos provinces."
+  # Developement de province
+    gift_event.4.title:0 "Investissement en [ROOT.GetName]"
+    gift_event.4.desc:0 "Investissement en [ROOT.GetName]"
+    gift_event.4.a:0 "Investissons dans l'infrastructure !"
+    gift_event.4.b:0 "Investissons dans l'économie !"
+    gift_event.4.c:0 "Investissons dans la garnison !"
+    gift_event.5.title:0 "Gros investissement en [ROOT.GetName]"
+    gift_event.5.desc:0 "Gros investissement en [ROOT.GetName]"
+    gift_event.5.a:0 "Investissons partout !"

@@ -3,11 +3,11 @@ country_decisions = {
 	form_majorie_decision = {
 		allow = {
 			ai = no
-			NOT = { tag = MAJ }
+			NOT = { tag = LGW }
 		}
 		potential = {
 			ai = no
-			NOT = { tag = MAJ }
+			NOT = { tag = LGW }
 		}
 		effect = {
 			country_event = {
@@ -23,7 +23,7 @@ country_decisions = {
 			NOT = { religion = catholic }
 		}
 		potential = {
-			tag = MAJ
+			tag = LGW
 			NOT = { religion = catholic }
 		}
 		effect = {
@@ -36,11 +36,11 @@ country_decisions = {
 
 	adopt_majorie_culture = {
 		allow = {
-			tag = MAJ
+			tag = LGW
 			NOT = { primary_culture = aquitaine }
 		}
 		potential = {
-			tag = MAJ
+			tag = LGW
 			NOT = { primary_culture = aquitaine }
 		}
 		effect = {

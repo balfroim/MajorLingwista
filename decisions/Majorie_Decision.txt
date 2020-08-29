@@ -1,6 +1,10 @@
 country_decisions = {
 
 	form_majorie_decision = {
+		allow = {
+			ai = no
+			NOT = { tag = LGW }
+		}
 		potential = {
 			ai = no
 			NOT = { tag = LGW }
@@ -14,6 +18,10 @@ country_decisions = {
 	}
 
 	adopt_majorie_faith = {
+		allow = {
+			ai = no
+			NOT = { religion = catholic }
+		}
 		potential = {
 			tag = LGW
 			NOT = { religion = catholic }
@@ -27,6 +35,10 @@ country_decisions = {
 	}
 
 	adopt_majorie_culture = {
+		allow = {
+			tag = LGW
+			NOT = { primary_culture = aquitaine }
+		}
 		potential = {
 			tag = LGW
 			NOT = { primary_culture = aquitaine }

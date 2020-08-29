@@ -1,0 +1,12 @@
+add_stab_or_prestige = {
+	# if stability < $THRESHOLD$
+	if = { 
+		limit = { 	
+			NOT = { stability = $THRESHOLD$	}
+		}
+		add_stability = $STAB$
+	}
+	else = {
+		add_prestige = $PRESTIGE$
+	}
+}

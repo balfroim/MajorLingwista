@@ -14,17 +14,12 @@ country_decisions = {
 			}
 		}
 	}
-
 	gift_decision1 = {
 		allow = {
-			AND = {
-				ai = no
-			}
+			ai = no
 		}
 		potential = {
-			AND = {
-				ai = no
-			}
+			ai = no
 		}
 		effect = {
 			country_event = {
@@ -33,7 +28,6 @@ country_decisions = {
 			}
 		}
 	}
-
 	gift_decision2 = {
 		allow = {
 			ai = no
@@ -46,13 +40,8 @@ country_decisions = {
 				id = gift_events.2
 				days = 0
 			}
-			country_event = {
-				id = gift_events.1
-				days = 0
-			}
 		}
 	}
-
 	gift_decision3 = {
 		allow = {
 			ai = no

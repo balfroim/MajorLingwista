@@ -34,6 +34,7 @@ country_event = {
 		event_target:least_developed_province = {
 			add_base_tax = 1
 		}
+		
 	}
 }
 
@@ -94,5 +95,49 @@ country_event = {
 		every_owned_province = {
 			add_base_tax = 1
 		}
+	}
+}
+
+province_event = {
+	id = gift_events.4
+	title = "gift_event.4.title"
+	desc = "gift_event.4.desc"
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "gift_event.4.a"
+		add_base_tax = 1
+	}
+	option = {
+		name = "gift_event.4.b"
+		add_base_production = 1
+	}
+	option = {
+		name = "gift_event.4.c"
+		add_base_manpower = 1
+	}
+}
+
+province_event = {
+	id = gift_events.5
+	title = "gift_event.5.title"
+	desc = "gift_event.5.desc"
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+
+	option = {
+		name = "gift_event.5.a"
+		add_base_tax = 1
+		add_base_production = 1
+		add_base_manpower = 1
 	}
 }

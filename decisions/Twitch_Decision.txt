@@ -46,10 +46,6 @@ country_decisions = {
 				id = gift_events.2
 				days = 0
 			}
-			country_event = {
-				id = gift_events.1
-				days = 0
-			}
 		}
 	}
 

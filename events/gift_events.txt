@@ -1,7 +1,8 @@
 namespace = gift_events
 
-# Un don pour la Major ! (100 bits)
 # Inspiré par l'événement "Gift to the State" (https://eu4.paradoxwikis.com/Prestige_events)
+
+# Un don pour la Major (Tier 1) !
 country_event = {
 	id = gift_events.1
 	title = "gift_event.1.title"
@@ -14,32 +15,44 @@ country_event = {
 		every_owned_province = {
 			# if base_tax < min_base_tax
 			limit = {
-				NOT = { higher_development_than = event_target:least_developed_province }
+				NOT = { higher_development_than = event_target:least_dev }
 			}
-			save_event_target_as = least_developed_province
+			save_event_target_as = least_dev
 		}
 	}
 
-
 	option = {
-		name = "gift_event.a"
+		name = "gift_event.income"
 		add_years_of_income = 0.4
 	}
 	option = {
-		name = "gift_event.b"
+		name = "gift_event.stab_or_prestige"
 		add_stab_or_prestige = {THRESHOLD=3 STAB=1 PRESTIGE=5}
 	}
 	option = {
-		name = "gift_event.c.1"
-		event_target:least_developed_province = {
+		name = "gift_event.least_dev_tax"
+
+		event_target:least_dev = {
 			add_base_tax = 1
 		}
-		
+	}
+	option = {
+		name = "gift_event.least_dev_prod"
+
+		event_target:least_dev = {
+			add_base_production = 1
+		}
+	}
+	option = {
+		name = "gift_event.least_dev_mil"
+
+		event_target:least_dev = {
+			add_base_manpower = 1
+		}
 	}
 }
 
-# Un généreux don pour la Major ! (500 bits)
-# Inspiré par l'événement "Gift to the State" (https://eu4.paradoxwikis.com/Prestige_events)
+# Un généreux don pour la Major (Tier 2) !
 country_event = {
 	id = gift_events.2
 	title = "gift_event.2.title"
@@ -77,8 +90,7 @@ country_event = {
 	}
 }
 
-# Un énorme don pour la Major ! (1000 bits)
-# Inspiré par l'événement "Gift to the State" (https://eu4.paradoxwikis.com/Prestige_events)
+# Un énorme don pour la Major (Tier 3) !
 country_event = {
 	id = gift_events.3
 	title = "gift_event.3.title"

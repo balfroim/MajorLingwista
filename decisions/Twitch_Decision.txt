@@ -9,7 +9,7 @@ country_decisions = {
 		}
 		effect = {
 			country_event = {
-				id = twitch_events.1
+				id = sub_events.1
 				days = 0
 			}
 		}

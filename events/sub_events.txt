@@ -1,0 +1,148 @@
+namespace = sub_events
+
+# Un nouvel Illuminato est arrivé !
+country_event = {
+	id = sub_events.1
+	title = "sub_event.1.title"
+	desc = "sub_event.1.desc"
+	#picture = CORRUPTION_eventPicture
+	
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	# Faisons de lui un général !
+	# Faisons de lui un admiral !
+	# Faisons de lui un marchand !
+	# Faisons de lui un colon !
+	# Faisons de lui un explorateur !
+	# Faisons de lui un conseiller militaire !
+	option = {
+		name = "sub_event.mil_advisor"
+		country_event = {
+			id = sub_events.2
+		}
+	}
+	# Faisons de lui un conseiller diplomatique !
+	option = {
+		name = "sub_event.dip_advisor"
+		country_event = {
+			id = sub_events.3
+		}
+	}
+	# Faisons de lui un conseiller administratif !
+	option = {
+		name = "sub_event.mil_advisor"
+		country_event = {
+			id = sub_events.4
+		}
+	}
+
+	
+}
+
+country_event = {
+	id = sub_events.2
+	title = "sub_event.2.title"
+	desc = "sub_event.2.desc"
+
+	option = {
+		name = "sub_event.mil_advisor.1"
+		new_illuminato = {TYPE = commandant SKILL = 1}
+	}
+	option = {
+		name = "sub_event.mil_advisor.2"
+		new_illuminato = {TYPE = army_reformer SKILL = 1}
+	}
+	option = {
+		name = "sub_event.mil_advisor.3"
+		new_illuminato = {TYPE = army_organiser SKILL = 1}
+	}
+	option = {
+		name = "sub_event.mil_advisor.4"
+		new_illuminato = {TYPE = grand_captain SKILL = 1}
+	}
+	option = {
+		name = "sub_event.mil_advisor.5"
+		new_illuminato = {TYPE = recruitmaster SKILL = 1}
+	}
+	option = {
+		name = "sub_event.mil_advisor.6"
+		new_illuminato = {TYPE = quatermaster SKILL = 1}
+	}
+	option = {
+		name = "sub_event.mil_advisor.7"
+		new_illuminato = {TYPE = fortification_expert SKILL = 1}
+	}	
+}
+
+country_event = {
+	id = sub_events.3
+	title = "sub_event.3.title"
+	desc = "sub_event.3.desc"
+
+	option = {
+		name = "sub_event.dip_advisor.1"
+		new_illuminato = {TYPE = statesman  SKILL = 1}
+	}
+	option = {
+		name = "sub_event.dip_advisor.2"
+		new_illuminato = {TYPE = naval_reformer  SKILL = 1}
+	}
+	option = {
+		name = "sub_event.dip_advisor.3"
+		new_illuminato = {TYPE = trader  SKILL = 1}
+	}
+	option = {
+		name = "sub_event.dip_advisor.4"
+		new_illuminato = {TYPE = spymaster  SKILL = 1}
+	}
+	option = {
+		name = "sub_event.dip_advisor.5"
+		new_illuminato = {TYPE = colonial_governor  SKILL = 1}
+	}
+	option = {
+		name = "sub_event.dip_advisor.6"
+		new_illuminato = {TYPE = diplomat  SKILL = 1}
+	}
+	option = {
+		name = "sub_event.dip_advisor.7"
+		new_illuminato = {TYPE = navigator  SKILL = 1}
+	}	
+}
+
+country_event = {
+	id = sub_events.4
+	title = "sub_event.4.title"
+	desc = "sub_event.4.desc"
+
+	option = {
+		name = "sub_event.adm_advisor.1"
+		new_illuminato = {TYPE = philosopher  SKILL = 1}
+	}
+	option = {
+		name = "sub_event.adm_advisor.2"
+		new_illuminato = {TYPE = natural_scientist  SKILL = 1}
+	}
+	option = {
+		name = "sub_event.adm_advisor.3"
+		new_illuminato = {TYPE = artist  SKILL = 1}
+	}
+	option = {
+		name = "sub_event.adm_advisor.4"
+		new_illuminato = {TYPE = treasurer  SKILL = 1}
+	}
+	option = {
+		name = "sub_event.adm_advisor.5"
+		new_illuminato = {TYPE = theologian  SKILL = 1}
+	}
+	option = {
+		name = "sub_event.adm_advisor.6"
+		new_illuminato = {TYPE = master_of_mint  SKILL = 1}
+	}
+	option = {
+		name = "sub_event.adm_advisor.7"
+		new_illuminato = {TYPE = inquisitor  SKILL = 1}
+	}	
+}

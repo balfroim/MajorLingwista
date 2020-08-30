@@ -1,0 +1,23 @@
+add_stab_or_prestige = {
+	# if stability < $THRESHOLD$
+	if = { 
+		limit = { 	
+			NOT = { stability = $THRESHOLD$	}
+		}
+		add_stability = $STAB$
+	}
+	else = {
+		add_prestige = $PRESTIGE$
+	}
+}
+
+new_illuminato = {
+	define_advisor = {
+		type = $TYPE$
+		skill = $SKILL$
+		discount = yes
+		cost_multiplier = 0
+		culture = new_variable:ruler_culture
+		religion = new_variable:ruler_religion
+	}
+}

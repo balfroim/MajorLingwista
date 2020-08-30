@@ -56,9 +56,11 @@
     # Event
     gift_event.1.title:0 "Un don pour le Major !"
     gift_event.1.desc:0 "Un illuminato à décider de récompenser la bonne gouvernance du Major en faisant un don à la trésorie, soit par pur patriotisme ou en espérant recevoir un titre ou une position honorifique en échange."
-    gift_event.a:0 "Mettons ça dans la trésorie."
-    gift_event.b:0 "Dépensons ça généreusement."
-    gift_event.c.1:0 "Investissons dans [least_developed_province.GetName], une de nos provinces les plus pauvres."
+    gift_event.income:0 "Mettons ça dans la trésorie."
+    gift_event.stab_or_prestige:0 "Dépensons ça généreusement."
+    gift_event.least_dev_tax:0 "Investissons dans l'infrastructure de [least_dev.GetName], notre province la plus pauvre."
+    gift_event.least_dev_prod:0 "Investissons dans la production de [least_dev.GetName], notre province la plus pauvre."
+    gift_event.least_dev_mil:0 "Investissons dans la garnison de [least_dev.GetName], notre province la plus pauvre."
  # Don de 500 bits.
     # Decision
     gift_decision2_title:0 "Don de 500 bits."

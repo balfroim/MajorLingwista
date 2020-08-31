@@ -9,14 +9,23 @@ country_event = {
 	
 	is_triggered_only = yes
 
-	immediate = {
+	# Il va servir dans l'armée !
+	option = {
+		name = "sub_event.mil_advisor"
+		country_event = {
+			id = sub_events.5
+		}
 	}
-
-	# Faisons de lui un général !
-	# Faisons de lui un admiral !
 	# Faisons de lui un marchand !
-	# Faisons de lui un colon !
-	# Faisons de lui un explorateur !
+	option = {
+		name = "sub_event.merchantman"
+		add_mercantilism = 100
+	}
+	# Faisons de lui un scientifique !
+	option = {
+		name = "sub_event.merchantman"
+		change_innovativeness = 100
+	}
 	# Faisons de lui un conseiller militaire !
 	option = {
 		name = "sub_event.mil_advisor"
@@ -144,5 +153,40 @@ country_event = {
 	option = {
 		name = "sub_event.adm_advisor.7"
 		new_illuminato = {TYPE = inquisitor  SKILL = 1}
+	}	
+}
+
+country_event = {
+	id = sub_events.5
+	title = "sub_event.5.title"
+	desc = "sub_event.5.desc"
+
+	# Faisons de lui un général !
+	option = {
+		name = "sub_event.general"
+		create_general = {
+			tradition = 100
+		}
+	}
+	# Faisons de lui un admiral !
+	option = {
+		name = "sub_event.admiral"
+		create_admiral = {
+			tradition = 100
+		}
+	}
+	# Faisons de lui un explorateur !
+	option = {
+		name = "sub_event.explorer"
+		create_explorer = {
+			tradition = 100
+		}
+	}
+	# Faisons de lui un conquistador !
+	option = {
+		name = "sub_event.conquistador"
+		create_conquistador = {
+			tradition = 100
+		}
 	}	
 }

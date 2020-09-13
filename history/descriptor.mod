@@ -3,4 +3,4 @@ tags={
 	"Missions And Decisions"
 }
 name="MajorLingwista"
-supported_version="1.30.3"
+supported_version="1.30.4"

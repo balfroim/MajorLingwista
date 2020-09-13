@@ -23,7 +23,7 @@ country_event = {
 	}
 	# Faisons de lui un scientifique !
 	option = {
-		name = "sub_event.merchantman"
+		name = "sub_event.scientifique"
 		change_innovativeness = 100
 	}
 	# Faisons de lui un conseiller militaire !
@@ -42,7 +42,7 @@ country_event = {
 	}
 	# Faisons de lui un conseiller administratif !
 	option = {
-		name = "sub_event.mil_advisor"
+		name = "sub_event.adm_advisor"
 		country_event = {
 			id = sub_events.4
 		}
@@ -68,6 +68,21 @@ country_event = {
 		name = "sub_event.mil_advisor.3"
 		new_illuminato = {TYPE = army_organiser SKILL = 1}
 	}
+	# Un autre type conseiller militaire !
+	option = {
+		name = "sub_event.mil_advisor2"
+		country_event = {
+			id = sub_events.22
+		}
+	}
+		
+}
+
+country_event = {
+	id = sub_events.22
+	title = "sub_event.2.title"
+	desc = "sub_event.2.desc"
+
 	option = {
 		name = "sub_event.mil_advisor.4"
 		new_illuminato = {TYPE = grand_captain SKILL = 1}
@@ -83,8 +98,9 @@ country_event = {
 	option = {
 		name = "sub_event.mil_advisor.7"
 		new_illuminato = {TYPE = fortification_expert SKILL = 1}
-	}	
+	}
 }
+
 
 country_event = {
 	id = sub_events.3
@@ -103,6 +119,20 @@ country_event = {
 		name = "sub_event.dip_advisor.3"
 		new_illuminato = {TYPE = trader  SKILL = 1}
 	}
+	# Un autre type conseiller diplomatique !
+	option = {
+		name = "sub_event.dip_advisor2"
+		country_event = {
+			id = sub_events.32
+		}
+	}
+}
+
+country_event = {
+	id = sub_events.32
+	title = "sub_event.3.title"
+	desc = "sub_event.3.desc"
+
 	option = {
 		name = "sub_event.dip_advisor.4"
 		new_illuminato = {TYPE = spymaster  SKILL = 1}
@@ -121,6 +151,8 @@ country_event = {
 	}	
 }
 
+
+
 country_event = {
 	id = sub_events.4
 	title = "sub_event.4.title"
@@ -138,6 +170,21 @@ country_event = {
 		name = "sub_event.adm_advisor.3"
 		new_illuminato = {TYPE = artist  SKILL = 1}
 	}
+	# Un autre type conseiller diplomatique !
+	option = {
+		name = "sub_event.adm_advisor2"
+		country_event = {
+			id = sub_events.42
+		}
+	}	
+}
+
+
+country_event = {
+	id = sub_events.42
+	title = "sub_event.4.title"
+	desc = "sub_event.4.desc"
+
 	option = {
 		name = "sub_event.adm_advisor.4"
 		new_illuminato = {TYPE = treasurer  SKILL = 1}

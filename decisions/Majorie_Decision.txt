@@ -19,12 +19,12 @@ country_decisions = {
 
 	adopt_majorie_faith = {
 		allow = {
-			ai = no
-			NOT = { religion = catholic }
+			tag = LGW
+			NOT = { religion = blue_moon }
 		}
 		potential = {
 			tag = LGW
-			NOT = { religion = catholic }
+			NOT = { religion = blue_moon }
 		}
 		effect = {
 			country_event = {
@@ -46,6 +46,23 @@ country_decisions = {
 		effect = {
 			country_event = {
 				id = majorie_events.4
+				days = 0
+			}
+		}
+	}
+
+	adopt_majorie_ideas = {
+		allow = {
+			tag = LGW
+			NOT = {	has_idea = MAJ_idea1	}
+		}
+		potential = {
+			tag = LGW
+			NOT = {	has_idea = MAJ_idea1	}
+		}
+		effect = {
+			country_event = {
+				id = ideagroups.1 #Swap Ideas
 				days = 0
 			}
 		}

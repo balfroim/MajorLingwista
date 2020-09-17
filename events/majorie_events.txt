@@ -9,19 +9,19 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes	
 	option = {
-		name = "Majorie"
+		name = "majorie_event.2t"
 		change_tag = LGW
 		add_permanent_claim = 192
 		add_permanent_claim = 4384
 		if = {
 			limit = {
-				NOT = { government = monarchy }
+				NOT = { government = republic }
 			}
-			change_government = monarchy
+			change_government = republic
 		}
 		country_event = {
 			id = majorie_events.2
-			days = 1
+			days = 0
 		}
 	}
 }
@@ -33,21 +33,11 @@ country_event = {
 	picture = ANGRY_MOB_eventPicture
 	
 	is_triggered_only = yes
-	fire_only_once = yes	
 	option = {
-		name = "Lingwista_took_control"
-		add_government_reform = lingwista_reform
+		name = "majorie_event.2a"
+		add_government_reform = illuminatos_council_reform
 		kill_ruler = yes
 		add_stability = 1
-		define_ruler = {
-			name = "Major"
-			dynasty = "Lingwista"
-			adm = 6
-			dip = 6
-			mil = 6
-			age = 20
-			claim = 100
-		}
 	}
 }
 
@@ -58,10 +48,9 @@ country_event = {
 	picture = ANGRY_MOB_eventPicture
 	
 	is_triggered_only = yes
-	fire_only_once = yes	
 	option = {
 		name = "Lingwista_new_faith"
-		change_religion = catholic
+		change_religion = blue_moon
 	}
 }
 
@@ -72,7 +61,6 @@ country_event = {
 	picture = ANGRY_MOB_eventPicture
 	
 	is_triggered_only = yes
-	fire_only_once = yes	
 	option = {
 		name = "Lingwista_new_culture"
 		change_primary_culture = aquitaine

@@ -30,6 +30,7 @@ monarchy = {
 				revolutionary_empire_reform
 				holy_state_reform
 				austrian_archduchy_reform
+				lingwista_monarchy_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -46,6 +47,7 @@ monarchy = {
 				black_army_reform
 				legion_of_honor_reform
 				imperial_nobility_reform
+				lingwista_monarchy1_reform
 			}
 		}
 		bureaucracy = {
@@ -58,6 +60,7 @@ monarchy = {
 				penal_colonies_reform
 				liberte_reform
 				fraternite_reform
+				lingwista_monarchy2_reform
 			}
 		}
 		growth_of_administration = {
@@ -72,6 +75,7 @@ monarchy = {
 				revolutionary_principle_reform
 				equality_principle_reform
 				imperial_principle_reform
+				lingwista_monarchy3_reform
 			}
 		}
 		deliberative_assembly = {
@@ -86,6 +90,7 @@ monarchy = {
 				feuillant_reform
 				two_chamber_reform
 				imperial_decree_reform
+				lingwista_monarchy4_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {
@@ -94,6 +99,7 @@ monarchy = {
 				regional_representation_reform
 				consulate_reform
 				military_electorate_reform
+				lingwista_monarchy5_reform
 			}
 		}
 		separation_of_power = {
@@ -105,6 +111,7 @@ monarchy = {
 				emperor_of_the_revolution_reform
 				enlightened_monarchy_reform
 				become_rev_republic_reform
+				lingwista_monarchy6_reform
 			}
 		}
 	}
@@ -132,6 +139,7 @@ monarchy = {
 		principality_legacy
 		tsardom_legacy
 		holy_state_legacy
+		lingwista_monarchy
 	}
 
 	# Each group of exclusive reforms are mutually exclusive to each other
@@ -334,6 +342,7 @@ republic = {
 				three_classes_reform
 				military_electorate_reform
 				major_sole_elector_reform
+				illuminatos_electors_reform
 			}
 		}
 		office_selection = {
@@ -342,6 +351,7 @@ republic = {
 				bureaucratic_aparatus_reform
 				universal_suffrage_reform
 				appointment_by_major_reform
+				cooptation_reform
 			}
 		}
 		question_of_dictatorship = {
@@ -354,6 +364,8 @@ republic = {
 				president_for_life_reform
 				government_for_people_reform
 				become_rev_empire_reform
+				lingwista_took_control
+				illuminatos_bureau
 			}
 		}
 	}

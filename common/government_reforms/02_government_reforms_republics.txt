@@ -2350,6 +2350,15 @@ lingwista_took_control = {
 	effect = {
 		lose_reforms = 5
 		change_government = monarchy
+		add_stability = 3
+		define_ruler = {
+			dynasty = "Lingwista"
+			adm = 6
+			dip = 6
+			mil = 6
+			age = 20
+			claim = 100
+		}
 	}
 }
 

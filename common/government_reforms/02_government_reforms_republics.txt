@@ -1940,8 +1940,9 @@ civilising_mission_reform = {
 	allow_normal_conversion = yes
 	potential = {	has_reform = illuminatos_council_reform	}
 	modifiers = {
-		ae_impact = -0.1
-		all_power_cost = -0.1
+		discipline = 0.1
+		artillery_bonus_vs_fort = 2
+		backrow_artillery_damage = 0.1
 	}
 }
 
@@ -2078,9 +2079,8 @@ major_sole_elector_reform = {
 		tag = LGW
 	}
 	modifiers = {
-		discipline = 0.1
-		artillery_bonus_vs_fort = 2
-		backrow_artillery_damage = 0.1
+		ae_impact = -0.1
+		all_power_cost = -0.1
 	}
 }
 

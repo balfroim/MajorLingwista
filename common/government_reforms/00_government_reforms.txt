@@ -116,6 +116,27 @@ feudal_monarchy = {
 #
 ####################################
 
+lingwista_monarchy = {
+	# government mechanics flags go here
+	icon = "paper_with_seal_3"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	monarchy = yes
+	trigger = {	tag = LGW	}
+	modifiers = {
+    	governing_capacity = 150
+		production_efficiency = 0.5
+		global_autonomy = -0.05
+		max_absolutism = 50
+	}
+
+	custom_attributes = {
+		blocked_call_diet = yes
+	}
+}
+
 administrative_monarchy = {
 	# government mechanics flags go here
 	icon = "paper_with_seal"
@@ -296,15 +317,14 @@ illuminatos_council = {
 	royal_marriage = no
 	trigger = {	tag = LGW	}
 	modifiers = {
-		republican_tradition = 2
-		monarch_admin_power = 2
-		monarch_diplomatic_power = 2
-		monarch_military_power = 2
+		reform_progress_growth = 0.5
+		country_admin_power = 1
+		country_diplomatic_power = 1
+		country_military_power = 1
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
-		lottery_election = yes
 	}
 }
 

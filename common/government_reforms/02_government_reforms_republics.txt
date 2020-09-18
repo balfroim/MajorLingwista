@@ -1089,21 +1089,29 @@ illuminatos_council_reform = {
 	lock_level_when_selected = yes
 	allow_normal_conversion = yes
 	icon = "people_walking"
-	potential = {	tag = LGW	}
+	potential = {
+		OR = {
+			tag = LGW
+			ai = yes
+		}
+	}
 	valid_for_nation_designer = no
 	legacy_equivalent = illuminatos_council
 	modifiers = {
 		reform_progress_growth = 0.5
-		country_admin_power = 2
-		country_diplomatic_power = 2
-		country_military_power = 2
+		country_admin_power = 1
+		country_diplomatic_power = 1
+		country_military_power = 1
 	}
 	custom_attributes = {
 		locked_government_type = yes
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
 	}
-	duration = 2
+	duration = 3
+	ai = {
+		factor = 0
+	}
 }
 
 #Republican Virtues
@@ -1283,8 +1291,8 @@ gaullism_reform = {
 	allow_normal_conversion = yes
 	potential = {	has_reform = illuminatos_council_reform	}
 	modifiers = {
-		development_cost = -0.50
-		republican_tradition = 01
+		development_cost = -0.25
+		republican_tradition = 1
 	}
 }
 
@@ -1471,7 +1479,7 @@ illuminatos_alternance_reform = {
 	potential = {	has_reform = illuminatos_council_reform	}
 	modifiers = {
 		election_cycle = -1
-		land_morale = 0.1
+		administrative_efficiency = 0.1
 	}
 }
 
@@ -1562,8 +1570,8 @@ deconcentration_and_decentralization_reform = {
 	allow_normal_conversion = yes
 	potential = {	has_reform = illuminatos_council_reform	}
 	modifiers = {
-		governing_capacity_modifier = 0.5
-		core_creation = -0.5
+		governing_capacity_modifier = 0.25
+		institution_spread_from_true_faith = 0.5
 	}
 }
 
@@ -1701,9 +1709,8 @@ majorism_reform = {
 	allow_normal_conversion = yes
 	potential = {	has_reform = illuminatos_council_reform	}
 	modifiers = {
-		fire_damage = 0.2
-		siege_ability = 0.5
-		war_exhaustion = -0.2
+		fire_damage = 0.1
+		fire_damage_received = -0.1
 	}
 }
 
@@ -1844,9 +1851,9 @@ modernization_population_reform = {
 	allow_normal_conversion = yes
 	potential = {	has_reform = illuminatos_council_reform	}
 	modifiers = {
-		global_missionary_strength = 0.05
-		missionaries = 2
-		culture_conversion_cost = -0.50
+		global_missionary_strength = 0.02
+		missionaries = 1
+		culture_conversion_cost = -0.25
 	}
 }
 
@@ -1933,8 +1940,8 @@ civilising_mission_reform = {
 	allow_normal_conversion = yes
 	potential = {	has_reform = illuminatos_council_reform	}
 	modifiers = {
-		ae_impact = -0.2
-		all_power_cost = -0.2
+		ae_impact = -0.1
+		all_power_cost = -0.1
 	}
 }
 
@@ -2066,11 +2073,27 @@ military_electorate_reform = {
 major_sole_elector_reform = {
 	icon = "military_dictatorship_reform"
 	allow_normal_conversion = yes
-	potential = {	has_reform = illuminatos_council_reform	}
+	potential = {
+		has_reform = illuminatos_council_reform
+		tag = LGW
+	}
 	modifiers = {
 		discipline = 0.1
 		artillery_bonus_vs_fort = 2
 		backrow_artillery_damage = 0.1
+	}
+}
+
+illuminatos_electors_reform = {
+	icon = "military_dictatorship_reform"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = illuminatos_council_reform
+		NOT = { tag = LGW }
+	}
+	modifiers = {
+		defensiveness = 0.5
+		reinforce_cost_modifier = -0.5
 	}
 }
 
@@ -2126,11 +2149,27 @@ universal_suffrage_reform = {
 appointment_by_major_reform = {
 	icon = "politician"
 	allow_normal_conversion = yes
-	potential = {	has_reform = illuminatos_council_reform	}
+	potential = {
+		has_reform = illuminatos_council_reform
+		tag = LGW
+	}
 	modifiers = {
-		liberty_desire_from_subject_development = -0.5
+		liberty_desire_from_subject_development = -0.25
 		global_spy_defence = 0.5
-		tolerance_own = 2
+		tolerance_own = 1
+	}
+}
+
+cooptation_reform = {
+	icon = "military_dictatorship_reform"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = illuminatos_council_reform
+		NOT = { tag = LGW }
+	}
+	modifiers = {
+		diplomatic_upkeep = 2
+		diplomatic_reputation = 2
 	}
 }
 
@@ -2203,7 +2242,8 @@ strengthen_executive_powers_reform = {
 	icon = "soldiers_2"
 	allow_normal_conversion = yes
 	potential = { 
-		is_revolutionary = no 
+		is_revolutionary = no
+		NOT = { has_reform = illuminatos_council_reform }
 	}
 	modifiers = {
 		max_absolutism = 25
@@ -2213,6 +2253,9 @@ strengthen_executive_powers_reform = {
 reinforce_republican_values_reform = {
 	icon = "parliament_hall"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
+	}
 	modifiers = {
 		free_adm_policy = 1
 		reelection_cost = -0.1
@@ -2292,5 +2335,29 @@ become_rev_empire_reform = {
 	}
 	ai = {
 		factor = 0
+	}
+}
+
+lingwista_took_control = {
+	icon = "soldiers_2"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = illuminatos_council_reform
+		tag = LGW
+	}
+	modifiers = {
+	}
+	effect = {
+		lose_reforms = 5
+		change_government = monarchy
+	}
+}
+
+illuminatos_bureau = {
+	icon = "parliament_hall"
+	allow_normal_conversion = yes
+	potential = {	has_reform = illuminatos_council_reform	}
+	modifiers = {
+		administrative_efficiency = 0.2
 	}
 }

@@ -2361,7 +2361,6 @@ lingwista_took_control = {
 			male = yes
 			culture = aquitaine
 			religion = blue_moon
-			add_ruler_personality = immortal_personality
 		}
 	}
 }

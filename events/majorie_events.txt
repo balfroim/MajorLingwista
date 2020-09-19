@@ -76,4 +76,26 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = majorie_events.5
+	title = "majorie_event.5t"
+	desc = "majorie_event.5d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_reform = lingwista_monarchy_reform
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "majorie_event.5a"
+		add_ruler_personality = immortal_personality
+	}
+}
+
 

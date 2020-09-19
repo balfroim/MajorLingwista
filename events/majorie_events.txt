@@ -93,7 +93,7 @@ country_event = {
 		days = 1
 	}
 	option = {
-		name = "majorie_event.5a"
+		name = "majorie_event.5t"
 		add_ruler_personality = immortal_personality
 	}
 }

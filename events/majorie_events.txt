@@ -103,21 +103,15 @@ country_event = {
 	desc = "majorie_event.6"
 	picture = ANGRY_MOB_eventPicture
 	
-	fire_only_once = yes
-	
 	trigger = {
 		ai = yes
-		great_power_rank = 3
-		any_country = { 
-			OR = { 
-				has_reform = major_sole_elector_reform
-				has_reform = lingwista_monarchy_reform
-			}
-		}
+		has_global_flag = angry_illuminatos
+		is_great_power = yes
+		NOT = { tag = LGW }
 	}
 	
 	mean_time_to_happen = {
-		days = 0
+		days = 1
 	}
 	option = {
 		if = {
@@ -128,8 +122,9 @@ country_event = {
 		}
 		country_event = {
 			id = majorie_events.2
-			days = 1
+			days = 0
 		}
+		clr_global_flag = angry_illuminatos
 	}
 }
 

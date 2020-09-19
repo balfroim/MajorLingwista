@@ -1088,7 +1088,7 @@ cossacks_reform = {
 illuminatos_council_reform = {
 	lock_level_when_selected = yes
 	allow_normal_conversion = yes
-	icon = "people_walking"
+	icon = "illuminatos"
 	potential = {
 		OR = {
 			tag = LGW
@@ -1278,7 +1278,7 @@ fraternite_reform = {
 }
 
 gaullism_reform = {
-	icon = "man_and_children"
+	icon = "illuminatos"
 	allow_normal_conversion = yes
 	potential = {	has_reform = illuminatos_council_reform	}
 	modifiers = {
@@ -1461,7 +1461,7 @@ national_constituent_reform = {
 }
 
 illuminatos_alternance_reform = {
-	icon = "ballot_box"
+	icon = "illuminatos"
 	allow_normal_conversion = yes
 	potential = {	has_reform = illuminatos_council_reform	}
 	modifiers = {
@@ -1547,7 +1547,7 @@ union_of_states_reform = {
 }
 
 deconcentration_and_decentralization_reform = {
-	icon = "map"
+	icon = "illuminatos"
 	allow_normal_conversion = yes
 	potential = {	has_reform = illuminatos_council_reform	}
 	modifiers = {
@@ -1682,7 +1682,7 @@ two_chamber_reform = {
 }
 
 majorism_reform = {
-	icon = "man_on_podium"
+	icon = "illuminatos"
 	allow_normal_conversion = yes
 	potential = {	has_reform = illuminatos_council_reform	}
 	modifiers = {
@@ -1816,7 +1816,7 @@ revolutionary_council_reform = {
 }
 
 modernization_population_reform = {
-	icon = "war_against_the_world"
+	icon = "illuminatos"
 	allow_normal_conversion = yes
 	potential = {	has_reform = illuminatos_council_reform	}
 	modifiers = {
@@ -1899,7 +1899,7 @@ imperial_principle_reform = {
 }
 
 civilising_mission_reform = {
-	icon = "imperial_nobility_reform"
+	icon = "illuminatos"
 	allow_normal_conversion = yes
 	potential = {	has_reform = illuminatos_council_reform	}
 	modifiers = {
@@ -2032,7 +2032,7 @@ military_electorate_reform = {
 }
 
 major_sole_elector_reform = {
-	icon = "military_dictatorship_reform"
+	icon = "lingwista"
 	allow_normal_conversion = yes
 	potential = {
 		has_reform = illuminatos_council_reform
@@ -2048,7 +2048,7 @@ major_sole_elector_reform = {
 }
 
 illuminatos_electors_reform = {
-	icon = "military_dictatorship_reform"
+	icon = "illuminatos"
 	allow_normal_conversion = yes
 	potential = {
 		has_reform = illuminatos_council_reform
@@ -2104,7 +2104,7 @@ universal_suffrage_reform = {
 }
 
 appointment_by_major_reform = {
-	icon = "politician"
+	icon = "lingwista"
 	allow_normal_conversion = yes
 	potential = {
 		has_reform = illuminatos_council_reform
@@ -2118,7 +2118,7 @@ appointment_by_major_reform = {
 }
 
 cooptation_reform = {
-	icon = "military_dictatorship_reform"
+	icon = "illuminatos"
 	allow_normal_conversion = yes
 	potential = {
 		has_reform = illuminatos_council_reform
@@ -2292,7 +2292,7 @@ become_rev_empire_reform = {
 }
 
 lingwista_took_control = {
-	icon = "soldiers_2"
+	icon = "lingwista"
 	allow_normal_conversion = yes
 	potential = {
 		has_reform = illuminatos_council_reform
@@ -2319,7 +2319,7 @@ lingwista_took_control = {
 }
 
 illuminatos_bureau = {
-	icon = "parliament_hall"
+	icon = "illuminatos"
 	allow_normal_conversion = yes
 	potential = {	has_reform = illuminatos_council_reform	}
 	modifiers = {

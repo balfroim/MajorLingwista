@@ -44,6 +44,8 @@ l_french:
     MAJOR_CONSORT:0 "Major-consort"
     lingwista_monarchy_reform:0 "Contrôle direct de Lingwista"
     lingwista_monarchy_reform_desc:0 "Le Major Lingwista contrôle directement l'Etat."
+    majorie_event.5t:0 "Le Major est immortel."
+    majorie_event.5d:0 "Bénéficiant des avancées technologiques de son époque, le Major est devenu immortel. On raconte qu'il peut voyager dans le temps et l'espace et que c'est ainsi qu'il est arrivé parmi nous depuis un lointain avenir."
     lingwista_monarchy1_reform:0 "Modernisation de la société"
     lingwista_monarchy1_reform_desc:0 "Une société moderne n'a pas besoin d'ordres, si ce n'est l'ordre de son Major."
     lingwista_monarchy2_reform:0 "Propagande d'Etat"

@@ -1110,7 +1110,7 @@ illuminatos_council_reform = {
 	}
 	duration = 3
 	ai = {
-		factor = 0
+		factor = 100
 	}
 }
 
@@ -1284,6 +1284,9 @@ gaullism_reform = {
 	modifiers = {
 		development_cost = -0.25
 		republican_tradition = 1
+	}
+	ai = {
+		factor = 100
 	}
 }
 
@@ -1465,6 +1468,9 @@ illuminatos_alternance_reform = {
 		election_cycle = -1
 		administrative_efficiency = 0.1
 	}
+	ai = {
+		factor = 100
+	}
 }
 
 #Federalism vs Unitarianism vs Confederacy
@@ -1547,6 +1553,9 @@ deconcentration_and_decentralization_reform = {
 	modifiers = {
 		governing_capacity_modifier = 0.25
 		institution_spread_from_true_faith = 0.5
+	}
+	ai = {
+		factor = 100
 	}
 }
 
@@ -1680,6 +1689,9 @@ majorism_reform = {
 		fire_damage = 0.1
 		fire_damage_received = -0.1
 	}
+	ai = {
+		factor = 100
+	}
 }
 
 
@@ -1812,6 +1824,9 @@ modernization_population_reform = {
 		missionaries = 1
 		culture_conversion_cost = -0.25
 	}
+	ai = {
+		factor = 100
+	}
 }
 
 #Administration
@@ -1891,6 +1906,9 @@ civilising_mission_reform = {
 		discipline = 0.1
 		artillery_bonus_vs_fort = 2
 		backrow_artillery_damage = 0.1
+	}
+	ai = {
+		factor = 100
 	}
 }
 
@@ -2024,6 +2042,9 @@ major_sole_elector_reform = {
 		ae_impact = -0.1
 		all_power_cost = -0.1
 	}
+	effect = {
+		set_global_flag = angry_illuminatos
+	}
 }
 
 illuminatos_electors_reform = {
@@ -2036,6 +2057,9 @@ illuminatos_electors_reform = {
 	modifiers = {
 		defensiveness = 0.5
 		reinforce_cost_modifier = -0.5
+	}
+	ai = {
+		factor = 100
 	}
 }
 
@@ -2103,6 +2127,9 @@ cooptation_reform = {
 	modifiers = {
 		diplomatic_upkeep = 2
 		diplomatic_reputation = 2
+	}
+	ai = {
+		factor = 100
 	}
 }
 
@@ -2297,5 +2324,8 @@ illuminatos_bureau = {
 	potential = {	has_reform = illuminatos_council_reform	}
 	modifiers = {
 		administrative_efficiency = 0.2
+	}
+	ai = {
+		factor = 100
 	}
 }

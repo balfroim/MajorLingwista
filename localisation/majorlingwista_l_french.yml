@@ -1,5 +1,5 @@
 l_french:
-  # Former la Majorie
+ # Former la Majorie
     form_majorie_decision_title:0 "Former la Majorie"
     form_majorie_decision:0 "Former la Majorie"
     form_majorie_decision_desc:0 "C'est l'heure de sortir de l'ombre et de commencer à s'exposer."
@@ -10,8 +10,8 @@ l_french:
     error_event.0t:0 "Nous ne sommes pas encore prêts."
     majorie_event.2t:0 "Les illuminatos du Major Lingwista prennent le contrôle."
     majorie_event.2d:0 "Les illuminatos étant une organisation secrète, il est difficile de savoir comment ils vont assurer la politique du pays. Les ordres hiérarchiques parvenant aux agents d'exécution sur le terrain émanent du "Conseil des illuminatos". C'est le nouvel organe exécutif du pays."
-    majorie_event.2a:0 "Le conseil des illuminatos entre en scène, lequel sera élu ?"
-  # Réformes gouvernementales Majorie
+    majorie_event.2a:0 "Le conseil des illuminatos entre en scène, lequel sera choisi comme image de l'exécutif ?"
+ # Réformes gouvernementales Majorie
     illuminatos_council_reform:0 "Conseil secret des illuminatos"
     ILLUMINATO:0 "Illuminato"
     illuminatos_council_reform_desc:0 "Nul ne sait ce qui se passe au conseil secret des illuminatos. Il est dit que les sbires du Major s'y succédent pour conserver les apparences."
@@ -33,6 +33,7 @@ l_french:
     illuminatos_electors_reform_desc:0 "Les illuminatos sont les électeurs."
     appointment_by_major_reform:0 "Nomination par le Major"
     appointment_by_major_reform_desc:0 "Il est temps de révéler que le Major est le seul a prendre les décisions."
+    majorie_event.6:0 "Des illuminatos sont mécontents d'avoir été mis de coté et quittent la Majorie pour prendre le contrôle d'un autre pays."
     cooptation_reform:0 "Cooptation"
     cooptation_reform_desc:0 "Les illuminatos choisissent ceux qui peut les rejoindre."
     lingwista_took_control:0 "Le Major Lingwista prend le contrôle direct"
@@ -58,11 +59,11 @@ l_french:
     lingwista_monarchy5_reform_desc:0 "La voix du Major est la seule vérité. En doutes-tu ? Bien sûr que non."
     lingwista_monarchy6_reform:0 "Pouvoir des armes"
     lingwista_monarchy6_reform_desc:0 "Les armes sont le seul pouvoir réellement existant, ceux qui n'en sont pas déjà convaincu le seront bientôt."
-  # Idées Majorie
-    adopt_majorie_ideas_title:0 "Adopter les idées majoriennes"
-    adopt_majorie_ideas_title_desc:0 "Adopter les idées majoriennes"
-    MAJ_ideas:0 "idées majoriennes"
-    MAJ_ideas_start:0 "traditions majoriennes"
+ # Idées Majorie
+    adopt_majorie_ideas_title:0 "Adopter les idées majorées"
+    adopt_majorie_ideas_title_desc:0 "Adopter les idées majorées"
+    MAJ_ideas:0 "idées majorées"
+    MAJ_ideas_start:0 "traditions majorées"
     MAJ_idea1:0 "Majorie idée 1"
     MAJ_idea1_desc:0 "Majorie idée 1 description"
     MAJ_idea2:0 "Majorie idée 2"
@@ -77,7 +78,7 @@ l_french:
     MAJ_idea6_desc:0 "Majorie idée 6 description"
     MAJ_idea7:0 "Majorie idée 7"
     MAJ_idea7_desc:0 "Majorie idée 7 description"
-  # Religion Lune de Sang Bleue
+ # Religion Lune de Sang Bleue
     adopt_majorie_faith_title:0 "Adopter la foi du Major"
     adopt_majorie_faith:0 "Adopter la foi du Major"
     adopt_majorie_faith_desc:0 "Il est grand temps d'adopter la foi du Major"
@@ -86,7 +87,7 @@ l_french:
     majorie_event.3a:0 "Adoptons la religion du Major comme religion nationale."
     blue_moon:0 "La Lune de sang bleue"
     blue_moon_religion_desc:0 "Le temple  de  la  Lune  de  sang  bleue  de  la  nuit  sacrée  d'automne est un un thinktank  de  voyageurs  temporels  ingérents."
-  # Culture Français contemporain
+ # Culture Français contemporain
     adopt_majorie_culture_title:0 "Adopter la culture du Major"
     adopt_majorie_culture:0 "Adopter la culture du Major"
     adopt_majorie_culture_desc:0 "Il est grand temps d'adopter la culture du Major"
@@ -94,16 +95,12 @@ l_french:
     majorie_event.4d:0 "La culture de l'élite doit être inculquée aux natifs, il est temps de les élever dans la culture française contemporaine."
     majorie_event.4a:0 "Adoptons la culture du Major comme culture nationale."
     aquitaine:0 "français contemporain"
- # Le Major est arrivé
- majorie_events.0.title:0 "La Major est arrivé !"
- majorie_events.0.desc:0 "La Major est arrivé !"
- majorie_events.0.a:0 "Enfin !"
  # Un sub pour le Major !
- sub_decision_title:0 "Sub pour le Major"
- sub_decision:0 "Sub pour le Major"
- sub_decision_desc:0 "Sub pour le Major description"
- twitch_event.1t:0 "Event Twitch 1"
- twitch_event.1d:0 "Event Twitch 1"
+    sub_decision_title:0 "Sub pour le Major"
+    sub_decision:0 "Sub pour le Major"
+    sub_decision_desc:0 "Sub pour le Major description"
+    twitch_event.1t:0 "Event Twitch 1"
+    twitch_event.1d:0 "Event Twitch 1"
  # Don de 100 bits.
     # Decision
     gift_decision1_title:0 "Don de 100 bits."

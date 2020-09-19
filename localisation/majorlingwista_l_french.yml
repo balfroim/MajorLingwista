@@ -12,7 +12,7 @@ l_french:
     majorie_event.2d:0 "Les illuminatos étant une organisation secrète, il est difficile de savoir comment ils vont assurer la politique du pays. Les ordres hiérarchiques parvenant aux agents d'exécution sur le terrain émanent du "Conseil des illuminatos". C'est le nouvel organe exécutif du pays."
     majorie_event.2a:0 "Le conseil des illuminatos entre en scène, lequel sera choisi comme image de l'exécutif ?"
  # Réformes gouvernementales Majorie
-    illuminatos_council_reform:0 "Conseil secret des illuminatos"
+    illuminatos_council_reform:0 "Conseil secret"
     ILLUMINATO:0 "Illuminato"
     illuminatos_council_reform_desc:0 "Nul ne sait ce qui se passe au conseil secret des illuminatos. Il est dit que les sbires du Major s'y succédent pour conserver les apparences."
     gaullism_reform:0 "Néo-Gaullisme"

@@ -1127,6 +1127,30 @@ gov_religious_order = {
 	}
 }
 
+gov_illuminatos = {
+	rank = {
+		1 = illuminatos_council_reform
+		2 = illuminatos_council_reform
+		3 = illuminatos_council_reform
+	}
+
+	ruler_male = {
+		1 = ILLUMINATO
+		2 = ILLUMINATO
+		3 = ILLUMINATO
+	}
+	
+	ruler_female = {
+		1 = ILLUMINATO
+		2 = ILLUMINATO
+		3 = ILLUMINATO
+	}
+	
+	trigger = {
+		has_reform = illuminatos_council_reform
+	}
+}
+
 gov_lingwista = {
 	rank = {
 		1 = gov_lingwista

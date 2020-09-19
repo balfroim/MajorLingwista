@@ -1084,7 +1084,7 @@ gond_kingdom = {
 }
 
 lingwista_monarchy_reform = {
-	icon = "daimyo"
+	icon = "lingwista"
 	allow_normal_conversion = yes
 	legacy_equivalent = lingwista_monarchy
 	potential = {	tag = LGW	}
@@ -1320,7 +1320,7 @@ imperial_nobility_reform = {
 }
 
 lingwista_monarchy1_reform = {
-	icon = "imperial_nobility_reform"
+	icon = "lingwista"
 	allow_normal_conversion = yes
 	potential = {	has_reform = lingwista_monarchy_reform }
 	modifiers = {
@@ -1411,7 +1411,7 @@ mansabdari_reform = {
 }
 
 lingwista_monarchy2_reform = {
-	icon = "imperial_nobility_reform"
+	icon = "lingwista"
 	allow_normal_conversion = yes
 	potential = {	has_reform = lingwista_monarchy_reform }
 	modifiers = {
@@ -1608,7 +1608,7 @@ zabt_reform = {
 }
 
 lingwista_monarchy3_reform = {
-	icon = "imperial_nobility_reform"
+	icon = "lingwista"
 	allow_normal_conversion = yes
 	potential = {	has_reform = lingwista_monarchy_reform }
 	modifiers = {
@@ -1770,7 +1770,7 @@ imperial_decree_reform = {
 }
 
 lingwista_monarchy4_reform = {
-	icon = "imperial_nobility_reform"
+	icon = "lingwista"
 	allow_normal_conversion = yes
 	potential = {	has_reform = lingwista_monarchy_reform }
 	modifiers = {
@@ -1821,7 +1821,7 @@ consulate_reform = {
 }
 
 lingwista_monarchy5_reform = {
-	icon = "imperial_nobility_reform"
+	icon = "lingwista"
 	allow_normal_conversion = yes
 	potential = {	has_reform = lingwista_monarchy_reform }
 	modifiers = {
@@ -1968,7 +1968,7 @@ become_rev_republic_reform = {
 }
 
 lingwista_monarchy6_reform = {
-	icon = "imperial_nobility_reform"
+	icon = "lingwista"
 	allow_normal_conversion = yes
 	potential = {	has_reform = lingwista_monarchy_reform }
 	modifiers = {

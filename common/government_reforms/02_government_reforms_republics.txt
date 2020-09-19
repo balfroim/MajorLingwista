@@ -2358,6 +2358,9 @@ lingwista_took_control = {
 			mil = 6
 			age = 20
 			claim = 100
+			male = yes
+			culture = aquitaine
+			religion = blue_moon
 		}
 	}
 }

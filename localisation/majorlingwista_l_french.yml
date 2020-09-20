@@ -148,7 +148,9 @@ l_french:
    # SubGift (quelqu'un offre des abonnements dans le chat)
       twitch_event.2t:0 "Un subgift !"
       twitch_event.2d:0 "Quelqu'un a offert un abonnements à une ou plusieur personnes."
-      twitch_event.2a:0 "Veuillez passer par l'évènement d'abonnement autant de fois que de Sub."
+      twitch_event.2a:0 "Un abonnement offert UN SEUL"
+      twitch_event.2b:0 "Cinq abonnements, ça étoffe bien nos rangs !"
+      twitch_event.2c:0 "Dix abonnements, il va falloir être patient pour tous les ajouter."
    # Gift (quelqu'un fait un don)
       twitch_event.3t:0 "Un don !"
       twitch_event.3d:0 "Un don, certes, mais de combien ?"

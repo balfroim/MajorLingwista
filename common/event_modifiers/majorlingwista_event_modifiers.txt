@@ -1,3 +1,86 @@
+#Modifiers
+
+
+illuminato_diplomate_1 = {
+	diplomats = 1
+}
+
+illuminato_diplomate_2 = {
+	diplomats = 1
+}
+
+illuminato_diplomate_3 = {
+	diplomats = 1
+}
+
+illuminato_diplomate_4 = {
+	diplomats = 1
+}
+
+illuminato_diplomate_5 = {
+	diplomats = 1
+}
+
+illuminato_marchand_1 = {
+	merchants = 1
+}
+
+illuminato_marchand_2 = {
+	merchants = 1
+}
+
+illuminato_marchand_3 = {
+	merchants = 1
+}
+
+illuminato_marchand_4 = {
+	merchants = 1
+}
+
+illuminato_marchand_5 = {
+	merchants = 1
+}
+
+illuminato_colon_1 = {
+	colonists = 1
+}
+
+illuminato_colon_2 = {
+	colonists = 1
+}
+
+illuminato_colon_3 = {
+	colonists = 1
+}
+
+illuminato_colon_4 = {
+	colonists = 1
+}
+
+illuminato_colon_5 = {
+	colonists = 1
+}
+
+illuminato_missionnaire_1 = {
+	missionaries = 1
+}
+
+illuminato_missionnaire_2 = {
+	missionaries = 1
+}
+
+illuminato_missionnaire_3 = {
+	missionaries = 1
+}
+
+illuminato_missionnaire_4 = {
+	missionaries = 1
+}
+
+illuminato_missionnaire_5 = {
+	missionaries = 1
+}
+
 major_discipline1 = {
 	discipline = 0.05
 }
@@ -17,3 +100,4 @@ major_discipline4 = {
 major_discipline5 = {
 	discipline = 0.05
 }
+

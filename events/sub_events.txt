@@ -55,6 +55,8 @@ country_event = {
 	id = sub_events.2
 	title = "sub_event.2.title"
 	desc = "sub_event.2.desc"
+	
+	is_triggered_only = yes
 
 	option = {
 		name = "sub_event.mil_advisor.1"
@@ -82,6 +84,8 @@ country_event = {
 	id = sub_events.22
 	title = "sub_event.2.title"
 	desc = "sub_event.2.desc"
+	
+	is_triggered_only = yes
 
 	option = {
 		name = "sub_event.mil_advisor.4"
@@ -106,6 +110,8 @@ country_event = {
 	id = sub_events.3
 	title = "sub_event.3.title"
 	desc = "sub_event.3.desc"
+	
+	is_triggered_only = yes
 
 	option = {
 		name = "sub_event.dip_advisor.1"
@@ -132,6 +138,8 @@ country_event = {
 	id = sub_events.32
 	title = "sub_event.3.title"
 	desc = "sub_event.3.desc"
+	
+	is_triggered_only = yes
 
 	option = {
 		name = "sub_event.dip_advisor.4"
@@ -157,6 +165,8 @@ country_event = {
 	id = sub_events.4
 	title = "sub_event.4.title"
 	desc = "sub_event.4.desc"
+	
+	is_triggered_only = yes
 
 	option = {
 		name = "sub_event.adm_advisor.1"
@@ -184,6 +194,8 @@ country_event = {
 	id = sub_events.42
 	title = "sub_event.4.title"
 	desc = "sub_event.4.desc"
+	
+	is_triggered_only = yes
 
 	option = {
 		name = "sub_event.adm_advisor.4"
@@ -207,6 +219,8 @@ country_event = {
 	id = sub_events.5
 	title = "sub_event.5.title"
 	desc = "sub_event.5.desc"
+	
+	is_triggered_only = yes
 
 	# Faisons de lui un général !
 	option = {

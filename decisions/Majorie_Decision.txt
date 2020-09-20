@@ -3,11 +3,10 @@ country_decisions = {
 	form_majorie_decision = {
 		allow = {
 			ai = no
-			NOT = { tag = LGW }
+			NOT = { exists = LGW }
 		}
 		potential = {
-			ai = no
-			NOT = { tag = LGW }
+			NOT = { exists = LGW }
 		}
 		effect = {
 			country_event = {
@@ -19,12 +18,11 @@ country_decisions = {
 
 	adopt_majorie_faith = {
 		allow = {
-			ai = no
-			NOT = { religion = catholic }
+			tag = LGW
+			NOT = { religion = blue_moon }
 		}
 		potential = {
-			tag = LGW
-			NOT = { religion = catholic }
+			NOT = { religion = blue_moon }
 		}
 		effect = {
 			country_event = {
@@ -40,12 +38,27 @@ country_decisions = {
 			NOT = { primary_culture = aquitaine }
 		}
 		potential = {
-			tag = LGW
 			NOT = { primary_culture = aquitaine }
 		}
 		effect = {
 			country_event = {
 				id = majorie_events.4
+				days = 0
+			}
+		}
+	}
+
+	adopt_majorie_ideas = {
+		allow = {
+			tag = LGW
+			NOT = {	has_idea = MAJ_idea1	}
+		}
+		potential = {
+			NOT = {	has_idea = MAJ_idea1	}
+		}
+		effect = {
+			country_event = {
+				id = ideagroups.1 #Swap Ideas
 				days = 0
 			}
 		}

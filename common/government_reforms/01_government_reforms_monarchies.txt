@@ -15,17 +15,6 @@ monarchy_mechanic = {
 
 #Feudalism vs Autocracy:
 
-lingwista_reform = {
-	icon = "indian_sultanate"
-	allow_normal_conversion = yes
-	potential = {	tag = LGW	}
-	valid_for_nation_designer = no
-
-	modifiers = {
-		culture_conversion_cost = -0.5
-	}
-}
-
 feudalism_reform = {
 	icon = "castle"
 	allow_normal_conversion = yes
@@ -1094,6 +1083,23 @@ gond_kingdom = {
 	}
 }
 
+lingwista_monarchy_reform = {
+	icon = "lingwista"
+	allow_normal_conversion = yes
+	legacy_equivalent = lingwista_monarchy
+	potential = {	tag = LGW	}
+	valid_for_nation_designer = no
+
+	modifiers = {
+		country_admin_power = 2
+		country_diplomatic_power = 2
+		country_military_power = 2
+	}
+	effect = {
+		set_global_flag = angry_illuminatos
+	}
+}
+
 #Hereditary vs Nobility
 enforce_privileges_reform = {
 	icon = "people_walking"
@@ -1313,6 +1319,17 @@ imperial_nobility_reform = {
 	}
 }
 
+lingwista_monarchy1_reform = {
+	icon = "lingwista"
+	allow_normal_conversion = yes
+	potential = {	has_reform = lingwista_monarchy_reform }
+	modifiers = {
+		global_missionary_strength = 0.05
+		missionaries = 2
+		culture_conversion_cost = -0.5
+	}
+}
+
 #Bureaucracy:
 
 centralize_reform = {
@@ -1390,6 +1407,17 @@ mansabdari_reform = {
 	}
 	ai = {
 		factor = 10
+	}
+}
+
+lingwista_monarchy2_reform = {
+	icon = "lingwista"
+	allow_normal_conversion = yes
+	potential = {	has_reform = lingwista_monarchy_reform }
+	modifiers = {
+		development_cost = -0.5
+		legitimacy = 1
+		global_unrest = -1
 	}
 }
 
@@ -1579,6 +1607,16 @@ zabt_reform = {
 	}
 }
 
+lingwista_monarchy3_reform = {
+	icon = "lingwista"
+	allow_normal_conversion = yes
+	potential = {	has_reform = lingwista_monarchy_reform }
+	modifiers = {
+		administrative_efficiency = 0.5
+		governing_capacity_modifier = 0.5
+	}
+}
+
 #deliberative_assembly
 
 # parliamentary_reform defined in common file
@@ -1731,6 +1769,17 @@ imperial_decree_reform = {
 	}
 }
 
+lingwista_monarchy4_reform = {
+	icon = "lingwista"
+	allow_normal_conversion = yes
+	potential = {	has_reform = lingwista_monarchy_reform }
+	modifiers = {
+		ae_impact = -0.5
+		liberty_desire_from_subject_development = -0.5
+		global_spy_defence = 0.5
+	}
+}
+
 #absolute_rule_vs_constitutional
 
 letat_cest_moi_reform = {
@@ -1768,6 +1817,16 @@ consulate_reform = {
 	}
 	ai = {
 		factor = 2.5
+	}
+}
+
+lingwista_monarchy5_reform = {
+	icon = "lingwista"
+	allow_normal_conversion = yes
+	potential = {	has_reform = lingwista_monarchy_reform }
+	modifiers = {
+		max_absolutism = 50
+		yearly_absolutism = 1
 	}
 }
 
@@ -1905,5 +1964,16 @@ become_rev_republic_reform = {
 	}
 	ai = {
 		factor = 0
+	}
+}
+
+lingwista_monarchy6_reform = {
+	icon = "lingwista"
+	allow_normal_conversion = yes
+	potential = {	has_reform = lingwista_monarchy_reform }
+	modifiers = {
+		discipline = 0.1
+		siege_ability = 0.5
+		movement_speed = 0.5
 	}
 }

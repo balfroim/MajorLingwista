@@ -7,22 +7,24 @@ country_event = {
 	picture = ANGRY_MOB_eventPicture
 	
 	is_triggered_only = yes
-	fire_only_once = yes	
 	option = {
-		name = "Majorie"
+		name = "majorie_event.2t"
 		change_tag = LGW
 		add_permanent_claim = 192
 		add_permanent_claim = 4384
 		if = {
 			limit = {
-				NOT = { government = monarchy }
+				NOT = { government = republic }
 			}
-			change_government = monarchy
+			change_government = republic
 		}
 		country_event = {
 			id = majorie_events.2
-			days = 1
+			days = 0
 		}
+	}
+	option = {
+		name = "error_event.0t"
 	}
 }
 		
@@ -33,21 +35,11 @@ country_event = {
 	picture = ANGRY_MOB_eventPicture
 	
 	is_triggered_only = yes
-	fire_only_once = yes	
 	option = {
-		name = "Lingwista_took_control"
-		add_government_reform = lingwista_reform
+		name = "majorie_event.2a"
+		add_government_reform = illuminatos_council_reform
 		kill_ruler = yes
 		add_stability = 1
-		define_ruler = {
-			name = "Major"
-			dynasty = "Lingwista"
-			adm = 6
-			dip = 6
-			mil = 6
-			age = 20
-			claim = 100
-		}
 	}
 }
 
@@ -58,10 +50,12 @@ country_event = {
 	picture = ANGRY_MOB_eventPicture
 	
 	is_triggered_only = yes
-	fire_only_once = yes	
 	option = {
-		name = "Lingwista_new_faith"
-		change_religion = catholic
+		name = "majorie_event.3a"
+		change_religion = blue_moon
+	}
+	option = {
+		name = "error_event.0t"
 	}
 }
 
@@ -72,11 +66,65 @@ country_event = {
 	picture = ANGRY_MOB_eventPicture
 	
 	is_triggered_only = yes
-	fire_only_once = yes	
 	option = {
-		name = "Lingwista_new_culture"
+		name = "majorie_event.4a"
 		change_primary_culture = aquitaine
 		set_ruler_culture = aquitaine
+	}
+	option = {
+		name = "error_event.0t"
+	}
+}
+
+country_event = {
+	id = majorie_events.5
+	title = "majorie_event.5t"
+	desc = "majorie_event.5d"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_reform = lingwista_monarchy_reform
+	}
+	
+	mean_time_to_happen = {
+		days = 0
+	}
+	option = {
+		name = "majorie_event.5t"
+		add_ruler_personality = immortal_personality
+	}
+}
+
+country_event = {
+	id = majorie_events.6
+	title = "majorie_event.6"
+	desc = "majorie_event.6"
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		ai = yes
+		has_global_flag = angry_illuminatos
+		is_great_power = yes
+		NOT = { tag = LGW }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		if = {
+			limit = {
+				NOT = { government = republic }
+			}
+			change_government = republic
+		}
+		country_event = {
+			id = majorie_events.2
+			days = 0
+		}
+		clr_global_flag = angry_illuminatos
 	}
 }
 

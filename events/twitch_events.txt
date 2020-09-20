@@ -132,6 +132,92 @@ country_event = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
+			
 	}
 	option = {
 		name = "twitch_event.1b"
@@ -182,6 +268,91 @@ country_event = {
 				name = illuminato_marchand_5
 				duration = -1
 			}
+		}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
 		}
 	}
 	option = {
@@ -234,6 +405,91 @@ country_event = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 	option = {
 		name = "twitch_event.1e"
@@ -285,9 +541,91 @@ country_event = {
 				duration = -1
 			}
 		}
-	}
-	option = {
-		name = "error_event.1t"
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 }
 
@@ -303,11 +641,181 @@ country_event = {
 		create_general = {
 			tradition = 100
 		}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 	option = {
 		name = "twitch_event.11b"
 		create_admiral = {
 			tradition = 100
+		}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
 		}
 	}
 	option = {
@@ -315,15 +823,182 @@ country_event = {
 		create_explorer = {
 			tradition = 100
 		}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 	option = {
 		name = "twitch_event.11e"
 		create_conquistador = {
 			tradition = 100
 		}
-	}	
-	option = {
-		name = "error_event.1t"
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 }
 
@@ -337,33 +1012,625 @@ country_event = {
 	option = {
 		name = "twitch_event.12a"
 		new_illuminato = {TYPE = commandant SKILL = 1}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 	option = {
 		name = "twitch_event.12b"
 		new_illuminato = {TYPE = army_reformer SKILL = 1}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 	option = {
 		name = "twitch_event.12c"
 		new_illuminato = {TYPE = army_organiser SKILL = 1}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 	option = {
 		name = "twitch_event.12e"
 		new_illuminato = {TYPE = grand_captain SKILL = 1}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 	option = {
 		name = "twitch_event.12f"
 		new_illuminato = {TYPE = recruitmaster SKILL = 1}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 	option = {
 		name = "twitch_event.12g"
 		new_illuminato = {TYPE = quartermaster SKILL = 1}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 	option = {
 		name = "twitch_event.12h"
 		new_illuminato = {TYPE = fortification_expert SKILL = 1}
-	}
-	option = {
-		name = "error_event.1t"
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 }
 
@@ -377,33 +1644,625 @@ country_event = {
 	option = {
 		name = "twitch_event.13a"
 		new_illuminato = {TYPE = statesman  SKILL = 1}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 	option = {
 		name = "twitch_event.13b"
 		new_illuminato = {TYPE = naval_reformer  SKILL = 1}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 	option = {
 		name = "twitch_event.13c"
 		new_illuminato = {TYPE = trader  SKILL = 1}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 	option = {
 		name = "twitch_event.13e"
 		new_illuminato = {TYPE = spymaster  SKILL = 1}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 	option = {
 		name = "twitch_event.13f"
 		new_illuminato = {TYPE = colonial_governor  SKILL = 1}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 	option = {
 		name = "twitch_event.13g"
 		new_illuminato = {TYPE = diplomat  SKILL = 1}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 	option = {
 		name = "twitch_event.13h"
 		new_illuminato = {TYPE = navigator  SKILL = 1}
-	}
-	option = {
-		name = "error_event.1t"
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 }
 
@@ -417,33 +2276,625 @@ country_event = {
 	option = {
 		name = "twitch_event.14a"
 		new_illuminato = {TYPE = philosopher  SKILL = 1}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 	option = {
 		name = "twitch_event.14b"
 		new_illuminato = {TYPE = natural_scientist  SKILL = 1}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 	option = {
 		name = "twitch_event.14c"
 		new_illuminato = {TYPE = artist  SKILL = 1}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 	option = {
 		name = "twitch_event.14e"
 		new_illuminato = {TYPE = treasurer  SKILL = 1}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 	option = {
 		name = "twitch_event.14f"
 		new_illuminato = {TYPE = theologian  SKILL = 1}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 	option = {
 		name = "twitch_event.14g"
 		new_illuminato = {TYPE = master_of_mint  SKILL = 1}
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 	option = {
 		name = "twitch_event.14h"
 		new_illuminato = {TYPE = inquisitor  SKILL = 1}
-	}
-	option = {
-		name = "error_event.1t"
+		if = {
+			limit = { has_country_flag = dix_subgift}
+			clr_country_flag = dix_subgift
+			set_country_flag = neuf_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = neuf_subgift}
+			clr_country_flag = neuf_subgift
+			set_country_flag = huit_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = huit_subgift}
+			clr_country_flag = huit_subgift
+			set_country_flag = sept_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = sept_subgift}
+			clr_country_flag = sept_subgift
+			set_country_flag = six_subgift 
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = six_subgift }
+			clr_country_flag = six_subgift 
+			set_country_flag = cinq_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = cinq_subgift }
+			clr_country_flag = cinq_subgift
+			set_country_flag = quatre_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = quatre_subgift }
+			clr_country_flag = quatre_subgift
+			set_country_flag = trois_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = trois_subgift }
+			clr_country_flag = trois_subgift
+			set_country_flag = deux_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = deux_subgift }
+			clr_country_flag = deux_subgift
+			set_country_flag = un_subgift
+			country_event = {
+				id = twitch_events.1
+				days = 1
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = un_subgift }
+			clr_country_flag = un_subgift
+		}
 	}
 }
 
@@ -458,6 +2909,26 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = "twitch_event.2a"
+		country_event = {
+			id = twitch_events.1
+			days = 0
+		}
+	}
+	option = {
+		name = "twitch_event.2b"
+		set_country_flag = cinq_subgift
+		country_event = {
+			id = twitch_events.1
+			days = 0
+		}
+	}
+	option = {
+		name = "twitch_event.2c"
+		set_country_flag = dix_subgift
+		country_event = {
+			id = twitch_events.1
+			days = 0
+		}
 	}
 	option = {
 		name = "error_event.1t"

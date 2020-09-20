@@ -3067,7 +3067,7 @@ country_event = {
 	option = {
 		name = "twitch_event.3e"
 		event_target:most_developed_province = {
-			add_base_production = 1
+		add_base_production = 1
 		}
 	}
 	option = {

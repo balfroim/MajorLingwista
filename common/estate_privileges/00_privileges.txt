@@ -6767,7 +6767,7 @@ estate_brahmins_statutory_rights = {
 	cooldown_years = 20
 }
 
-estate_illuminatos_discipline = {
+estate_illuminatos_twitch = {
 	icon = privilege_grant_autonomy
 	land_share = 0
 	max_absolutism = 0
@@ -6776,13 +6776,12 @@ estate_illuminatos_discipline = {
 	can_select = {
 	}
 	on_granted = {
+		country_event = {
+			id = twitch_events.0
+			days = 0
+		}
 	}
-	penalties = {
-		yearly_corruption = 0.01
-	}
-	modifier = {
-		discipline = 0.1
-	}
+	cooldown_years = 0
 	ai_will_do = {
 		factor = 0
 	}
@@ -6803,6 +6802,27 @@ estate_illuminatos_war_council = {
 		}
 	}
 	cooldown_years = 0
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_illuminatos_discipline = {
+	icon = privilege_grant_autonomy
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.00
+	influence = 0.00
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+		yearly_corruption = 0.01
+	}
+	modifier = {
+		discipline = 0.1
+	}
 	ai_will_do = {
 		factor = 0
 	}

@@ -1821,6 +1821,10 @@ modernization_population_reform = {
 		missionaries = 1
 		culture_conversion_cost = -0.25
 	}
+	effect = {
+		custom_tooltip = "tooltype_majorie_faith"
+		custom_tooltip = "tooltype_majorie_culture"
+	}
 	ai = {
 		factor = 100
 	}
@@ -2298,6 +2302,7 @@ lingwista_took_control = {
 	modifiers = {
 	}
 	effect = {
+		change_tag = LGW
 		lose_reforms = 5
 		change_government = monarchy
 		add_stability = 3
@@ -2311,6 +2316,10 @@ lingwista_took_control = {
 			male = yes
 			culture = aquitaine
 			religion = blue_moon
+		}
+		country_event = {
+			id = majorie_events.5
+			days = 1
 		}
 	}
 }

@@ -1090,10 +1090,7 @@ illuminatos_council_reform = {
 	allow_normal_conversion = yes
 	icon = "illuminatos"
 	potential = {
-		OR = {
-			tag = LGW
-			ai = yes
-		}
+		is_colonial_nation = no
 	}
 	valid_for_nation_designer = no
 	legacy_equivalent = illuminatos_council
@@ -2036,7 +2033,7 @@ major_sole_elector_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_reform = illuminatos_council_reform
-		tag = LGW
+		ai = no
 	}
 	modifiers = {
 		ae_impact = -0.1
@@ -2052,7 +2049,7 @@ illuminatos_electors_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_reform = illuminatos_council_reform
-		NOT = { tag = LGW }
+		ai = yes
 	}
 	modifiers = {
 		defensiveness = 0.5
@@ -2108,7 +2105,7 @@ appointment_by_major_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_reform = illuminatos_council_reform
-		tag = LGW
+		ai = no
 	}
 	modifiers = {
 		liberty_desire_from_subject_development = -0.25
@@ -2122,7 +2119,7 @@ cooptation_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_reform = illuminatos_council_reform
-		NOT = { tag = LGW }
+		ai = yes
 	}
 	modifiers = {
 		diplomatic_upkeep = 2
@@ -2296,7 +2293,7 @@ lingwista_took_control = {
 	allow_normal_conversion = yes
 	potential = {
 		has_reform = illuminatos_council_reform
-		tag = LGW
+		ai = no
 	}
 	modifiers = {
 	}
@@ -2321,7 +2318,10 @@ lingwista_took_control = {
 illuminatos_bureau = {
 	icon = "illuminatos"
 	allow_normal_conversion = yes
-	potential = {	has_reform = illuminatos_council_reform	}
+	potential = {
+		has_reform = illuminatos_council_reform
+		ai = yes
+	}
 	modifiers = {
 		administrative_efficiency = 0.2
 	}

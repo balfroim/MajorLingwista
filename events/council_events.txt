@@ -1,0 +1,79 @@
+namespace = council_events
+
+
+
+country_event = {
+	id = council_events.1
+	title = "council_event.1t"
+	desc = "council_event.1d"
+	picture = CORRUPTION_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "council_event.1a"
+		trigger = {
+			NOT = { has_country_modifier = illuminato_discipline5 }
+		}
+		remove_estate_privilege = estate_illuminatos_war_council
+		if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_discipline1 }
+			}
+			add_country_modifier = {
+				name = illuminato_discipline1
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_discipline2 }
+			}
+			add_country_modifier = {
+				name = illuminato_discipline2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_discipline3 }
+			}
+			add_country_modifier = {
+				name = illuminato_discipline3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_discipline4 }
+			}
+			add_country_modifier = {
+				name = illuminato_discipline4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_discipline5 }
+			}
+			add_country_modifier = {
+				name = illuminato_discipline5
+				duration = -1
+			}
+		}
+	}
+}
+country_event = {
+	id = council_events.2
+	title = "council_event.2t"
+	desc = "council_event.2d"
+	picture = CORRUPTION_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "council_event.2a"
+		add_treasury = 500
+		remove_estate_privilege = estate_plebe_discours
+	}
+}

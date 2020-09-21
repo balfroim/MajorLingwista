@@ -5,13 +5,27 @@ country_event = {
 	title = "majorie_event.1t"
 	desc = "majorie_event.1d"
 	picture = ANGRY_MOB_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		ai = no
+		NOT = { has_government_reform = illuminatos_council_reform }
+		NOT = { tag = LGW }
+	}
 	
-	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 0
+	}
+
 	option = {
-		name = "majorie_event.2t"
-		change_tag = LGW
+		name = "majorie_event.1t"
 		add_permanent_claim = 192
 		add_permanent_claim = 4384
+		if = {
+			limit = { primitives = yes }
+			set_primitive = no
+		}
 		if = {
 			limit = {
 				NOT = { government = republic }
@@ -23,14 +37,11 @@ country_event = {
 			days = 0
 		}
 	}
-	option = {
-		name = "error_event.0t"
-	}
 }
 		
 country_event = {
 	id = majorie_events.2
-	title = "majorie_event.2t"
+	title = "majorie_event.1t"
 	desc = "majorie_event.2d"
 	picture = ANGRY_MOB_eventPicture
 	
@@ -82,18 +93,16 @@ country_event = {
 	desc = "majorie_event.5d"
 	picture = ANGRY_MOB_eventPicture
 	
-	fire_only_once = yes
-	
-	trigger = {
-		has_reform = lingwista_monarchy_reform
-	}
-	
-	mean_time_to_happen = {
-		days = 0
-	}
+	is_triggered_only = yes
+
 	option = {
 		name = "majorie_event.5t"
 		add_ruler_personality = immortal_personality
+		add_government_reform = lingwista_monarchy_reform
+		country_event = {
+			id = ideagroups.1 #Swap Ideas
+			days = 0
+		}
 	}
 }
 

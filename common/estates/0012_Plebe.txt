@@ -1,0 +1,85 @@
+estate_plebe =
+{
+	icon = 8
+
+	# If true, country will get estate
+	trigger = {
+		OR = {
+			has_reform = illuminatos_council_reform
+			tag = LGW
+		}
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		yearly_corruption = -0.2
+	}
+	country_modifier_neutral = {
+		yearly_corruption = -0.1
+	}	
+	country_modifier_angry = {
+		yearly_corruption = 0.1
+	}
+
+	land_ownership_modifier = {
+		plebe_loyalty_modifier = 0.2
+	}
+
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			NOT = { culture_group = french }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { culture = aquitaine }
+		}
+		modifier = {
+			factor = 0.67
+			NOT = { is_state_core = owner }
+		}
+		modifier = {
+			factor = 1.2
+			base_tax = 10
+		}
+	}
+
+	# Influence modifiers
+	base_influence = 10
+	influence_modifier = {
+		desc = control_haute_marne
+		trigger = {
+			tag = LGW
+			owns = 192 #Haute-Marne
+		}	
+		influence = 20
+	}
+	influence_modifier = {
+		desc = control_nesblog
+		trigger = {
+			tag = LGW
+			owns = 4384 #Rennes
+		}	
+		influence = 20
+	}
+	influence_modifier = {
+		desc = cultural_minority
+		trigger = {
+			NOT = { dominant_culture = aquitaine }
+		}	
+		influence = -15
+	}
+
+	
+	privileges = {
+		estate_plebe_discours
+	}
+
+	agendas = {
+	}
+
+	color = { 229 160 172 }
+
+	influence_from_dev_modifier = 1.0
+}

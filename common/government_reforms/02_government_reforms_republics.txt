@@ -1686,8 +1686,8 @@ majorism_reform = {
 	allow_normal_conversion = yes
 	potential = {	has_reform = illuminatos_council_reform	}
 	modifiers = {
-		fire_damage = 0.1
-		fire_damage_received = -0.1
+		years_of_nationalism = -5
+		global_autonomy = -0.05
 	}
 	ai = {
 		factor = 100

@@ -61,6 +61,7 @@ estate_illuminatos =
 	privileges = {
 		estate_illuminatos_discipline
 		estate_illuminatos_war_council
+		estate_illuminatos_twitch
 	}
 
 	agendas = {

@@ -1328,6 +1328,10 @@ lingwista_monarchy1_reform = {
 		missionaries = 2
 		culture_conversion_cost = -0.5
 	}
+	effect = {
+		custom_tooltip = "tooltype_majorie_faith"
+		custom_tooltip = "tooltype_majorie_culture"
+	}
 }
 
 #Bureaucracy:

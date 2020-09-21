@@ -81,23 +81,23 @@ illuminato_missionnaire_5 = {
 	missionaries = 1
 }
 
-major_discipline1 = {
+illuminato_discipline1 = {
 	discipline = 0.05
 }
 
-major_discipline2 = {
+illuminato_discipline2 = {
 	discipline = 0.05
 }
 
-major_discipline3 = {
+illuminato_discipline3 = {
 	discipline = 0.05
 }
 
-major_discipline4 = {
+illuminato_discipline4 = {
 	discipline = 0.05
 }
 
-major_discipline5 = {
+illuminato_discipline5 = {
 	discipline = 0.05
 }
 

@@ -14,6 +14,7 @@ country_event = {
 			id = twitch_events.1
 			days = 0
 		}
+		remove_estate_privilege = estate_illuminatos_twitch
 	}
 	option = {
 		name = "twitch_event.2t"
@@ -21,6 +22,7 @@ country_event = {
 			id = twitch_events.2
 			days = 0
 		}
+		remove_estate_privilege = estate_illuminatos_twitch
 	}
 	option = {
 		name = "twitch_event.3t"
@@ -28,6 +30,7 @@ country_event = {
 			id = twitch_events.3
 			days = 0
 		}
+		remove_estate_privilege = estate_illuminatos_twitch
 	}
 	option = {
 		name = "twitch_event.4t"
@@ -35,6 +38,7 @@ country_event = {
 			id = twitch_events.4
 			days = 0
 		}
+		remove_estate_privilege = estate_illuminatos_twitch
 	}
 	option = {
 		name = "twitch_event.5t"
@@ -42,9 +46,11 @@ country_event = {
 			id = twitch_events.5
 			days = 0
 		}
+		remove_estate_privilege = estate_illuminatos_twitch
 	}
 	option = {
 		name = "error_event.1t"
+		remove_estate_privilege = estate_illuminatos_twitch
 	}
 }
 
@@ -3272,12 +3278,15 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = "twitch_event.51a"
+		add_mil_tech = 1
 	}
 	option = {
 		name = "twitch_event.51b"
+		add_adm_tech = 1
 	}
 	option = {
 		name = "twitch_event.51c"
+		add_dip_tech = 1
 	}
 	option = {
 		name = "error_event.1t"
@@ -3293,12 +3302,15 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = "twitch_event.52a"
+		add_army_professionalism = 0.25
 	}
 	option = {
 		name = "twitch_event.52b"
+		add_yearly_manpower = 0.5
 	}
 	option = {
 		name = "twitch_event.52c"
+		add_yearly_sailors = 10
 	}
 	option = {
 		name = "error_event.1t"
@@ -3314,12 +3326,15 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = "twitch_event.53a"
+		add_army_professionalism = -0.25
 	}
 	option = {
 		name = "twitch_event.53b"
+		add_army_tradition = -10
 	}
 	option = {
 		name = "twitch_event.53c"
+		add_navy_tradition = -10
 	}
 	option = {
 		name = "error_event.1t"

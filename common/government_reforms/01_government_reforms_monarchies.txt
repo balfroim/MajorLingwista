@@ -1614,6 +1614,7 @@ lingwista_monarchy3_reform = {
 	modifiers = {
 		administrative_efficiency = 0.5
 		governing_capacity_modifier = 0.5
+		global_autonomy = -0.05
 	}
 }
 
@@ -1775,8 +1776,8 @@ lingwista_monarchy4_reform = {
 	potential = {	has_reform = lingwista_monarchy_reform }
 	modifiers = {
 		ae_impact = -0.5
-		liberty_desire_from_subject_development = -0.5
 		global_spy_defence = 0.5
+		years_of_nationalism = -5
 	}
 }
 
@@ -1972,7 +1973,6 @@ lingwista_monarchy6_reform = {
 	allow_normal_conversion = yes
 	potential = {	has_reform = lingwista_monarchy_reform }
 	modifiers = {
-		discipline = 0.1
 		siege_ability = 0.5
 		movement_speed = 0.5
 	}

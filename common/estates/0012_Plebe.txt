@@ -74,6 +74,7 @@ estate_plebe =
 	
 	privileges = {
 		estate_plebe_discours
+		estate_plebe_coup_d_etat
 	}
 
 	agendas = {

@@ -16,6 +16,11 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 0
+
+		modifier = {
+			factor = 1000
+			ai = no
+		}
 	}
 
 	option = {
@@ -134,6 +139,37 @@ country_event = {
 			days = 0
 		}
 		clr_global_flag = angry_illuminatos
+	}
+}
+
+country_event = {
+	id = majorie_events.7
+	title = "majorie_event.7t"
+	desc = "majorie_event.7d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "majorie_event.7t"
+		remove_estate_privilege = estate_plebe_coup_d_etat
+		change_tag = LGW
+		change_government = monarchy
+		define_ruler = {
+			dynasty = "Lingwista"
+			adm = 6
+			dip = 6
+			mil = 6
+			age = 20
+			claim = 100
+			male = yes
+			culture = aquitaine
+			religion = blue_moon
+		}
+		country_event = {
+			id = majorie_events.5
+			days = 1
+		}
 	}
 }
 

@@ -13,54 +13,270 @@ country_event = {
 	option = {
 		name = "council_event.1a"
 		trigger = {
-			NOT = { has_country_modifier = illuminato_discipline5 }
+			NOT = { has_country_modifier = illuminato_discipline_5 }
 		}
 		remove_estate_privilege = estate_illuminatos_war_council
 		if = {
 			limit = {
-				NOT = { has_country_modifier = illuminato_discipline1 }
+				NOT = { has_country_modifier = illuminato_discipline_1 }
 			}
 			add_country_modifier = {
-				name = illuminato_discipline1
+				name = illuminato_discipline_1
 				duration = -1
 			}
 		}
 		else_if = {
 			limit = {
-				NOT = { has_country_modifier = illuminato_discipline2 }
+				NOT = { has_country_modifier = illuminato_discipline_2 }
 			}
 			add_country_modifier = {
-				name = illuminato_discipline2
+				name = illuminato_discipline_2
 				duration = -1
 			}
 		}
 		else_if = {
 			limit = {
-				NOT = { has_country_modifier = illuminato_discipline3 }
+				NOT = { has_country_modifier = illuminato_discipline_3 }
 			}
 			add_country_modifier = {
-				name = illuminato_discipline3
+				name = illuminato_discipline_3
 				duration = -1
 			}
 		}
 		else_if = {
 			limit = {
-				NOT = { has_country_modifier = illuminato_discipline4 }
+				NOT = { has_country_modifier = illuminato_discipline_4 }
 			}
 			add_country_modifier = {
-				name = illuminato_discipline4
+				name = illuminato_discipline_4
 				duration = -1
 			}
 		}
 		else_if = {
 			limit = {
-				NOT = { has_country_modifier = illuminato_discipline5 }
+				NOT = { has_country_modifier = illuminato_discipline_5 }
 			}
 			add_country_modifier = {
-				name = illuminato_discipline5
+				name = illuminato_discipline_5
 				duration = -1
 			}
 		}
+	}
+	option = {
+		name = "council_event.1b"
+		trigger = {
+			NOT = { has_country_modifier = illuminato_moral_5 }
+		}
+		remove_estate_privilege = estate_illuminatos_war_council
+		if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_moral_1 }
+			}
+			add_country_modifier = {
+				name = illuminato_moral_1
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_moral_2 }
+			}
+			add_country_modifier = {
+				name = illuminato_moral_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_moral_3 }
+			}
+			add_country_modifier = {
+				name = illuminato_moral_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_moral_4 }
+			}
+			add_country_modifier = {
+				name = illuminato_moral_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_moral_5 }
+			}
+			add_country_modifier = {
+				name = illuminato_moral_5
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = "council_event.1c"
+		trigger = {
+			NOT = { has_country_modifier = illuminato_volontaires_5 }
+		}
+		remove_estate_privilege = estate_illuminatos_war_council
+		if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_volontaires_1 }
+			}
+			add_country_modifier = {
+				name = illuminato_volontaires_1
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_volontaires_2 }
+			}
+			add_country_modifier = {
+				name = illuminato_volontaires_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_volontaires_3 }
+			}
+			add_country_modifier = {
+				name = illuminato_volontaires_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_volontaires_4 }
+			}
+			add_country_modifier = {
+				name = illuminato_volontaires_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_volontaires_5 }
+			}
+			add_country_modifier = {
+				name = illuminato_volontaires_5
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = "council_event.1e"
+		trigger = {
+			NOT = { has_country_modifier = illuminato_officiers_5 }
+		}
+		remove_estate_privilege = estate_illuminatos_war_council
+		if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_officiers_1 }
+			}
+			add_country_modifier = {
+				name = illuminato_officiers_1
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_officiers_2 }
+			}
+			add_country_modifier = {
+				name = illuminato_officiers_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_officiers_3 }
+			}
+			add_country_modifier = {
+				name = illuminato_officiers_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_officiers_4 }
+			}
+			add_country_modifier = {
+				name = illuminato_officiers_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_officiers_5 }
+			}
+			add_country_modifier = {
+				name = illuminato_officiers_5
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = "council_event.1f"
+		trigger = {
+			NOT = { has_country_modifier = illuminato_balistique_5 }
+		}
+		remove_estate_privilege = estate_illuminatos_war_council
+		if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_balistique_1 }
+			}
+			add_country_modifier = {
+				name = illuminato_balistique_1
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_balistique_2 }
+			}
+			add_country_modifier = {
+				name = illuminato_balistique_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_balistique_3 }
+			}
+			add_country_modifier = {
+				name = illuminato_balistique_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_balistique_4 }
+			}
+			add_country_modifier = {
+				name = illuminato_balistique_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = illuminato_balistique_5 }
+			}
+			add_country_modifier = {
+				name = illuminato_balistique_5
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = "council_event.1g"
+		trigger = {
+			NOT = { army_professionalism = 1 }
+		}
+		remove_estate_privilege = estate_illuminatos_war_council
+		add_army_professionalism = 0.1
 	}
 }
 country_event = {

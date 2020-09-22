@@ -6807,27 +6807,6 @@ estate_illuminatos_war_council = {
 	}
 }
 
-estate_illuminatos_discipline = {
-	icon = privilege_grant_autonomy
-	land_share = 0
-	max_absolutism = 0
-	loyalty = 0.00
-	influence = 0.00
-	can_select = {
-	}
-	on_granted = {
-	}
-	penalties = {
-		yearly_corruption = 0.01
-	}
-	modifier = {
-		discipline = 0.1
-	}
-	ai_will_do = {
-		factor = 0
-	}
-}
-
 estate_plebe_discours = {
 	icon = privilege_grant_autonomy
 	land_share = 0
@@ -6839,6 +6818,27 @@ estate_plebe_discours = {
 	on_granted = {
 		country_event = {
 			id = council_events.2
+			days = 0
+		}
+	}
+	cooldown_years = 0
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_plebe_coup_d_etat = {
+	icon = privilege_grant_autonomy
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.00
+	influence = 0.00
+	can_select = {
+		NOT = { tag = LGW }
+	}
+	on_granted = {
+		country_event = {
+			id = majorie_events.7
 			days = 0
 		}
 	}

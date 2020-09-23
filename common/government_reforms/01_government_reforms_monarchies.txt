@@ -1324,9 +1324,9 @@ lingwista_monarchy1_reform = {
 	allow_normal_conversion = yes
 	potential = {	has_reform = lingwista_monarchy_reform }
 	modifiers = {
-		global_missionary_strength = 0.05
+		global_missionary_strength = 0.02
 		missionaries = 2
-		culture_conversion_cost = -0.5
+		culture_conversion_cost = -0.25
 	}
 	effect = {
 		custom_tooltip = "tooltype_majorie_faith"
@@ -1419,7 +1419,7 @@ lingwista_monarchy2_reform = {
 	allow_normal_conversion = yes
 	potential = {	has_reform = lingwista_monarchy_reform }
 	modifiers = {
-		development_cost = -0.5
+		development_cost = -0.25
 		legitimacy = 1
 		global_unrest = -1
 	}
@@ -1616,8 +1616,8 @@ lingwista_monarchy3_reform = {
 	allow_normal_conversion = yes
 	potential = {	has_reform = lingwista_monarchy_reform }
 	modifiers = {
-		administrative_efficiency = 0.5
-		governing_capacity_modifier = 0.5
+		administrative_efficiency = 0.25
+		governing_capacity_modifier = 0.25
 		global_autonomy = -0.05
 	}
 }
@@ -1779,8 +1779,8 @@ lingwista_monarchy4_reform = {
 	allow_normal_conversion = yes
 	potential = {	has_reform = lingwista_monarchy_reform }
 	modifiers = {
-		ae_impact = -0.5
-		global_spy_defence = 0.5
+		ae_impact = -0.2
+		global_spy_defence = 0.2
 		years_of_nationalism = -5
 	}
 }

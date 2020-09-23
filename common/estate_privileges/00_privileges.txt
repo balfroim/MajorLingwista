@@ -6852,17 +6852,42 @@ estate_natifs_conscription = {
 	icon = privilege_grant_autonomy
 	land_share = 0
 	max_absolutism = 0
-	loyalty = 0.00
+	loyalty = -0.10
 	influence = 0.00
 	can_select = {
 	}
 	on_granted = {
-		add_manpower = 10
-		loyalty = -10
+		add_yearly_manpower = 10
 	}
 	on_revoked = {
-		loyalty = 10
+		loyalty = 5
 	}
+	benefits = {
+		global_manpower_modifier = 0.1
+	} 
+	cooldown_years = 0
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_natifs_taxation_exceptionnelle = {
+	icon = privilege_grant_autonomy
+	land_share = 0
+	max_absolutism = 0
+	loyalty = -0.10
+	influence = 0.00
+	can_select = {
+	}
+	on_granted = {
+		add_years_of_income = 1
+	}
+	on_revoked = {
+		loyalty = 5
+	}
+	benefits = {
+		global_tax_modifier = 0.1
+	} 
 	cooldown_years = 0
 	ai_will_do = {
 		factor = 0

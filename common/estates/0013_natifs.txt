@@ -57,6 +57,7 @@ estate_natifs =
 	
 	privileges = {
 		estate_natifs_conscription
+		estate_natifs_taxation_exceptionnelle
 	}
 
 	agendas = {

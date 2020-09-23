@@ -113,6 +113,9 @@ l_english:
     estate_plebe_coup_d_etat:0 "Coup d'Etat soutenu par la Plèbe"
     estate_plebe_coup_d_etat_desc:0 "Faisons un coup d'Etat avec le soutien de la Plèbe pour se passer des illuminatos."
     estate_natifs_conscription:0 "Conscription des natifs"
+    estate_natifs_conscription_desc:0 "Enrolons de force des natifs pour l'armée."
+    estate_natifs_taxation_exceptionnelle:0 "Taxation exceptionnelle des natifs"
+    estate_natifs_taxation_exceptionnelle_desc:0 "Augmentons les impôts des natifs pour remplir les caisses de l'Etat."
  # Idées Majorie
     MAJ_ideas:0 "idées majorées"
     MAJ_ideas_start:0 "traditions majorées"

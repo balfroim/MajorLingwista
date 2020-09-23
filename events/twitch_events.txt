@@ -1006,6 +1006,13 @@ country_event = {
 			clr_country_flag = un_subgift
 		}
 	}
+	option = {
+		name = "error_event.2t"
+		country_event = {
+			id = twitch_events.1
+			days = 0
+		}
+	}
 }
 
 country_event = {
@@ -1636,6 +1643,13 @@ country_event = {
 		else_if = {
 			limit = { has_country_flag = un_subgift }
 			clr_country_flag = un_subgift
+		}
+	}
+	option = {
+		name = "error_event.2t"
+		country_event = {
+			id = twitch_events.1
+			days = 0
 		}
 	}
 }
@@ -2270,6 +2284,13 @@ country_event = {
 			clr_country_flag = un_subgift
 		}
 	}
+	option = {
+		name = "error_event.2t"
+		country_event = {
+			id = twitch_events.1
+			days = 0
+		}
+	}
 }
 
 country_event = {
@@ -2900,6 +2921,13 @@ country_event = {
 		else_if = {
 			limit = { has_country_flag = un_subgift }
 			clr_country_flag = un_subgift
+		}
+	}
+	option = {
+		name = "error_event.2t"
+		country_event = {
+			id = twitch_events.1
+			days = 0
 		}
 	}
 }

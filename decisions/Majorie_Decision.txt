@@ -4,7 +4,10 @@ country_decisions = {
 		potential = {
 			NOT = { religion = blue_moon }
 			OR = {
-				has_reform = modernization_population_reform
+				AND = {
+					ai = no
+					has_reform = modernization_population_reform
+				}
 				has_reform = lingwista_monarchy1_reform
 			}
 		}
@@ -20,7 +23,10 @@ country_decisions = {
 		potential = {
 			NOT = { primary_culture = aquitaine }
 			OR = {
-				has_reform = modernization_population_reform
+				AND = {
+					ai = no
+					has_reform = modernization_population_reform
+				}
 				has_reform = lingwista_monarchy1_reform
 			}
 		}

@@ -2056,8 +2056,8 @@ illuminatos_electors_reform = {
 		ai = yes
 	}
 	modifiers = {
-		defensiveness = 0.5
-		reinforce_cost_modifier = -0.5
+		defensiveness = 0.25
+		reinforce_cost_modifier = -0.25
 	}
 	ai = {
 		factor = 100
@@ -2112,8 +2112,8 @@ appointment_by_major_reform = {
 		ai = no
 	}
 	modifiers = {
-		liberty_desire_from_subject_development = -0.25
-		global_spy_defence = 0.5
+		liberty_desire_from_subject_development = -0.10
+		global_spy_defence = 0.25
 		tolerance_own = 1
 	}
 }

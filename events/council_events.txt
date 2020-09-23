@@ -279,6 +279,7 @@ country_event = {
 		add_army_professionalism = 0.1
 	}
 }
+
 country_event = {
 	id = council_events.2
 	title = "council_event.2t"
@@ -288,8 +289,842 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "council_event.2a"
-		add_treasury = 500
+		name = "council_event.21t"
+		remove_estate_privilege = estate_plebe_discours
+		country_event = {
+			id = council_events.21
+			days = 0
+		}
+	}
+	option = {
+		name = "council_event.22t"
+		remove_estate_privilege = estate_plebe_discours
+		country_event = {
+			id = council_events.22
+			days = 0
+		}
+	}
+	option = {
+		name = "council_event.23t"
+		remove_estate_privilege = estate_plebe_discours
+		country_event = {
+			id = council_events.23
+			days = 0
+		}
+	}
+	option = {
+		name = "council_event.24t"
+		remove_estate_privilege = estate_plebe_discours
+		country_event = {
+			id = council_events.24
+			days = 0
+		}
+	}
+	option = {
+		name = "council_event.25t"
+		remove_estate_privilege = estate_plebe_discours
+		country_event = {
+			id = council_events.25
+			days = 0
+		}
+	}
+	option = {
+		name = "error_event.1t"
+		remove_estate_privilege = estate_plebe_discours
+	}
+}
+
+country_event = {
+	id = council_events.21
+	title = "council_event.21t"
+	desc = "council_event.21d"
+	picture = CORRUPTION_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "council_event.21a"
+		remove_estate_privilege = estate_plebe_discours
+		change_government_reform_progress = 100
+	}
+	option = {
+		name = "council_event.21b"
+		remove_estate_privilege = estate_plebe_discours
+		add_years_of_income = 1
+		if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_fiscalite_1 }
+			}
+			add_country_modifier = {
+				name = plebe_fiscalite_1
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_fiscalite_2 }
+			}
+			add_country_modifier = {
+				name = plebe_fiscalite_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_fiscalite_3 }
+			}
+			add_country_modifier = {
+				name = plebe_fiscalite_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_fiscalite_4 }
+			}
+			add_country_modifier = {
+				name = plebe_fiscalite_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_fiscalite_5 }
+			}
+			add_country_modifier = {
+				name = plebe_fiscalite_5
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = "council_event.21c"
+		remove_estate_privilege = estate_plebe_discours
+		add_mercantilism = 2
+		if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_commerce_1 }
+			}
+			add_country_modifier = {
+				name = plebe_commerce_1
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_commerce_2 }
+			}
+			add_country_modifier = {
+				name = plebe_commerce_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_commerce_3 }
+			}
+			add_country_modifier = {
+				name = plebe_commerce_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_commerce_4 }
+			}
+			add_country_modifier = {
+				name = plebe_commerce_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_commerce_5 }
+			}
+			add_country_modifier = {
+				name = plebe_commerce_5
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = "error_event.1t"
+		remove_estate_privilege = estate_plebe_discours
+	}
+}
+
+country_event = {
+	id = council_events.22
+	title = "council_event.22t"
+	desc = "council_event.22d"
+	picture = CORRUPTION_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		trigger = {
+			NOT = { has_country_modifier = plebe_maquis_5 }
+		}
+		name = "council_event.22a"
+		remove_estate_privilege = estate_plebe_discours
+		if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_maquis_1 }
+			}
+			add_country_modifier = {
+				name = plebe_maquis_1
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_maquis_2 }
+			}
+			add_country_modifier = {
+				name = plebe_maquis_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_maquis_3 }
+			}
+			add_country_modifier = {
+				name = plebe_maquis_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_maquis_4 }
+			}
+			add_country_modifier = {
+				name = plebe_maquis_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_maquis_5 }
+			}
+			add_country_modifier = {
+				name = plebe_maquis_5
+				duration = -1
+			}
+		}
+	}
+	option = {
+		trigger = {
+			NOT = { has_country_modifier = plebe_fortifications_5 }
+		}
+		name = "council_event.22b"
+		remove_estate_privilege = estate_plebe_discours
+		if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_fortifications_1 }
+			}
+			add_country_modifier = {
+				name = plebe_fortifications_1
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_fortifications_2 }
+			}
+			add_country_modifier = {
+				name = plebe_fortifications_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_fortifications_3 }
+			}
+			add_country_modifier = {
+				name = plebe_fortifications_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_fortifications_4 }
+			}
+			add_country_modifier = {
+				name = plebe_fortifications_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_fortifications_5 }
+			}
+			add_country_modifier = {
+				name = plebe_fortifications_5
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = "council_event.22c"
+		remove_estate_privilege = estate_plebe_discours
+		add_treasury = 50
+		if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_effort_de_guerre_1 }
+			}
+			add_country_modifier = {
+				name = plebe_effort_de_guerre_1
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_effort_de_guerre_2 }
+			}
+			add_country_modifier = {
+				name = plebe_effort_de_guerre_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_effort_de_guerre_3 }
+			}
+			add_country_modifier = {
+				name = plebe_effort_de_guerre_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_effort_de_guerre_4 }
+			}
+			add_country_modifier = {
+				name = plebe_effort_de_guerre_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_effort_de_guerre_5 }
+			}
+			add_country_modifier = {
+				name = plebe_effort_de_guerre_5
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = "error_event.1t"
+		remove_estate_privilege = estate_plebe_discours
+	}
+}
+
+country_event = {
+	id = council_events.23
+	title = "council_event.23t"
+	desc = "council_event.23d"
+	picture = CORRUPTION_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "council_event.23a"
+		remove_estate_privilege = estate_plebe_discours
+		add_sailors = 100
+		if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_marine_1 }
+			}
+			add_country_modifier = {
+				name = plebe_marine_1
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_marine_2 }
+			}
+			add_country_modifier = {
+				name = plebe_marine_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_marine_3 }
+			}
+			add_country_modifier = {
+				name = plebe_marine_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_marine_4 }
+			}
+			add_country_modifier = {
+				name = plebe_marine_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_marine_5 }
+			}
+			add_country_modifier = {
+				name = plebe_marine_5
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = "council_event.23b"
+		remove_estate_privilege = estate_plebe_discours
+		trigger = {
+			NOT = { has_country_modifier = plebe_fatigue_de_guerre_5 }
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_fatigue_de_guerre_1 }
+			}
+			add_country_modifier = {
+				name = plebe_fatigue_de_guerre_1
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_fatigue_de_guerre_2 }
+			}
+			add_country_modifier = {
+				name = plebe_fatigue_de_guerre_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_fatigue_de_guerre_3 }
+			}
+			add_country_modifier = {
+				name = plebe_fatigue_de_guerre_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_fatigue_de_guerre_4 }
+			}
+			add_country_modifier = {
+				name = plebe_fatigue_de_guerre_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_fatigue_de_guerre_5 }
+			}
+			add_country_modifier = {
+				name = plebe_fatigue_de_guerre_5
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = "council_event.23c"
+		remove_estate_privilege = estate_plebe_discours
+		trigger = {
+			NOT = { has_country_modifier = plebe_financement_des_generaux_5 }
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_financement_des_generaux_1 }
+			}
+			add_country_modifier = {
+				name = plebe_financement_des_generaux_1
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_financement_des_generaux_2 }
+			}
+			add_country_modifier = {
+				name = plebe_financement_des_generaux_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_financement_des_generaux_3 }
+			}
+			add_country_modifier = {
+				name = plebe_financement_des_generaux_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_financement_des_generaux_4 }
+			}
+			add_country_modifier = {
+				name = plebe_financement_des_generaux_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_financement_des_generaux_5 }
+			}
+			add_country_modifier = {
+				name = plebe_financement_des_generaux_5
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = "error_event.1t"
+		remove_estate_privilege = estate_plebe_discours
+	}
+}
+
+country_event = {
+	id = council_events.24
+	title = "council_event.24t"
+	desc = "council_event.24d"
+	picture = CORRUPTION_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "council_event.24a"
+		remove_estate_privilege = estate_plebe_discours
+		if = {
+			limit = { has_country_modifier = plebe_ae_5 }
+			add_adm_power = 100
+		}
+		else = { add_adm_power = 50 }
+		if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_ae_1 }
+			}
+			add_country_modifier = {
+				name = plebe_ae_1
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_ae_2 }
+			}
+			add_country_modifier = {
+				name = plebe_ae_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_ae_3 }
+			}
+			add_country_modifier = {
+				name = plebe_ae_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_ae_4 }
+			}
+			add_country_modifier = {
+				name = plebe_ae_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_ae_5 }
+			}
+			add_country_modifier = {
+				name = plebe_ae_5
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = "council_event.24b"
+		remove_estate_privilege = estate_plebe_discours
+		if = {
+			limit = { has_country_modifier = plebe_province_warscore_cost_5 }
+			add_mil_power = 100
+		}
+		else = { add_mil_power = 50 }
+		if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_province_warscore_cost_1 }
+			}
+			add_country_modifier = {
+				name = plebe_province_warscore_cost_1
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_province_warscore_cost_2 }
+			}
+			add_country_modifier = {
+				name = plebe_province_warscore_cost_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_province_warscore_cost_3 }
+			}
+			add_country_modifier = {
+				name = plebe_province_warscore_cost_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_province_warscore_cost_4 }
+			}
+			add_country_modifier = {
+				name = plebe_province_warscore_cost_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_province_warscore_cost_5 }
+			}
+			add_country_modifier = {
+				name = plebe_province_warscore_cost_5
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = "council_event.24c"
+		remove_estate_privilege = estate_plebe_discours
+		if = {
+			limit = { has_country_modifier = plebe_unjustified_demands_5 }
+			add_dip_power = 100
+		}
+		else = { add_dip_power = 50 }
+		if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_unjustified_demands_1 }
+			}
+			add_country_modifier = {
+				name = plebe_unjustified_demands_1
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_unjustified_demands_2 }
+			}
+			add_country_modifier = {
+				name = plebe_unjustified_demands_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_unjustified_demands_3 }
+			}
+			add_country_modifier = {
+				name = plebe_unjustified_demands_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_unjustified_demands_4 }
+			}
+			add_country_modifier = {
+				name = plebe_unjustified_demands_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_unjustified_demands_5 }
+			}
+			add_country_modifier = {
+				name = plebe_unjustified_demands_5
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = "error_event.1t"
+		remove_estate_privilege = estate_plebe_discours
+	}
+}
+
+country_event = {
+	id = council_events.25
+	title = "council_event.25t"
+	desc = "council_event.25d"
+	picture = CORRUPTION_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "council_event.25a"
+		remove_estate_privilege = estate_plebe_discours
+		add_absolutism = 10
+		if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_controle_sujets_1 }
+			}
+			add_country_modifier = {
+				name = plebe_controle_sujets_1
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_controle_sujets_2 }
+			}
+			add_country_modifier = {
+				name = plebe_controle_sujets_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_controle_sujets_3 }
+			}
+			add_country_modifier = {
+				name = plebe_controle_sujets_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_controle_sujets_4 }
+			}
+			add_country_modifier = {
+				name = plebe_controle_sujets_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_controle_sujets_5 }
+			}
+			add_country_modifier = {
+				name = plebe_controle_sujets_5
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = "council_event.25b"
+		remove_estate_privilege = estate_plebe_discours
+		add_corruption = -2
+		if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_espions_1 }
+			}
+			add_country_modifier = {
+				name = plebe_espions_1
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_espions_2 }
+			}
+			add_country_modifier = {
+				name = plebe_espions_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_espions_3 }
+			}
+			add_country_modifier = {
+				name = plebe_espions_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_espions_4 }
+			}
+			add_country_modifier = {
+				name = plebe_espions_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_espions_5 }
+			}
+			add_country_modifier = {
+				name = plebe_espions_5
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = "council_event.25c"
+		remove_estate_privilege = estate_plebe_discours
+		add_mercantilism = 2
+		if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_aide_marchands_1 }
+			}
+			add_country_modifier = {
+				name = plebe_aide_marchands_1
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_aide_marchands_2 }
+			}
+			add_country_modifier = {
+				name = plebe_aide_marchands_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_aide_marchands_3 }
+			}
+			add_country_modifier = {
+				name = plebe_aide_marchands_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_aide_marchands_4 }
+			}
+			add_country_modifier = {
+				name = plebe_aide_marchands_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_aide_marchands_5 }
+			}
+			add_country_modifier = {
+				name = plebe_aide_marchands_5
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = "error_event.1t"
 		remove_estate_privilege = estate_plebe_discours
 	}
 }

@@ -1592,11 +1592,14 @@ french	= {
 	}
 	modern_french = {
 		primary = LGW
-		dynasty_names = { 
+		dynasty_names = {
+			Lingwista
 		}
 		male_names = {
+			mettre des pseudos twitch tipee discord etc
 		}
 		female_names = {
+			pareil rajouter des pseudos
 		}
 	}
 	dynasty_names = {

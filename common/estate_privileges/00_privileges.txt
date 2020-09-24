@@ -6834,7 +6834,7 @@ estate_plebe_coup_d_etat = {
 	loyalty = 0.00
 	influence = 0.00
 	can_select = {
-		NOT = { tag = LGW }
+		NOT = { exists = LGW }
 	}
 	on_granted = {
 		country_event = {
@@ -6871,7 +6871,7 @@ estate_natifs_conscription = {
 	} 
 	cooldown_years = 0
 	ai_will_do = {
-		factor = 0
+		factor = 10
 	}
 }
 
@@ -6896,9 +6896,9 @@ estate_natifs_conscription_reduite = {
 	benefits = {
 		global_manpower_modifier = -0.1
 	} 
-	cooldown_years = 0
+	cooldown_years = 1
 	ai_will_do = {
-		factor = 0
+		factor = 5
 	}
 }
 
@@ -6925,7 +6925,7 @@ estate_natifs_taxation_exceptionnelle = {
 	} 
 	cooldown_years = 0
 	ai_will_do = {
-		factor = 0
+		factor = 10
 	}
 }
 
@@ -6951,9 +6951,9 @@ estate_natifs_taxation_reduite = {
 		global_tax_modifier = -0.1
 		stability_cost_modifier = -0.1
 	} 
-	cooldown_years = 0
+	cooldown_years = 1
 	ai_will_do = {
-		factor = 0
+		factor = 5
 	}
 }
 

@@ -48,30 +48,17 @@ estate_plebe =
 	# Influence modifiers
 	base_influence = 20
 	influence_modifier = {
-		desc = cultural_minority
+		desc = cultural_minority_plebe
 		trigger = {
 			NOT = { dominant_culture = aquitaine }
 		}	
 		influence = -10
 	}
-	# Loyalty modifiers
-	loyalty_modifier = {
-		desc = control_haute_marne
-		trigger = {
-			tag = LGW
-			owns = 192 #Haute-Marne
-		}	
-		loyalty = 20
+	influence_modifier = {
+		desc = cultural_majority_plebe
+		trigger = { dominant_culture = aquitaine }
+		influence = 10
 	}
-	loyalty_modifier = {
-		desc = control_nesblog
-		trigger = {
-			tag = LGW
-			owns = 4384 #Rennes
-		}	
-		loyalty = 20
-	}
-
 	
 	privileges = {
 		estate_plebe_discours

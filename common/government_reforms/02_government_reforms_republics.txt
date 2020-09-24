@@ -2314,7 +2314,7 @@ lingwista_took_control = {
 			age = 20
 			claim = 100
 			male = yes
-			culture = aquitaine
+			culture = modern_french
 			religion = blue_moon
 		}
 		country_event = {

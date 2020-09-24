@@ -12,13 +12,13 @@ estate_natifs =
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
-		production_efficiency = 0.2
+		global_unrest = -1
 	}
 	country_modifier_neutral = {
-		production_efficiency = 0.1
+		global_unrest = 1
 	}	
 	country_modifier_angry = {
-		production_efficiency = -0.2
+		global_unrest = 2
 	}
 
 	land_ownership_modifier = {
@@ -46,13 +46,13 @@ estate_natifs =
 	}
 
 	# Influence modifiers
-	base_influence = 10
+	base_influence = 20
 	influence_modifier = {
 		desc = cultural_minority
 		trigger = {
-			NOT = { dominant_culture = ROOT }
+			NOT = { dominant_culture = aquitaine }
 		}	
-		influence = -15
+		influence = 20
 	}
 	
 	privileges = {

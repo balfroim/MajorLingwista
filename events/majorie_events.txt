@@ -86,6 +86,10 @@ country_event = {
 		name = "majorie_event.4a"
 		change_primary_culture = modern_french
 		set_ruler_culture = modern_french
+		capital_scope = {
+			limit = { LGW }
+			change_culture = modern_french
+		}
 	}
 	option = {
 		name = "error_event.0t"

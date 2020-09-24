@@ -46,18 +46,25 @@ estate_natifs =
 	}
 
 	# Influence modifiers
-	base_influence = 20
+	base_influence = 40
 	influence_modifier = {
-		desc = cultural_minority
-		trigger = {
+		desc = cultural_majority_natifs
+		trigger = { 
 			NOT = { dominant_culture = aquitaine }
-		}	
+		}
 		influence = 20
+	}
+	influence_modifier = {
+		desc = cultural_minority_natifs
+		trigger = { dominant_culture = aquitaine }
+		influence = -20
 	}
 	
 	privileges = {
 		estate_natifs_conscription
+		estate_natifs_conscription_reduite
 		estate_natifs_taxation_exceptionnelle
+		estate_natifs_taxation_reduite
 	}
 
 	agendas = {

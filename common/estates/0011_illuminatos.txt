@@ -34,27 +34,28 @@ estate_illuminatos =
 	# Influence modifiers
 	base_influence = 10
 	influence_modifier = {
+		desc = cultural_minority
+		trigger = {
+			NOT = { dominant_culture = aquitaine }
+		}	
+		influence = -5
+	}
+	# Loyalty modifiers
+	loyalty_modifier = {
 		desc = control_haute_marne
 		trigger = {
 			tag = LGW
 			owns = 192 #Haute-Marne
 		}	
-		influence = 20
+		loyalty = 20
 	}
-	influence_modifier = {
+	loyalty_modifier = {
 		desc = control_nesblog
 		trigger = {
 			tag = LGW
 			owns = 4384 #Rennes
 		}	
-		influence = 20
-	}
-	influence_modifier = {
-		desc = cultural_minority
-		trigger = {
-			NOT = { dominant_culture = aquitaine }
-		}	
-		influence = -15
+		loyalty = 20
 	}
 
 	

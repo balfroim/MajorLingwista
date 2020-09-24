@@ -10,7 +10,7 @@ country_event = {
 
 	trigger = {
 		ai = no
-		NOT = { has_government_reform = illuminatos_council_reform }
+		NOT = { has_reform = illuminatos_council_reform }
 		NOT = { tag = LGW }
 	}
 	
@@ -180,7 +180,10 @@ country_event = {
 	picture = ANGRY_MOB_eventPicture
 	
 	trigger = {
-		ai = no
+		OR = {
+			has_reform = illuminatos_council_reform
+			tag = LGW
+		}
 		owns = 4384
 		NOT = {
 			4384 = { has_province_modifier = terre_nesblog }
@@ -209,7 +212,10 @@ country_event = {
 	picture = ANGRY_MOB_eventPicture
 	
 	trigger = {
-		ai = no
+		OR = {
+			has_reform = illuminatos_council_reform
+			tag = LGW
+		}
 		owns = 192
 		NOT = {
 			192 = { has_province_modifier = haute_marne }

@@ -50,13 +50,13 @@ estate_natifs =
 	influence_modifier = {
 		desc = cultural_majority_natifs
 		trigger = { 
-			NOT = { dominant_culture = aquitaine }
+			NOT = { dominant_culture = modern_french }
 		}
 		influence = 20
 	}
 	influence_modifier = {
 		desc = cultural_minority_natifs
-		trigger = { dominant_culture = aquitaine }
+		trigger = { dominant_culture = modern_french }
 		influence = -20
 	}
 	

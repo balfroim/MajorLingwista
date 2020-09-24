@@ -33,7 +33,7 @@ estate_plebe =
 		}
 		modifier = {
 			factor = 0.5
-			NOT = { culture = aquitaine }
+			NOT = { culture = modern_french }
 		}
 		modifier = {
 			factor = 0.67
@@ -50,13 +50,13 @@ estate_plebe =
 	influence_modifier = {
 		desc = cultural_minority_plebe
 		trigger = {
-			NOT = { dominant_culture = aquitaine }
+			NOT = { dominant_culture = modern_french }
 		}	
 		influence = -10
 	}
 	influence_modifier = {
 		desc = cultural_majority_plebe
-		trigger = { dominant_culture = aquitaine }
+		trigger = { dominant_culture = modern_french }
 		influence = 10
 	}
 	

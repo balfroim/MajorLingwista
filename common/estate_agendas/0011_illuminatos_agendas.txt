@@ -1,0 +1,55 @@
+
+
+estate_illuminatos_fire_advisor = {
+	can_select = {
+		employed_advisor = {
+			NOT = { culture = aquitaine }
+		}
+	}
+	selection_weight = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			always = yes
+		}
+	}
+	immediate_effect = {
+		hidden_effect = {
+			set_country_flag = need_to_fire_foreign_advisor
+		}
+	}
+	on_invalid = {
+		clr_country_flag = need_to_fire_foreign_advisor
+	}
+	task_requirements = {
+		custom_trigger_tooltip = {
+			tooltip = fire_foreign_advisor_tooltip
+			has_country_flag = just_fired_foreign_advisor
+		}
+	}
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_illuminatos
+			loyalty = 10
+		}
+		clr_country_flag = just_fired_foreign_advisor
+		clr_country_flag = need_to_fire_foreign_advisor
+	}
+	invalid_trigger = {
+		NOT = {
+			employed_advisor = {
+				culture = aquitaine
+			}
+		}
+		NOT = { has_country_flag = just_fired_foreign_advisor }
+	}
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = estate_illuminatos
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+		clr_country_flag = need_to_fire_foreign_advisor
+    }
+}

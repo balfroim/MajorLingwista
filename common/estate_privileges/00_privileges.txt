@@ -6851,17 +6851,14 @@ estate_plebe_coup_d_etat = {
 estate_natifs_conscription = {
 	icon = privilege_grant_autonomy
 	land_share = 0
-	max_absolutism = 0
-	loyalty = 0.00
-	influence = 0.00
+	max_absolutism = 5
+	loyalty = -0.10
+	influence = -0.05
 	can_select = {
+		NOT = { has_country_flag = conscription_reduced }
 	}
 	on_granted = {
 		add_yearly_manpower = 10
-		add_estate_loyalty = {
-   			estate = estate_natifs
- 			loyalty = -10
-		}
 	}
 	on_revoked = {
 		add_estate_loyalty = {
@@ -6878,20 +6875,44 @@ estate_natifs_conscription = {
 	}
 }
 
-estate_natifs_taxation_exceptionnelle = {
+estate_natifs_conscription_reduite = {
 	icon = privilege_grant_autonomy
 	land_share = 0
-	max_absolutism = 0
-	loyalty = 0.00
-	influence = 0.00
+	max_absolutism = -5
+	loyalty = 0.10
+	influence = 0.05
 	can_select = {
 	}
 	on_granted = {
-		add_years_of_income = 1
-		add_estate_loyalty = {
-   			estate = estate_natifs
- 			loyalty = -10
+		set_country_flag = conscription_reduced
+		hidden_effect = {
+			remove_estate_privilege = estate_natifs_conscription
 		}
+		custom_tooltip = estate_natifs_conscription_remove
+	}
+	on_revoked = {
+		clr_country_flag = conscription_reduced
+	}
+	benefits = {
+		global_manpower_modifier = -0.1
+	} 
+	cooldown_years = 0
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_natifs_taxation_exceptionnelle = {
+	icon = privilege_grant_autonomy
+	land_share = 0
+	max_absolutism = 5
+	loyalty = -0.10
+	influence = -0.05
+	can_select = {
+		NOT = { has_country_flag = taxation_reduced}
+	}
+	on_granted = {
+		add_years_of_income = 1
 	}
 	on_revoked = {
 		add_estate_loyalty = {
@@ -6907,3 +6928,32 @@ estate_natifs_taxation_exceptionnelle = {
 		factor = 0
 	}
 }
+
+estate_natifs_taxation_reduite = {
+	icon = privilege_grant_autonomy
+	land_share = 0
+	max_absolutism = -5
+	loyalty = 0.10
+	influence = 0.05
+	can_select = {
+	}
+	on_granted = {
+		set_country_flag = taxation_reduced
+		hidden_effect = {
+			remove_estate_privilege = estate_natifs_taxation_exceptionnelle
+		}
+		custom_tooltip = estate_natifs_taxation_remove
+	}
+	on_revoked = {
+		clr_country_flag = taxation_reduced
+	}
+	benefits = {
+		global_tax_modifier = -0.1
+		stability_cost_modifier = -0.1
+	} 
+	cooldown_years = 0
+	ai_will_do = {
+		factor = 0
+	}
+}
+

@@ -21,7 +21,7 @@ country_decisions = {
 
 	adopt_majorie_culture = {
 		potential = {
-			NOT = { primary_culture = aquitaine }
+			NOT = { primary_culture = modern_french }
 			OR = {
 				AND = {
 					ai = no

@@ -176,10 +176,6 @@
    # Sub (quelqu'un s'abonne)
       twitch_event.1t:0 "Un abonnement !"
       twitch_event.1d:0 "Quelqu'un s'est abonné."
-      twitch_event.1a:0 "Il va rejoindre nos diplomates."
-      twitch_event.1b:0 "C'est un incroyable marchand."
-      twitch_event.1c:0 "Il colonisera de nouvelles terres pour nous."
-      twitch_event.1e:0 "Il convertira les infidèles pour nous."
       twitch_event.11t:0 "Il va mener nos troupes au combat !"
       twitch_event.11d:0 "Notre état-major a toujours de la place. Quelle position cet illuminato occupera-t-il ?"
       twitch_event.11a:0 "Il commandera nos troupes sur le champ de bataille !"
@@ -213,6 +209,12 @@
       twitch_event.14f:0 "Ce sera un Théologien."
       twitch_event.14g:0 "Ce sera un Maître de la monnaie."
       twitch_event.14h:0 "Ce sera un Inquisiteur."
+      twitch_event.15t:0 "Faisons de lui un agent de terrain !"
+      twitch_event.15d:0 "Ses capacités d'interraction avec les natifs peuvent être utilisées de bien des façons."
+      twitch_event.15a:0 "Il va rejoindre nos diplomates."
+      twitch_event.15b:0 "C'est un incroyable marchand."
+      twitch_event.15c:0 "Il colonisera de nouvelles terres pour nous."
+      twitch_event.15e:0 "Il convertira les infidèles pour nous."
    # SubGift (quelqu'un offre des abonnements dans le chat)
       twitch_event.2t:0 "Un subgift !"
       twitch_event.2d:0 "Quelqu'un a offert un abonnements à une ou plusieur personnes. Si plusieurs abonnements ont été offerts, l'évènement reviendra jusqu'à être apparu 5 ou 10 fois le cas échéant."

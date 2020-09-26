@@ -37,5 +37,24 @@ country_decisions = {
 			}
 		}
 	}
+
+	adopt_futuristic_weapons = {
+		potential = {
+			NOT = { has_country_flag = futuristic_weapon }
+			OR = {
+				AND = {
+					ai = no
+					has_reform = civilising_mission_reform
+				}
+				has_reform = lingwista_monarchy1_reform
+			}
+		}
+		effect = {
+			country_event = {
+				id = majorie_events.11
+				days = 0
+			}
+		}
+	}
 	
 }

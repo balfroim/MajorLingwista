@@ -247,12 +247,10 @@ country_event = {
 
 	trigger = {
 		has_reform = colonial_government
-		is_subject_of = {
-			any_country = {
-				OR = {
-					has_reform = illuminatos_council_reform
-					tag = LGW
-				}
+		overlord = {
+			OR = {
+				has_reform = illuminatos_council_reform
+				tag = LGW
 			}
 		}
 	}

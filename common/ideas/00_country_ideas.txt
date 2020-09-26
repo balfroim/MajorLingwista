@@ -15165,12 +15165,12 @@ ICE_ideas = {
 
 MAJ_ideas = {
 	start = {
-		manpower_recovery_speed = 0.5
-		reinforce_cost_modifier = -0.5
+		infantry_power = 0.2
+		idea_cost = -0.1
 	}
 	
 	bonus = {
-		land_attrition = -0.5
+		discipline = 0.1
 	}	
 
 	trigger = {
@@ -15182,20 +15182,19 @@ MAJ_ideas = {
 		technology_cost = -0.2
 	}
 	MAJ_idea2 = {
-		discipline = 0.25
-		land_forcelimit_modifier = -0.25
+		global_manpower_modifier = 0.5
 	}
 	MAJ_idea3 = {
-		fire_damage = 0.2
-		backrow_artillery_damage = 0.2
+		fire_damage = 0.1
+		land_attrition = -0.5
 	}
 	MAJ_idea4 = {
-		defensiveness = 0.2
-		garrison_size = 0.2
+    		diplomatic_reputation = 2
+    		diplomatic_upkeep = 2
 	}
 	MAJ_idea5 = {
-		hostile_attrition = 1
-		leader_land_fire = 1
+		heavy_ship_power = 0.15
+		naval_morale = 0.15
 	}
 	MAJ_idea6 = {
 		infantry_cost = -0.2

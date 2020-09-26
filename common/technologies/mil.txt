@@ -18,6 +18,7 @@ technology = {
 	land_morale 		= 	2.0
 	
 	enable = acolytes_des_illustres
+	enable = acolytes_des_illustres_a_cheval
 	enable = batterie_laser
 }
 

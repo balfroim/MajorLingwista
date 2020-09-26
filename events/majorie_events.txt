@@ -278,7 +278,7 @@ country_event = {
 		hidden_effect = {
  			country_event = {
 				id = majorie_events.12
-				days = 1
+				days = 1750
 			}
 		}
 		add_adm_power = -100

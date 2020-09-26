@@ -1615,9 +1615,6 @@ blue_moon_group = {
 	blue_moon = {
 		icon = 21
 		color = { 25 125 200 }
-		province = {
-			local_friendly_movement_speed = 0.2
-		}
 		country = {
 			tolerance_own = 2
 			institution_spread_from_true_faith = 0.5

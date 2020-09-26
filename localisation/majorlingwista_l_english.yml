@@ -31,6 +31,8 @@ l_english:
     tooltype_futuristic_weapons:0 "Dans cinq ans nous pourrons équiper nos troupes avec les armes futuristes."
     acolytes_des_illustres:0 "Acolytes des illustres"
     acolytes_des_illustresDESCR:0 "Les acolytes des illustres sont leurs frères et soeurs d'armes du Major, qui se battent avec lui contre les aliens et autres robots polyglottes."
+    batterie_laser:0 "Batterie de laser"
+    batterie_laserDESCR:0 "Les lasers sont ce qu'il y a de plus efficace contre les aliens, les robots, mais aussi les natifs récalcitrants."
     major_sole_elector_reform:0 "Un unique électeur: le Major"
     major_sole_elector_reform_desc:0 "Il est temps de révéler l'existence du Major aux natifs."
     illuminatos_electors_reform:0 "Electeurs illuminatos"

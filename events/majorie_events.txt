@@ -319,6 +319,7 @@ country_event = {
 	}
 
 	option = {
+		name = "majorie_event.13t"
 		custom_tooltip = "tooltype_des_traitres"
 		clr_global_flag = traitres_illuminatos
 	}

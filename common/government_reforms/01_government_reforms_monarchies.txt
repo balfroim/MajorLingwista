@@ -1327,10 +1327,12 @@ lingwista_monarchy1_reform = {
 		global_missionary_strength = 0.02
 		missionaries = 2
 		culture_conversion_cost = -0.25
+		cb_on_religious_enemies = yes
 	}
 	effect = {
 		custom_tooltip = "tooltype_majorie_faith"
 		custom_tooltip = "tooltype_majorie_culture"
+		custom_tooltip = "tooltype_majorie_weapons"
 	}
 }
 

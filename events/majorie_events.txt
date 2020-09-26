@@ -264,3 +264,26 @@ country_event = {
 		add_government_reform = illuminatos_council_reform
 	}
 }
+
+country_event = {
+	id = majorie_events.11
+	title = "majorie_event.11t"
+	desc = "majorie_event.11d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	option = {
+		name = "majorie_event.11a"
+		set_country_flag = futuristic_weapon
+ 		hidden_effect = {
+			set_country_flag = acolytes_des_illustres
+			year = 5
+		}
+		add_adm_power = -100
+		add_mil_power = -500
+		add_treasury = -1000
+	}
+	option = {
+		name = "error_event.0t"
+	}
+}

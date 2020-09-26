@@ -109,26 +109,22 @@ country_event = {
 		add_ruler_personality = immortal_personality
 		add_government_reform = lingwista_monarchy_reform
 		country_event = {
-			id = ideagroups.1 #Swap Ideas
+			id = ideagroups.1
 			days = 0
-		}
-		effect = {
-			set_global_flag = angry_illuminatos
 		}
 	}
 }
 
 country_event = {
 	id = majorie_events.6
-	title = "majorie_event.6"
-	desc = "majorie_event.6"
+	title = "majorie_event.6t"
+	desc = "majorie_event.6d"
 	picture = ANGRY_MOB_eventPicture
 	
 	trigger = {
 		ai = yes
 		has_global_flag = angry_illuminatos
 		is_great_power = yes
-		NOT = { tag = LGW }
 	}
 	
 	mean_time_to_happen = {
@@ -141,29 +137,12 @@ country_event = {
 			}
 			change_government = republic
 		}
+		set_global_flag = traitres_illuminatos
+		clr_global_flag = angry_illuminatos
 		country_event = {
 			id = majorie_events.2
 			days = 0
 		}
-		clr_global_flag = angry_illuminatos
-		LGW = {
-			country_event = {
-			id = majorie_events.6a
-			days = 1
-		}
-	}
-}
-
-country_event = {
-	id = majorie_events.6a
-	title = "majorie_event.6t"
-	desc = "majorie_event.6d"
-	picture = ANGRY_MOB_eventPicture
-	
-	is_triggered_only = yes
-
-	option = {
-		custom_tooltip = "tooltype_des_traitres"
 	}
 }
 
@@ -322,5 +301,25 @@ country_event = {
 	option = {
 		name = "majorie_event.12a"
 		change_unit_type = majorie
+	}
+}
+
+country_event = {
+	id = majorie_events.13
+	title = "majorie_event.13t"
+	desc = "majorie_event.13d"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		has_global_flag = traitres_illuminatos
+		OR = {
+			has_reform = major_sole_elector_reform
+			has_reform = lingwista_monarchy_reform
+		}
+	}
+
+	option = {
+		custom_tooltip = "tooltype_des_traitres"
+		clr_global_flag = traitres_illuminatos
 	}
 }

@@ -1901,9 +1901,10 @@ civilising_mission_reform = {
 	allow_normal_conversion = yes
 	potential = {	has_reform = illuminatos_council_reform	}
 	modifiers = {
-		discipline = 0.1
-		artillery_bonus_vs_fort = 2
-		backrow_artillery_damage = 0.1
+		cb_on_religious_enemies = yes
+	}
+	effect = {
+		custom_tooltip = "tooltype_majorie_weapons"
 	}
 	ai = {
 		factor = 100

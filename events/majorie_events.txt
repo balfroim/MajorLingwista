@@ -238,3 +238,31 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = majorie_events.10
+	title = "majorie_event.10t"
+	desc = "majorie_event.10d"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		has_reform = colonial_government
+		is_subject_of = {
+			any_country = {
+				OR = {
+					has_reform = illuminatos_council_reform
+					tag = LGW
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	option = {
+		name = "majorie_event.10t"
+		remove_government_reform = colonial_government
+		add_government_reform = illuminatos_council_reform
+	}
+}

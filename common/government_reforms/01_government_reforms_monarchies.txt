@@ -1095,6 +1095,9 @@ lingwista_monarchy_reform = {
 		country_diplomatic_power = 2
 		country_military_power = 2
 	}
+	effect = {
+		set_global_flag = angry_illuminatos
+	}
 }
 
 #Hereditary vs Nobility

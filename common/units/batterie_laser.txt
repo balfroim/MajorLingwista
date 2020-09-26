@@ -1,6 +1,7 @@
 # Batterie laser
 
 type = artillery
+unit_type = majorie
 
 maneuver = 2
 offensive_morale = 6
@@ -9,7 +10,3 @@ offensive_fire = 6
 defensive_fire = 6
 offensive_shock = 1
 defensive_shock = 1
-
-trigger = {
-	has_country_flag = acolytes_des_illustres
-}

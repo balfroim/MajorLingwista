@@ -1,4 +1,4 @@
-﻿l_french:
+l_french:
  # Former la Majorie/Réformes gouvernementles
     LGW:0 "Majorie"
     LGW_ADJ:0 "Majoré"
@@ -56,6 +56,8 @@
     lingwista_monarchy5_reform_desc:0 "La voix du Major est la seule vérité. En doutes-tu ? Bien sûr que non."
     lingwista_monarchy6_reform:0 "Pouvoir des armes"
     lingwista_monarchy6_reform_desc:0 "Les armes sont le seul pouvoir réellement existant, ceux qui n'en sont pas déjà convaincu le seront bientôt."
+    majorie_event.10t:0 "Des illuminatos dans les colonies"
+    majorie_event.10d:0 "Les illuminatos prennent également le pouvoir dans les colonies. Les natifs ne peuvent pas les fuir en migrant dans le nouveau monde."
  # Estate Illuminatos/Plèbe/Natifs
     estate_illuminatos:0 "Illuminatos"
     estate_illuminatos_desc:0 "Les illuminatos sont un groupe dissident des illuminatis, fondé par le Major Lingwista, ils l'ont suivi ici pour l'aider à réussir sa périlleuse mission."
@@ -139,18 +141,19 @@
     MAJ_ideas_start:0 "traditions majorées"
     MAJ_idea1:0 "Pays du voyageur temporel"
     MAJ_idea1_desc:0 "Le pays est contrôlé par un voyageur temporel, qui aide sporadiquement la recherche avec ses connaissances futuristes."
-    MAJ_idea2:0 "Gardes d'élite futuristes"
-    MAJ_idea2_desc:0 "L'armée se recentre sur la garde rapprochée du Major."
-    MAJ_idea3:0 "Armes du futur"
-    MAJ_idea3_desc:0 "Avec ces armes futuristes, nos armées décimeront nos ennemis !"
+    MAJ_idea2:0 "Médecine futuriste"
+    MAJ_idea2_desc:0 "Les procédés médicinaux apportés par le Major nous permettent d'accroitre la populations en état de rejoindre notre armée."
+    MAJ_idea3:0 "Vétéran de la guerre"
+    MAJ_idea3_desc:0 "Le Major a connu le front. Il sait qu'un fusil-laser et des rations de survie sont ce qui fait d'un soldat un bon soldat."
     MAJ_idea4:0 "Douksavien"
-    MAJ_idea4_desc:0 "Le chef d'oeuvre du Major pour faire échouer le plan des aliens !"
-    MAJ_idea5:0 "Esprit de la Résistance"
-    MAJ_idea5_desc:0 "Comme son modèle, le général De Gaulle, le Major Lingwista est un héros de la résistance."
-    MAJ_idea6:0 "Haine des robots polyglottes"
-    MAJ_idea6_desc:0 "Des années de détention avec un geolier robotique polyglotte ont forgé une profonde haine, que le major propage autour de lui."
+    MAJ_idea4_desc:0 "Le Major, de part ses connaissances linguistiques, est un polyglotte de renom, ce qui lui permet d'entretenir de meilleures relations et avec davantage de pays."
+    MAJ_idea5:0 "Flotte du Mont Saint-Michel"
+    MAJ_idea5_desc:0 "La flotte du Major a pour but principal de règler les prétentions autour du Mont Saint-Michel: il appartient au Major Lingwista."
+    MAJ_idea6:0 "Procédés industriels futuristes"
+    MAJ_idea6_desc:0 "Les techniques industrielles futuristes de manufacturation des armes nous permettent de réduire le coût des équipements."
     MAJ_idea7:0 ""Je vous ai compris !""
     MAJ_idea7_desc:0 "Comme son idole, le général De Gaulle, le Major Lingwista apaise les foules avec ses talents d'orateur."
+    MAJ_ideas_bonus:0 "Tradition majorée"
  # Religion Lune de Sang Bleue
     tooltype_majorie_faith:0 "Débloque la décision permettant d'adopter la foi du Major"
     adopt_majorie_faith_title:0 "Adopter la foi du Major"

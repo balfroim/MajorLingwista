@@ -276,8 +276,10 @@ country_event = {
 		name = "majorie_event.11a"
 		set_country_flag = futuristic_weapon
 		hidden_effect = {
- 			set_country_flag = acolytes_des_illustres
-			days = 1750
+ 			country_event = {
+				id = majorie_events.12
+				days = 1
+			}
 		}
 		add_adm_power = -100
 		add_mil_power = -500
@@ -286,5 +288,18 @@ country_event = {
 	}
 	option = {
 		name = "error_event.0t"
+	}
+}
+
+country_event = {
+	id = majorie_events.12
+	title = "majorie_event.12t"
+	desc = "majorie_event.12d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	option = {
+		name = "majorie_event.12a"
+		change_unit_type = majorie
 	}
 }

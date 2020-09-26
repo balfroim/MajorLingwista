@@ -112,6 +112,9 @@ country_event = {
 			id = ideagroups.1 #Swap Ideas
 			days = 0
 		}
+		effect = {
+			set_global_flag = angry_illuminatos
+		}
 	}
 }
 
@@ -143,6 +146,24 @@ country_event = {
 			days = 0
 		}
 		clr_global_flag = angry_illuminatos
+		LGW = {
+			country_event = {
+			id = majorie_events.6a
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = majorie_events.6a
+	title = "majorie_event.6t"
+	desc = "majorie_event.6d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		custom_tooltip = "tooltype_des_traitres"
 	}
 }
 

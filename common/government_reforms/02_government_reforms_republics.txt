@@ -1089,9 +1089,6 @@ illuminatos_council_reform = {
 	lock_level_when_selected = yes
 	allow_normal_conversion = yes
 	icon = "illuminatos"
-	potential = {
-		is_colonial_nation = no
-	}
 	valid_for_nation_designer = no
 	legacy_equivalent = illuminatos_council
 	modifiers = {

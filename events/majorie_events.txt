@@ -275,13 +275,14 @@ country_event = {
 	option = {
 		name = "majorie_event.11a"
 		set_country_flag = futuristic_weapon
- 		hidden_effect = {
-			set_country_flag = acolytes_des_illustres
-			year = 5
+		hidden_effect = {
+ 			set_country_flag = acolytes_des_illustres
+			days = 1750
 		}
 		add_adm_power = -100
 		add_mil_power = -500
 		add_treasury = -1000
+		custom_tooltip = "tooltype_futuristic_weapons"
 	}
 	option = {
 		name = "error_event.0t"

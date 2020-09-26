@@ -1,6 +1,7 @@
 # Acolytes des Illustres
 
 type = infantry
+unit_type = majorie
 
 maneuver = 1
 offensive_morale = 4
@@ -9,7 +10,3 @@ offensive_fire = 6
 defensive_fire = 6
 offensive_shock = 3
 defensive_shock = 3
-
-trigger = {
-	has_country_flag = acolytes_des_illustres
-}

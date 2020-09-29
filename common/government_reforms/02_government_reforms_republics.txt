@@ -2316,7 +2316,7 @@ lingwista_took_control = {
 			religion = blue_moon
 		}
 		country_event = {
-			id = majorie_events.5
+			id = majorie_events.05
 			days = 1
 		}
 	}

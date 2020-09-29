@@ -1,5 +1,6 @@
 namespace = majorie_events
 
+### Events 0X RP de base
 country_event = {
 	id = majorie_events.01
 	title = "majorie_event.01t"
@@ -163,6 +164,7 @@ country_event = {
 	}
 }
 
+### Events 1X Decisions
 country_event = {
 	id = majorie_events.10
 	title = "majorie_event.10t"
@@ -239,6 +241,7 @@ country_event = {
 	}
 }
 
+### Events 2X estates
 country_event = {
 	id = majorie_events.20
 	title = "majorie_event.20t"

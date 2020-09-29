@@ -6838,7 +6838,7 @@ estate_plebe_coup_d_etat = {
 	}
 	on_granted = {
 		country_event = {
-			id = majorie_events.7
+			id = majorie_events.04
 			days = 0
 		}
 	}

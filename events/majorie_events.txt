@@ -1,30 +1,32 @@
 namespace = majorie_events
 
 country_event = {
-	id = majorie_events.1
-	title = "majorie_event.1t"
-	desc = "majorie_event.1d"
+	id = majorie_events.01
+	title = "majorie_event.01t"
+	desc = "majorie_event.01d"
 	picture = ANGRY_MOB_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		ai = no
-		NOT = { has_reform = illuminatos_council_reform }
-		NOT = { tag = LGW }
-	}
 	
-	mean_time_to_happen = {
-		days = 0
-
-		modifier = {
-			factor = 1000
-			ai = no
-		}
-	}
+	is_triggered_only = yes
 
 	option = {
-		name = "majorie_event.1t"
+		name = "majorie_event.02t"
+		country_event = {
+			id = majorie_events.02
+			days = 0
+		}
+	}
+}
+
+country_event = {
+	id = majorie_events.02
+	title = "majorie_event.02t"
+	desc = "majorie_event.02d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "majorie_event.03t"
 		add_permanent_claim = 192
 		add_permanent_claim = 4384
 		if = {
@@ -38,21 +40,21 @@ country_event = {
 			change_government = republic
 		}
 		country_event = {
-			id = majorie_events.2
+			id = majorie_events.03
 			days = 0
 		}
 	}
 }
 		
 country_event = {
-	id = majorie_events.2
-	title = "majorie_event.1t"
-	desc = "majorie_event.2d"
+	id = majorie_events.03
+	title = "majorie_event.03t"
+	desc = "majorie_event.03d"
 	picture = ANGRY_MOB_eventPicture
 	
 	is_triggered_only = yes
 	option = {
-		name = "majorie_event.2a"
+		name = "majorie_event.03t"
 		add_government_reform = illuminatos_council_reform
 		kill_ruler = yes
 		add_stability = 1
@@ -60,52 +62,46 @@ country_event = {
 }
 
 country_event = {
-	id = majorie_events.3
-	title = "majorie_event.3t"
-	desc = "majorie_event.3d"
+	id = majorie_events.04
+	title = "majorie_event.04t"
+	desc = "majorie_event.04d"
 	picture = ANGRY_MOB_eventPicture
 	
 	is_triggered_only = yes
-	option = {
-		name = "majorie_event.3a"
-		change_religion = blue_moon
-	}
-	option = {
-		name = "error_event.0t"
-	}
-}
 
-country_event = {
-	id = majorie_events.4
-	title = "majorie_event.4t"
-	desc = "majorie_event.4d"
-	picture = ANGRY_MOB_eventPicture
-	
-	is_triggered_only = yes
 	option = {
-		name = "majorie_event.4a"
-		change_primary_culture = modern_french
-		set_ruler_culture = modern_french
-		capital_scope = {
-			limit = { LGW }
-			change_culture = modern_french
+		name = "majorie_event.04t"
+		remove_estate_privilege = estate_plebe_coup_d_etat
+		change_tag = LGW
+		change_government = monarchy
+		define_ruler = {
+			dynasty = "Lingwista"
+			adm = 6
+			dip = 6
+			mil = 6
+			age = 20
+			claim = 100
+			male = yes
+			culture = modern_french
+			religion = blue_moon
+		}
+		country_event = {
+			id = majorie_events.05
+			days = 0
 		}
 	}
-	option = {
-		name = "error_event.0t"
-	}
 }
 
 country_event = {
-	id = majorie_events.5
-	title = "majorie_event.5t"
-	desc = "majorie_event.5d"
+	id = majorie_events.05
+	title = "majorie_event.05t"
+	desc = "majorie_event.05d"
 	picture = ANGRY_MOB_eventPicture
 	
 	is_triggered_only = yes
 
 	option = {
-		name = "majorie_event.5t"
+		name = "majorie_event.05t"
 		add_ruler_personality = immortal_personality
 		add_government_reform = lingwista_monarchy_reform
 		country_event = {
@@ -116,9 +112,9 @@ country_event = {
 }
 
 country_event = {
-	id = majorie_events.6
-	title = "majorie_event.6t"
-	desc = "majorie_event.6d"
+	id = majorie_events.06
+	title = "majorie_event.07t"
+	desc = "majorie_event.07d"
 	picture = ANGRY_MOB_eventPicture
 	
 	trigger = {
@@ -140,47 +136,139 @@ country_event = {
 		set_global_flag = traitres_illuminatos
 		clr_global_flag = angry_illuminatos
 		country_event = {
-			id = majorie_events.2
+			id = majorie_events.03
 			days = 0
 		}
 	}
 }
 
 country_event = {
-	id = majorie_events.7
-	title = "majorie_event.7t"
-	desc = "majorie_event.7d"
+	id = majorie_events.07
+	title = "majorie_event.07t"
+	desc = "majorie_event.07d"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		has_global_flag = traitres_illuminatos
+		OR = {
+			has_reform = major_sole_elector_reform
+			has_reform = lingwista_monarchy_reform
+		}
+	}
+
+	option = {
+		name = "majorie_event.07t"
+		custom_tooltip = "tooltype_des_traitres"
+		clr_global_flag = traitres_illuminatos
+	}
+}
+
+country_event = {
+	id = majorie_events.10
+	title = "majorie_event.10t"
+	desc = "majorie_event.10d"
 	picture = ANGRY_MOB_eventPicture
 	
 	is_triggered_only = yes
-
 	option = {
-		name = "majorie_event.7t"
-		remove_estate_privilege = estate_plebe_coup_d_etat
-		change_tag = LGW
-		change_government = monarchy
-		define_ruler = {
-			dynasty = "Lingwista"
-			adm = 6
-			dip = 6
-			mil = 6
-			age = 20
-			claim = 100
-			male = yes
-			culture = modern_french
-			religion = blue_moon
+		name = "majorie_event.10a"
+		change_primary_culture = modern_french
+		set_ruler_culture = modern_french
+		capital_scope = {
+			limit = { LGW }
+			change_culture = modern_french
 		}
-		country_event = {
-			id = majorie_events.5
-			days = 0
-		}
+	}
+	option = {
+		name = "error_event.0t"
 	}
 }
 
 country_event = {
-	id = majorie_events.8
-	title = "majorie_event.8t"
-	desc = "majorie_event.8d"
+	id = majorie_events.11
+	title = "majorie_event.11t"
+	desc = "majorie_event.11d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	option = {
+		name = "majorie_event.11a"
+		change_religion = blue_moon
+	}
+	option = {
+		name = "error_event.0t"
+	}
+}
+
+country_event = {
+	id = majorie_events.12
+	title = "majorie_event.12t"
+	desc = "majorie_event.12d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	option = {
+		name = "majorie_event.12a"
+		set_country_flag = futuristic_weapon
+		hidden_effect = {
+ 			country_event = {
+				id = majorie_events.13
+				days = 1750
+			}
+		}
+		add_adm_power = -100
+		add_mil_power = -500
+		add_treasury = -1000
+		custom_tooltip = "tooltype_futuristic_weapons"
+	}
+	option = {
+		name = "error_event.0t"
+	}
+}
+
+country_event = {
+	id = majorie_events.13
+	title = "majorie_event.13t"
+	desc = "majorie_event.13d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	option = {
+		name = "majorie_event.13a"
+		change_unit_type = majorie
+	}
+}
+
+country_event = {
+	id = majorie_events.20
+	title = "majorie_event.20t"
+	desc = "majorie_event.20d"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		has_reform = colonial_government
+		overlord = {
+			OR = {
+				has_reform = illuminatos_council_reform
+				tag = LGW
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	option = {
+		name = "majorie_event.20t"
+		remove_government_reform = colonial_government
+		add_government_reform = illuminatos_council_reform
+	}
+}
+
+country_event = {
+	id = majorie_events.21
+	title = "majorie_event.21t"
+	desc = "majorie_event.21d"
 	picture = ANGRY_MOB_eventPicture
 
 	trigger = {
@@ -198,7 +286,7 @@ country_event = {
 		days = 0
 	}
 	option = {
-		name = "majorie_event.8t"
+		name = "majorie_event.21t"
 		4384 = {
 			add_permanent_province_modifier = { 
 				name = terre_nesblog_modifier
@@ -209,9 +297,9 @@ country_event = {
 }
 
 country_event = {
-	id = majorie_events.9
-	title = "majorie_event.9t"
-	desc = "majorie_event.8d"
+	id = majorie_events.22
+	title = "majorie_event.22t"
+	desc = "majorie_event.21d"
 	picture = ANGRY_MOB_eventPicture
 
 	trigger = {
@@ -229,98 +317,12 @@ country_event = {
 		days = 0
 	}
 	option = {
-		name = "majorie_event.9t"
+		name = "majorie_event.22t"
 		192 = {
 			add_permanent_province_modifier = { 
 				name = haute_marne_modifier
 				duration = -1
 			}
 		}
-	}
-}
-
-country_event = {
-	id = majorie_events.10
-	title = "majorie_event.10t"
-	desc = "majorie_event.10d"
-	picture = ANGRY_MOB_eventPicture
-
-	trigger = {
-		has_reform = colonial_government
-		overlord = {
-			OR = {
-				has_reform = illuminatos_council_reform
-				tag = LGW
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 0
-	}
-	option = {
-		name = "majorie_event.10t"
-		remove_government_reform = colonial_government
-		add_government_reform = illuminatos_council_reform
-	}
-}
-
-country_event = {
-	id = majorie_events.11
-	title = "majorie_event.11t"
-	desc = "majorie_event.11d"
-	picture = ANGRY_MOB_eventPicture
-	
-	is_triggered_only = yes
-	option = {
-		name = "majorie_event.11a"
-		set_country_flag = futuristic_weapon
-		hidden_effect = {
- 			country_event = {
-				id = majorie_events.12
-				days = 1750
-			}
-		}
-		add_adm_power = -100
-		add_mil_power = -500
-		add_treasury = -1000
-		custom_tooltip = "tooltype_futuristic_weapons"
-	}
-	option = {
-		name = "error_event.0t"
-	}
-}
-
-country_event = {
-	id = majorie_events.12
-	title = "majorie_event.12t"
-	desc = "majorie_event.12d"
-	picture = ANGRY_MOB_eventPicture
-	
-	is_triggered_only = yes
-	option = {
-		name = "majorie_event.12a"
-		change_unit_type = majorie
-	}
-}
-
-country_event = {
-	id = majorie_events.13
-	title = "majorie_event.13t"
-	desc = "majorie_event.13d"
-	picture = ANGRY_MOB_eventPicture
-
-	trigger = {
-		has_global_flag = traitres_illuminatos
-		OR = {
-			has_reform = major_sole_elector_reform
-			has_reform = lingwista_monarchy_reform
-		}
-	}
-
-	option = {
-		name = "majorie_event.13t"
-		custom_tooltip = "tooltype_des_traitres"
-		clr_global_flag = traitres_illuminatos
 	}
 }

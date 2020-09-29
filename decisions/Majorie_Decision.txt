@@ -1,24 +1,5 @@
 country_decisions = {
 
-	adopt_majorie_faith = {
-		potential = {
-			NOT = { religion = blue_moon }
-			OR = {
-				AND = {
-					ai = no
-					has_reform = modernization_population_reform
-				}
-				has_reform = lingwista_monarchy1_reform
-			}
-		}
-		effect = {
-			country_event = {
-				id = majorie_events.3
-				days = 0
-			}
-		}
-	}
-
 	adopt_majorie_culture = {
 		potential = {
 			NOT = { primary_culture = modern_french }
@@ -32,7 +13,26 @@ country_decisions = {
 		}
 		effect = {
 			country_event = {
-				id = majorie_events.4
+				id = majorie_events.10
+				days = 0
+			}
+		}
+	}
+
+	adopt_majorie_faith = {
+		potential = {
+			NOT = { religion = blue_moon }
+			OR = {
+				AND = {
+					ai = no
+					has_reform = modernization_population_reform
+				}
+				has_reform = lingwista_monarchy1_reform
+			}
+		}
+		effect = {
+			country_event = {
+				id = majorie_events.11
 				days = 0
 			}
 		}
@@ -51,7 +51,7 @@ country_decisions = {
 		}
 		effect = {
 			country_event = {
-				id = majorie_events.11
+				id = majorie_events.12
 				days = 0
 			}
 		}

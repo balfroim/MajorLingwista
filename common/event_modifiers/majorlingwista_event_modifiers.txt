@@ -488,3 +488,19 @@ haute_marne_modifier = {
 	terre_nesblog_illuminatos = 0.2
 	terre_nesblog_plebe = 0.2
 }
+
+rares_illuminatos_modifier = {
+	rares_illuminatos = 0.5
+}
+
+quelques_illuminatos_modifier = {
+	quelques_illuminatos = 0.25
+}
+
+multiples_illuminatos_modifier = {
+	multiples_illuminatos = -0.1
+}
+
+nombreux_illuminatos_modifier = {
+	nombreux_illuminatos = -0.2
+}

@@ -20,7 +20,7 @@ estate_illuminatos =
 		technology_cost = -0.1
 	}	
 	country_modifier_angry = {
-		innovativeness_gain = -0.5
+		yearly_corruption = 0.5
 	}
 
 	land_ownership_modifier = {

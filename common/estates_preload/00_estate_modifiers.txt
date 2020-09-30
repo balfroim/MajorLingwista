@@ -362,6 +362,26 @@ estate_illuminatos = {
 			owns = 192
 		}
 	}
+	modifier_definition = {
+		type = loyalty
+		key = rares_illuminatos
+		trigger = { has_estate = estate_illuminatos }
+	}
+	modifier_definition = {
+		type = loyalty
+		key = quelques_illuminatos
+		trigger = { has_estate = estate_illuminatos }
+	}
+	modifier_definition = {
+		type = loyalty
+		key = multiples_illuminatos
+		trigger = { has_estate = estate_illuminatos }
+	}
+	modifier_definition = {
+		type = loyalty
+		key = nombreux_illuminatos
+		trigger = { has_estate = estate_illuminatos }
+	}
 }
 
 estate_plebe = {

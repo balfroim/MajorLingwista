@@ -15,6 +15,12 @@ country_event = {
 			id = majorie_events.02
 			days = 0
 		}
+		hidden_effect = {
+			set_variable = {
+				which = ControleIlluminatos
+				value = 0
+			}
+		}
 	}
 }
 
@@ -28,8 +34,11 @@ country_event = {
 
 	option = {
 		name = "majorie_event.03t"
-		add_permanent_claim = 192
-		add_permanent_claim = 4384
+		if = {
+			limit = { ai = no }
+			add_permanent_claim = 192
+			add_permanent_claim = 4384
+		}
 		if = {
 			limit = { primitives = yes }
 			set_primitive = no
@@ -39,6 +48,12 @@ country_event = {
 				NOT = { government = republic }
 			}
 			change_government = republic
+		}
+		effect = {
+			change_variable = {
+				which = ControleIlluminatos
+				value = 1
+			}
 		}
 		country_event = {
 			id = majorie_events.03
@@ -85,6 +100,12 @@ country_event = {
 			male = yes
 			culture = modern_french
 			religion = blue_moon
+		}
+		effect = {
+			subtract_variable = {
+				which = ControleIlluminatos
+				value = 1
+			}
 		}
 		country_event = {
 			id = majorie_events.05
@@ -159,6 +180,12 @@ country_event = {
 
 	option = {
 		name = "majorie_event.07t"
+		hidden_effect = {
+			change_variable = {
+				which = ControleIlluminatos
+				value = 1
+			}
+		}
 		custom_tooltip = "tooltype_des_traitres"
 		clr_global_flag = traitres_illuminatos
 	}
@@ -212,11 +239,9 @@ country_event = {
 	option = {
 		name = "majorie_event.12a"
 		set_country_flag = futuristic_weapon
-		hidden_effect = {
- 			country_event = {
-				id = majorie_events.13
-				days = 1750
-			}
+		country_event = {
+			id = majorie_events.13
+			days = 1750
 		}
 		add_adm_power = -100
 		add_mil_power = -500
@@ -326,6 +351,224 @@ country_event = {
 				name = haute_marne_modifier
 				duration = -1
 			}
+		}
+	}
+}
+
+country_event = {
+	id = majorie_events.23
+	title = "majorie_event.23t"
+	desc = "majorie_event.23d"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		OR = {
+			has_reform = illuminatos_council_reform
+			tag = LGW
+		}
+		NOT = {
+			has_country_modifier = rares_illuminatos_modifier
+		}
+		check_variable = {
+			which = ControleIlluminatos
+			value = 0
+		}
+		NOT = {
+			check_variable = {
+				which = ControleIlluminatos
+				value = 2
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	option = {
+		name = "majorie_event.23a"
+		add_country_modifier = {
+				name = rares_illuminatos_modifier
+				duration = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = quelques_illuminatos_modifier
+			}
+			remove_country_modifier = quelques_illuminatos_modifier
+		}
+		if = {
+			limit = {
+				has_country_modifier = multiples_illuminatos_modifier
+			}
+			remove_country_modifier = multiples_illuminatos_modifier
+		}
+		if = {
+			limit = {
+				has_country_modifier = nombreux_illuminatos_modifier
+			}
+			remove_country_modifier = nombreux_illuminatos_modifier
+		}
+	}
+}
+
+country_event = {
+	id = majorie_events.24
+	title = "majorie_event.24t"
+	desc = "majorie_event.24d"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		OR = {
+			has_reform = illuminatos_council_reform
+			tag = LGW
+		}
+		NOT = {
+			has_country_modifier = quelques_illuminatos_modifier
+		}
+		check_variable = {
+			which = ControleIlluminatos
+			value = 2
+		}
+		NOT = {
+			check_variable = {
+				which = ControleIlluminatos
+				value = 4
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	option = {
+		name = "majorie_event.24a"
+		add_country_modifier = {
+				name = quelques_illuminatos_modifier
+				duration = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = rares_illuminatos_modifier
+			}
+			remove_country_modifier = rares_illuminatos_modifier
+		}
+		if = {
+			limit = {
+				has_country_modifier = multiples_illuminatos_modifier
+			}
+			remove_country_modifier = multiples_illuminatos_modifier
+		}
+		if = {
+			limit = {
+				has_country_modifier = nombreux_illuminatos_modifier
+			}
+			remove_country_modifier = nombreux_illuminatos_modifier
+		}
+	}
+}
+
+country_event = {
+	id = majorie_events.25
+	title = "majorie_event.25t"
+	desc = "majorie_event.25d"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		OR = {
+			has_reform = illuminatos_council_reform
+			tag = LGW
+		}
+		NOT = {
+			has_country_modifier = multiples_illuminatos_modifier
+		}
+		check_variable = {
+			which = ControleIlluminatos
+			value = 4
+		}
+		NOT = {
+			check_variable = {
+				which = ControleIlluminatos
+				value = 12
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	option = {
+		name = "majorie_event.25a"
+		add_country_modifier = {
+				name = multiples_illuminatos_modifier
+				duration = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = rares_illuminatos_modifier
+			}
+			remove_country_modifier = rares_illuminatos_modifier
+		}
+		if = {
+			limit = {
+				has_country_modifier = quelques_illuminatos_modifier
+			}
+			remove_country_modifier = quelques_illuminatos_modifier
+		}
+		if = {
+			limit = {
+				has_country_modifier = nombreux_illuminatos_modifier
+			}
+			remove_country_modifier = nombreux_illuminatos_modifier
+		}
+	}
+}
+
+country_event = {
+	id = majorie_events.26
+	title = "majorie_event.26t"
+	desc = "majorie_event.26d"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		OR = {
+			has_reform = illuminatos_council_reform
+			tag = LGW
+		}
+		NOT = {
+			has_country_modifier = nombreux_illuminatos_modifier
+		}
+		check_variable = {
+			which = ControleIlluminatos
+			value = 12
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	option = {
+		name = "majorie_event.26a"
+		add_country_modifier = {
+				name = nombreux_illuminatos_modifier
+				duration = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = rares_illuminatos_modifier
+			}
+			remove_country_modifier = rares_illuminatos_modifier
+		}
+		if = {
+			limit = {
+				has_country_modifier = quelques_illuminatos_modifier
+			}
+			remove_country_modifier = quelques_illuminatos_modifier
+		}
+		if = {
+			limit = {
+				has_country_modifier = multiples_illuminatos_modifier
+			}
+			remove_country_modifier = multiples_illuminatos_modifier
 		}
 	}
 }

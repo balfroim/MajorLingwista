@@ -12,13 +12,13 @@ estate_plebe =
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
-		yearly_corruption = -0.2
+		production_efficiency = 1.0
 	}
 	country_modifier_neutral = {
-		yearly_corruption = -0.1
+		production_efficiency = 0.5
 	}	
 	country_modifier_angry = {
-		yearly_corruption = 0.1
+		administrative_efficiency = -0.1
 	}
 
 	land_ownership_modifier = {
@@ -63,6 +63,8 @@ estate_plebe =
 	privileges = {
 		estate_plebe_discours
 		estate_plebe_coup_d_etat
+		estate_plebe_education
+		estate_plebe_apartheid
 	}
 
 	agendas = {

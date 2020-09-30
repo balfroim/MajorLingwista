@@ -173,9 +173,10 @@ country_event = {
 	trigger = {
 		has_global_flag = traitres_illuminatos
 		OR = {
-			has_reform = major_sole_elector_reform
+			has_reform = illuminatos_council_reform
 			has_reform = lingwista_monarchy_reform
 		}
+		ai = no
 	}
 
 	option = {
@@ -569,6 +570,33 @@ country_event = {
 				has_country_modifier = multiples_illuminatos_modifier
 			}
 			remove_country_modifier = multiples_illuminatos_modifier
+		}
+	}
+}
+
+country_event = {
+	id = majorie_events.27
+	title = "majorie_event.27t"
+	desc = "majorie_event.27d"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		ai = no
+		has_global_flag = illuminatos_annexed
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = {
+		name = "majorie_event.27t"
+		effect = {
+			subtract_variable = {
+				which = ControleIlluminatos
+				value = 1
+			}
+			clr_global_flag = illuminatos_annexed
 		}
 	}
 }

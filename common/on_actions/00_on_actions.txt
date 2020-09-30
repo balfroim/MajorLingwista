@@ -1309,6 +1309,10 @@ on_annexed = {
 			remove_country_modifier = primas_germaniae
 			set_global_flag = no_primas_germaniae
 		}
+		if = {
+			limit = { has_reform = illuminatos_council_reform }
+			set_global_flag = illuminatos_annexed
+		}
 	}
 }
 

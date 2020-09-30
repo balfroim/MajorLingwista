@@ -6807,6 +6807,36 @@ estate_illuminatos_war_council = {
 	}
 }
 
+estate_illuminatos_subvention = {
+	icon = privilege_grant_autonomy
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.10
+	influence = 0.10
+	can_select = {
+	}
+	on_granted = {
+		add_corruption = 1
+		add_estate_loyalty = {
+   			estate = estate_illuminatos
+ 			loyalty = 10
+		}
+	}
+	on_revoked = {
+		add_estate_loyalty = {
+   			estate = estate_illuminatos
+ 			loyalty = 20
+		}
+	}
+	penalties = {
+		yearly_corruption = 0.1
+	}
+	cooldown_years = 0
+	ai_will_do = {
+		factor = 0
+	}
+}
+
 estate_plebe_discours = {
 	icon = privilege_grant_autonomy
 	land_share = 0
@@ -6816,6 +6846,10 @@ estate_plebe_discours = {
 	can_select = {
 	}
 	on_granted = {
+		add_estate_loyalty = {
+   			estate = estate_plebe
+ 			loyalty = 10
+		}
 		country_event = {
 			id = council_events.2
 			days = 0
@@ -6848,17 +6882,83 @@ estate_plebe_coup_d_etat = {
 	}
 }
 
+estate_plebe_education = {
+	icon = privilege_grant_autonomy
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.00
+	influence = 0.00
+	can_select = {
+		NOT = { has_country_flag = plebe_apartheid }
+		primary_culture = modern_french
+	}
+	on_granted = {
+		set_country_flag = plebe_education
+		add_estate_loyalty = {
+   			estate = estate_plebe
+ 			loyalty = -10
+		}
+	}
+	on_revoked = {
+		clr_country_flag = plebe_education
+		add_estate_loyalty = {
+   			estate = estate_plebe
+ 			loyalty = 25
+		}
+	}
+	benefits = {
+		culture_conversion_cost = -0.50
+	}
+	cooldown_years = 0
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_plebe_apartheid = {
+	icon = privilege_grant_autonomy
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.20
+	influence = 0.20
+	can_select = {
+		NOT = { has_country_flag = plebe_education }
+		primary_culture = modern_french
+	}
+	on_granted = {
+		set_country_flag = plebe_apartheid
+		add_estate_loyalty = {
+   			estate = estate_plebe
+ 			loyalty = 10
+		}
+	}
+	on_revoked = {
+		clr_country_flag = plebe_apartheid
+	}
+	penalties = {
+		global_unrest = 1
+	}
+	cooldown_years = 0
+	ai_will_do = {
+		factor = 0
+	}
+}
+
 estate_natifs_conscription = {
 	icon = privilege_grant_autonomy
 	land_share = 0
 	max_absolutism = 5
-	loyalty = -0.10
-	influence = -0.05
+	loyalty = 0.00
+	influence = 0.00
 	can_select = {
 		NOT = { has_country_flag = conscription_reduced }
 	}
 	on_granted = {
-		add_yearly_manpower = 10
+		add_yearly_manpower = 2
+		add_estate_loyalty = {
+   			estate = estate_natifs
+ 			loyalty = -10
+		}
 	}
 	on_revoked = {
 		add_estate_loyalty = {
@@ -6869,7 +6969,7 @@ estate_natifs_conscription = {
 	benefits = {
 		global_manpower_modifier = 0.1
 	} 
-	cooldown_years = 0
+	cooldown_years = 1
 	ai_will_do = {
 		factor = 10
 	}
@@ -6879,8 +6979,8 @@ estate_natifs_conscription_reduite = {
 	icon = privilege_grant_autonomy
 	land_share = 0
 	max_absolutism = -5
-	loyalty = 0.10
-	influence = 0.05
+	loyalty = 0.20
+	influence = -0.10
 	can_select = {
 	}
 	on_granted = {
@@ -6889,6 +6989,10 @@ estate_natifs_conscription_reduite = {
 			remove_estate_privilege = estate_natifs_conscription
 		}
 		custom_tooltip = estate_natifs_conscription_remove
+		add_estate_loyalty = {
+   			estate = estate_natifs
+ 			loyalty = 10
+		}
 	}
 	on_revoked = {
 		clr_country_flag = conscription_reduced
@@ -6906,13 +7010,17 @@ estate_natifs_taxation_exceptionnelle = {
 	icon = privilege_grant_autonomy
 	land_share = 0
 	max_absolutism = 5
-	loyalty = -0.10
-	influence = -0.05
+	loyalty = 0.00
+	influence = 0.00
 	can_select = {
 		NOT = { has_country_flag = taxation_reduced}
 	}
 	on_granted = {
-		add_years_of_income = 1
+		add_years_of_income = 2
+		add_estate_loyalty = {
+   			estate = estate_natifs
+ 			loyalty = -10
+		}
 	}
 	on_revoked = {
 		add_estate_loyalty = {
@@ -6923,7 +7031,7 @@ estate_natifs_taxation_exceptionnelle = {
 	benefits = {
 		global_tax_modifier = 0.1
 	} 
-	cooldown_years = 0
+	cooldown_years = 1
 	ai_will_do = {
 		factor = 10
 	}
@@ -6933,8 +7041,8 @@ estate_natifs_taxation_reduite = {
 	icon = privilege_grant_autonomy
 	land_share = 0
 	max_absolutism = -5
-	loyalty = 0.10
-	influence = 0.05
+	loyalty = 0.20
+	influence = -0.10
 	can_select = {
 	}
 	on_granted = {
@@ -6943,6 +7051,10 @@ estate_natifs_taxation_reduite = {
 			remove_estate_privilege = estate_natifs_taxation_exceptionnelle
 		}
 		custom_tooltip = estate_natifs_taxation_remove
+		add_estate_loyalty = {
+   			estate = estate_natifs
+ 			loyalty = 10
+		}
 	}
 	on_revoked = {
 		clr_country_flag = taxation_reduced

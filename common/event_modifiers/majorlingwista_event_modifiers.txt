@@ -498,9 +498,9 @@ quelques_illuminatos_modifier = {
 }
 
 multiples_illuminatos_modifier = {
-	multiples_illuminatos = -0.1
+	multiples_illuminatos = -0.25
 }
 
 nombreux_illuminatos_modifier = {
-	nombreux_illuminatos = -0.2
+	nombreux_illuminatos = -0.5
 }

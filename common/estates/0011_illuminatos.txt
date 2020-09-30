@@ -12,15 +12,15 @@ estate_illuminatos =
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
-		technology_cost = -0.1
-		idea_cost = -0.1
+		technology_cost = -0.2
+		idea_cost = -0.2
 		innovativeness_gain = 0.5
 	}
 	country_modifier_neutral = {
 		technology_cost = -0.1
 	}	
 	country_modifier_angry = {
-		yearly_corruption = 0.5
+		innovativeness_gain = -0.5
 	}
 
 	land_ownership_modifier = {
@@ -49,6 +49,7 @@ estate_illuminatos =
 	privileges = {
 		estate_illuminatos_twitch
 		estate_illuminatos_war_council
+		estate_illuminatos_subvention
 	}
 
 	agendas = {

@@ -164,6 +164,10 @@ l_english:
     estate_plebe_coup_d_etat_desc:0 "Faisons un coup d'Etat avec le soutien de la Plèbe pour se passer des illuminatos."
     terre_nesblog_plebe:0 "Augmente la loyauté moyenne de la Plèbe."
     haute_marne_plebe:0 "Augmente la loyauté moyenne de la Plèbe."
+    estate_plebe_education:0 "Education plébéienne des Natifs"
+    estate_plebe_education_desc:0 "La Plèbe sera mécontente, mais nous pourrons plus facilement faire intégrer les Natifs à la Plèbe."
+    estate_plebe_apartheid:0 "Instaurer un régime d'Apartheid"
+    estate_plebe_apartheid_desc:0 "En séparant dans la vie de tous les jours la Plèbe des Natifs, nous nous assurons de la loyauté de la Plèbe.
    # Natifs
     estate_natifs:0 "Les Natifs"
     estate_natifs_desc:0 "Les Natifs sont les malheureux ayant vu leur pays pris en hôtage par le Major et ses illuminatos."

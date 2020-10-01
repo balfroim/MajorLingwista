@@ -728,10 +728,6 @@ country_event = {
 	option = {
 		name = "majorie_event.30t"
 		effect = {
-			subtract_variable = {
-				which = ControleIlluminatos
-				value = 1
-			}
 			clr_global_flag = aliens_arrivent
 		}
 	}

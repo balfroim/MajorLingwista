@@ -455,6 +455,8 @@ l_english:
     majorie_event.30d:0 "Les Aliens n'ont pas attendu le XXIème siècle pour passer à l'attaque. Espérons que nos préparatifs eurent été suffisant."
     ALI:0 "Aliens"
     ALI_ADJ:0 "Aliens"
+    gov_alien:0 "Expédition alien"
+    ALIEN:0 "Chef Alien"
     aliens:0 "Aliens"
     aliensDESCR:0 "Les extra-terrestres qui ont envahi la Terre au XXIème siècle."
     xenomorphes:0 "Xenomorphes"

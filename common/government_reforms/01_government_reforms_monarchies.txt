@@ -19,6 +19,9 @@ feudalism_reform = {
 	icon = "castle"
 	allow_normal_conversion = yes
 	legacy_equivalent = feudal_monarchy
+	potential = {
+		NOT = { tag = LGW }
+	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	modifiers = {
@@ -36,6 +39,9 @@ autocracy_reform = {
 	icon = "crown"
 	allow_normal_conversion = yes
 	legacy_equivalent = despotic_monarchy
+	potential = {
+		NOT = { tag = LGW }
+	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	modifiers = {
@@ -51,6 +57,7 @@ plutocratic_reform = {
 	allow_normal_conversion = yes
 	legacy_equivalent = despotic_monarchy
 	potential = {
+		NOT = { tag = LGW }
 		OR = {
 			technology_group = indian
 			technology_group = muslim
@@ -89,6 +96,7 @@ austrian_archduchy_reform = {
 	legacy_equivalent = austrian_archduchy
 	valid_for_nation_designer = yes
 	potential = {
+		NOT = { tag = LGW }
 		OR = {
 			tag = HAB
 			was_tag = HAB
@@ -109,6 +117,7 @@ grand_duchy_reform = {
 	icon = "peasants"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		OR = {
 			AND = {
 				tag = LIT
@@ -133,6 +142,7 @@ indian_sultanate_reform = {
 	icon = "indian_sultanate"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		OR = {
 			capital_scope = {
 				superregion = india_superregion
@@ -167,6 +177,7 @@ shogunate = {
 	icon = "shogunate"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		NOT = { has_country_flag = formed_japan_flag }
 		OR = {
 			AND = {
@@ -212,6 +223,7 @@ daimyo = {
 	icon = "daimyo"
 	allow_normal_conversion = no
 	potential = {
+		NOT = { tag = LGW }
 		NOT = { has_country_flag = formed_japan_flag }
 		overlord = { has_reform = shogunate }
 	}
@@ -239,6 +251,7 @@ indep_daimyo = {
 	icon = "samurai"
 	allow_normal_conversion = no
 	potential = {
+		NOT = { tag = LGW }
 		NOT = { has_country_flag = formed_japan_flag }
 		OR = {
 			AND = {
@@ -279,6 +292,7 @@ celestial_empire = {
 	icon = "celestial_empire"
 	allow_normal_conversion = no
 	potential = {
+		NOT = { tag = LGW }
 		if = {
 			limit = {
 				has_dlc = "Mandate of Heaven"
@@ -349,6 +363,7 @@ elective_monarchy = {
 	icon = "elective_monarchy"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		OR = {
 			has_reform = elective_monarchy
 			AND = {
@@ -384,6 +399,7 @@ iqta = {
 	icon = "muslim"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		religion_group = muslim
 	}
 	valid_for_nation_designer = yes
@@ -411,6 +427,7 @@ english_monarchy = {
 	icon = "british_queen"
 	allow_normal_conversion = no
 	potential = {
+		NOT = { tag = LGW }
 		have_had_reform = english_monarchy
 	}
 	lock_level_when_selected = yes
@@ -443,6 +460,7 @@ ottoman_government = {
 	allow_normal_conversion = yes
 	icon = "ottoman_government"
 	potential = {
+		NOT = { tag = LGW }
 		religion_group = muslim
 		OR = {
 			AND = {
@@ -491,6 +509,7 @@ prussian_monarchy = {
 	icon = "prussian_monarchy"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		OR = {
 			AND = {
 				tag = PRU
@@ -562,6 +581,7 @@ principality = {
 	icon = "russian_principality"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		NOT = { has_reform = tsardom }
 		NOT = { have_had_reform = tsardom }
 		religion = orthodox
@@ -599,6 +619,7 @@ tsardom = {
 	icon = "king"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		religion = orthodox
 		OR = {
 			AND = {
@@ -645,6 +666,7 @@ mamluk_government = {
 	icon = "mamluk_government"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		religion_group = muslim
 		OR = {
 			AND = {
@@ -689,6 +711,7 @@ feudal_theocracy = {
 	icon = "feudal_theocracy"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		OR = {
 			AND = {
 				religion_group = muslim
@@ -727,6 +750,7 @@ mughal_government = {
 	icon = "peacock_throne"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		has_dlc = "Dharma"
 		AND = {
 			tag = MUG
@@ -885,6 +909,7 @@ revolutionary_empire_reform = {
 	icon = "rioting_burning_2"
 	allow_normal_conversion = no
 	potential = {
+		NOT = { tag = LGW }
 		has_reform = revolutionary_empire_reform
 	}
 	legacy_equivalent = revolutionary_empire
@@ -944,6 +969,7 @@ mandala_reform = {
 	icon = "mandala_system"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		NOT = { religion = shinto }
 		NOT = { religion = confucianism }
 		OR = {
@@ -978,6 +1004,7 @@ nayankara_reform = {
 	icon = "nayankara_system"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		has_dlc = "Dharma"
 		technology_group = indian
 		OR = {
@@ -1020,6 +1047,7 @@ misl_confederacy_reform = {
 	allow_normal_conversion = yes
 	icon = "misl_confederacy"
 	potential = {
+		NOT = { tag = LGW }
 		has_dlc = "Dharma"
 		religion = sikhism
 	}
@@ -1039,6 +1067,7 @@ rajput_kingdom = {
 	icon = "rajput_kingdom"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		has_dlc = "Dharma"
 		OR = {
 			culture_group = western_aryan
@@ -1067,6 +1096,7 @@ gond_kingdom = {
 	icon = "chieftain"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		has_dlc = "Dharma"
 		technology_group = indian
 		primary_culture = gondi
@@ -1105,6 +1135,7 @@ enforce_privileges_reform = {
 	icon = "people_walking"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		is_revolutionary = no
 	}
 	modifiers = {
@@ -1123,6 +1154,7 @@ quash_noble_power_reform = {
 	icon = "king_2"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		is_revolutionary = no
 	}
 	modifiers = {
@@ -1144,6 +1176,7 @@ enforce_trader_privileges_reform = {
 	icon = "paper_money_map"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		is_reform_available = plutocratic_reform
 		OR = {
 			technology_group = indian
@@ -1178,6 +1211,7 @@ bengali_reform = {
 	icon = "merchant_ship"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		has_dlc = "Dharma"
 		primary_culture = bengali
 		religion_group = muslim
@@ -1195,6 +1229,7 @@ sufi_syncretism_reform = {
 	icon = "muslim"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		has_dlc = "Dharma"
 		primary_culture = bengali
 		religion_group = muslim
@@ -1212,6 +1247,7 @@ poligar_reform = {
 	icon = "indian_crown"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		has_dlc = "Dharma"
 		technology_group = indian
 		OR = {
@@ -1233,6 +1269,7 @@ khalsa_reform = {
 	icon = "strength_of_the_khalsa"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		has_dlc = "Dharma"
 		religion = sikhism
 	}
@@ -1250,6 +1287,7 @@ deccani_society_reform = {
 	icon = "noble_indian"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		has_dlc = "Dharma"
 		is_revolutionary = no
 		technology_group = indian
@@ -1271,6 +1309,7 @@ black_army_reform = {
 	icon = "black_army_reform"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		tag = HUN
 		has_country_flag = black_army_reform_flag
 		is_revolutionary = no
@@ -1289,6 +1328,7 @@ legion_of_honor_reform = {
 	icon = "legion_of_honor_reform"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		is_revolutionary = yes
 	}
 	modifiers = {
@@ -1306,6 +1346,7 @@ imperial_nobility_reform = {
 	icon = "imperial_nobility_reform"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		is_revolutionary = yes
 	}
 	modifiers = {
@@ -1342,6 +1383,7 @@ centralize_reform = {
 	icon = "paper_with_seal_3"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		OR = {
 			is_revolutionary = no
 			NOT = { has_dlc = "Emperor" }
@@ -1356,6 +1398,7 @@ decentralize_reform = {
 	icon = "map"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		OR = {
 			is_revolutionary = no
 			NOT = { has_dlc = "Emperor" }
@@ -1382,6 +1425,7 @@ sidhi_recruitment = {
 	icon = "siddhi_recruitment"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		has_dlc = "Dharma"
 		technology_group = indian
 		religion_group = muslim
@@ -1403,6 +1447,7 @@ mansabdari_reform = {
 	icon = "noble_muslim"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		tag = MUG
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "Dharma"
@@ -1433,6 +1478,7 @@ clergy_in_administration_reform = {
 	icon = "religious_leader"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		OR = {
 			is_revolutionary = no
 			NOT = { has_dlc = "Emperor" }
@@ -1472,6 +1518,7 @@ of_noble_bearing_reform = {
 	icon = "nobleman"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		OR = {
 			is_revolutionary = no
 			NOT = { has_dlc = "Emperor" }
@@ -1531,6 +1578,7 @@ meritocratic_focus_reform = {
 	icon = "merchant"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		OR = {
 			is_revolutionary = no
 			NOT = { has_dlc = "Emperor" }
@@ -1582,6 +1630,7 @@ dakhni_culture_reform = {
 	icon = "indian_crown"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		has_dlc = "Dharma"
 		technology_group = indian
 		religion_group = muslim
@@ -1602,6 +1651,7 @@ zabt_reform = {
 	icon = "general_eastern_administrative"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		has_dlc = "Dharma"
 		tag = MUG
 	}
@@ -1632,6 +1682,7 @@ royal_decree_reform = {
 	icon = "king"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		is_revolutionary = no
 	}
 	modifiers = {
@@ -1645,6 +1696,9 @@ royal_decree_reform = {
 aristocratic_court_reform = {
 	icon = "soldiers_2"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { tag = LGW }
+	}
 	modifiers = {
 		army_tradition_decay = -0.003
 	}
@@ -1657,6 +1711,7 @@ states_general_reform = {
 	icon = "states_general"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		is_revolutionary = no
 	}
 	trigger = {
@@ -1702,6 +1757,7 @@ general_estates_reform = {
 	icon = "paper_with_seal"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		is_revolutionary = no
 	}
 	modifiers = {
@@ -1721,6 +1777,7 @@ legislative_sejm = {
 	allow_normal_conversion = yes
 	
 	potential = {
+		NOT = { tag = LGW }
 		has_reform = elective_monarchy
 		has_dlc = "Res Publica"
 	}
@@ -1745,6 +1802,7 @@ integrated_sejmiks = {
 	allow_normal_conversion = yes
 	
 	potential = {
+		NOT = { tag = LGW }
 		has_reform = elective_monarchy
 		has_dlc = "Res Publica"
 	}
@@ -1766,6 +1824,7 @@ imperial_decree_reform = {
 	icon = "king"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		is_revolutionary = yes
 	}
 	modifiers = {
@@ -1792,6 +1851,9 @@ lingwista_monarchy4_reform = {
 letat_cest_moi_reform = {
 	icon = "queen"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { tag = LGW }
+	}
 	modifiers = {
 		governing_capacity = 250
 	}
@@ -1807,6 +1869,9 @@ letat_cest_moi_reform = {
 regional_representation_reform = {
 	icon = "assembly_hall"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { tag = LGW }
+	}
 	modifiers = {
 		min_autonomy_in_territories = -0.10
 	}
@@ -1816,6 +1881,7 @@ consulate_reform = {
 	icon = "revolutionary_republic"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		is_revolutionary = yes
 	}
 	modifiers = {
@@ -1846,6 +1912,7 @@ political_absolutism_reform = {
 	icon = "judge"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		is_revolutionary = no
 	}
 	modifiers = {
@@ -1865,6 +1932,7 @@ legislative_houses_reform = {
 	icon = "parliament_hall"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		is_revolutionary = no
 	}
 	modifiers = {
@@ -1876,6 +1944,7 @@ become_a_republic_reform = {
 	icon = "parliament_highlighted"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		is_revolutionary = no
 	}
 	trigger = {
@@ -1897,6 +1966,7 @@ install_theocratic_government_reform = {
 	icon = "pope_highlighted"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		is_revolutionary = no
 	}
 	trigger = {
@@ -1918,6 +1988,7 @@ emperor_of_the_revolution_reform = {
 	icon = "emperor_of_the_revolution_reform"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		is_revolutionary = yes
 	}
 	modifiers = {
@@ -1932,6 +2003,7 @@ enlightened_monarchy_reform = {
 	icon = "enlightened_monarchy_reform"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { tag = LGW }
 		is_revolutionary = yes
 	}
 	modifiers = {
@@ -1948,6 +2020,7 @@ become_rev_republic_reform = {
 	allow_normal_conversion = yes
 
 	potential = { 
+		NOT = { tag = LGW }
 		is_revolutionary = yes
 	}
 	

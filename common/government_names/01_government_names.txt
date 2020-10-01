@@ -1,6 +1,90 @@
 # For specific government types
 # Will pick the first valid one it finds in list
 
+gov_illuminatos = {
+	rank = {
+		1 = illuminatos_council_reform
+		2 = illuminatos_council_reform
+		3 = illuminatos_council_reform
+	}
+
+	ruler_male = {
+		1 = ILLUMINATO
+		2 = ILLUMINATO
+		3 = ILLUMINATO
+	}
+	
+	ruler_female = {
+		1 = ILLUMINATO
+		2 = ILLUMINATO
+		3 = ILLUMINATO
+	}
+	
+	trigger = {
+		has_reform = illuminatos_council_reform
+	}
+}
+
+gov_lingwista = {
+	rank = {
+		1 = gov_lingwista
+		2 = gov_lingwista
+		3 = gov_lingwista
+	}
+
+	ruler_male = {
+		1 = MAJOR
+		2 = MAJOR
+		3 = MAJOR
+	}
+	
+	ruler_female = {
+		1 = MAJOR
+		2 = MAJOR
+		3 = MAJOR
+	}
+	
+	consort_male = {
+		1 = MAJOR_CONSORT
+		2 = MAJOR_CONSORT
+		3 = MAJOR_CONSORT
+	}
+
+	consort_female = {
+		1 = MAJOR_CONSORT
+		2 = MAJOR_CONSORT
+		3 = MAJOR_CONSORT
+	}
+	
+	trigger = {
+		has_reform = lingwista_monarchy_reform
+	}
+}
+
+gov_Alien = {
+	rank = {
+		1 = gov_alien
+		2 = gov_alien
+		3 = gov_alien
+	}
+
+	ruler_male = {
+		1 = ALIEN
+		2 = ALIEN
+		3 = ALIEN
+	}
+	
+	ruler_female = {
+		1 = ALIEN
+		2 = ALIEN
+		3 = ALIEN
+	}
+	
+	trigger = {
+		has_reform = alien1_reform
+	}
+}
+
 gov_steppe_horde = {
 	rank = {
 		1 = HORDE
@@ -1124,65 +1208,5 @@ gov_religious_order = {
 				tag = KOJ
 			}
 		}
-	}
-}
-
-gov_illuminatos = {
-	rank = {
-		1 = illuminatos_council_reform
-		2 = illuminatos_council_reform
-		3 = illuminatos_council_reform
-	}
-
-	ruler_male = {
-		1 = ILLUMINATO
-		2 = ILLUMINATO
-		3 = ILLUMINATO
-	}
-	
-	ruler_female = {
-		1 = ILLUMINATO
-		2 = ILLUMINATO
-		3 = ILLUMINATO
-	}
-	
-	trigger = {
-		has_reform = illuminatos_council_reform
-	}
-}
-
-gov_lingwista = {
-	rank = {
-		1 = gov_lingwista
-		2 = gov_lingwista
-		3 = gov_lingwista
-	}
-
-	ruler_male = {
-		1 = MAJOR
-		2 = MAJOR
-		3 = MAJOR
-	}
-	
-	ruler_female = {
-		1 = MAJOR
-		2 = MAJOR
-		3 = MAJOR
-	}
-	
-	consort_male = {
-		1 = MAJOR_CONSORT
-		2 = MAJOR_CONSORT
-		3 = MAJOR_CONSORT
-	}
-
-	consort_female = {
-		1 = MAJOR_CONSORT
-		2 = MAJOR_CONSORT
-		3 = MAJOR_CONSORT
-	}
-	
-	trigger = {
-		has_reform = lingwista_monarchy_reform
 	}
 }

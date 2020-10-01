@@ -20,6 +20,9 @@ technology = {
 	enable = acolytes_des_illustres
 	enable = acolytes_des_illustres_a_cheval
 	enable = batterie_laser
+	enable = aliens
+	enable = xenomorphes
+	enable = predators
 }
 
 technology = {

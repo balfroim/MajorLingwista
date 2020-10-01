@@ -20,26 +20,14 @@ historical_idea_groups = {
 }
 
 historical_units = {
-	western_medieval_infantry
-	chevauchee
-	western_men_at_arms
-	swiss_landsknechten
-	dutch_maurician
-	french_caracolle
-	anglofrench_line
-	french_dragoon
-	french_bluecoat
-	french_cuirassier
-	french_impulse
-	mixed_order_infantry
-	open_order_cavalry
-	napoleonic_square
-	napoleonic_lancers
+	acolytes_des_illustres
+	acolytes_des_illustres_a_cheval
+	batterie_laser
 }
 
 monarch_names = {
 	"Lingwista #1" = 60
-	"Monté #0" = 40
+	"MontÃ© #0" = 40
 	"Bourageur #0" = 30
 	"Jean-Pierre #0" = 20
 	"Hans-Pierre #0" = 20
@@ -56,23 +44,23 @@ monarch_names = {
 }
 
 leader_names = {
-	Nançon Couesnon "de Michel" "du futur" "pas du futur" "du désert" "de Landéan" "le perdu" "l'acolyte des illustres" "de Nes"
-	"du château" "de la casse" "qui vit vers le Zozan" "de la chesnedet" Guéhenno "du rocher coupé" "du Grenier" "le sans papiers"
-	"le voyageur temporel" "du temple de la lune" "l'illuminato" "de Lécousse" "des Cotterêts" "du forum de la gare" "le gallo"
-	"le bretonneux" "le social traitre" "le myope" Spidreuneur Groslay "qui a sub" "le tipeur" "l'inflitré du futur"
+	NanÃ§on Couesnon "de Michel" "du futur" "pas du futur" "du dÃ©sert" "de LandÃ©an" "le perdu" "l'acolyte des illustres" "de Nes"
+	"du chÃ¢teau" "de la casse" "qui vit vers le Zozan" "de la chesnedet" GuÃ©henno "du rocher coupÃ©" "du Grenier" "le sans papiers"
+	"le voyageur temporel" "du temple de la lune" "l'illuminato" "de LÃ©cousse" "des CotterÃªts" "du forum de la gare" "le gallo"
+	"le bretonneux" "le social traitre" "le myope" Spidreuneur Groslay "qui a sub" "le tipeur" "l'inflitrÃ© du futur"
 }
 
 ship_names = {
-	"le Mauvais" "Le Raoult" "le Grammarnazi" "le Templiste" "le Futuriste" "le Passéiste"
-	"la Faille temporelle" "l'Académiste" "le Zozan" "le Major" "le Monté" "le Breton"
-	"le Gallo" "le Bretonneux" "le Nançon" "le Couesnon" "le Jardiland" "le Bricomarché" "le Gifi"
-	"le Carrefour market" "le chateau" "le SuperU Drive" "le Buffalo Grill" "le Vidéaste" "l'Ingérent"
-	"le Tipeur" "le Utipeur" "le Sub" "le Don" "le Bit" "l'Abonné" "le Foloeur" "le Kenavo"
+	"le Mauvais" "Le Raoult" "le Grammarnazi" "le Templiste" "le Futuriste" "le PassÃ©iste"
+	"la Faille temporelle" "l'AcadÃ©miste" "le Zozan" "le Major" "le MontÃ©" "le Breton"
+	"le Gallo" "le Bretonneux" "le NanÃ§on" "le Couesnon" "le Jardiland" "le BricomarchÃ©" "le Gifi"
+	"le Carrefour market" "le chateau" "le SuperU Drive" "le Buffalo Grill" "le VidÃ©aste" "l'IngÃ©rent"
+	"le Tipeur" "le Utipeur" "le Sub" "le Don" "le Bit" "l'AbonnÃ©" "le Foloeur" "le Kenavo"
 }
 
 army_names = {
-	 "Armée de la forêt"     "Armée de Fougères"     "Armée du Nançon"	 
-	 "Armée du Ruisseau"     "Armée du Futur"        "Armée de l'Internet"
-	 "Armée perso du Major"  "Armée des subs"        "Armée des abonnés"
-	 "Armée de $PROVINCE$" 
+	 "ArmÃ©e de la forÃªt"     "ArmÃ©e de FougÃ¨res"     "ArmÃ©e du NanÃ§on"	 
+	 "ArmÃ©e du Ruisseau"     "ArmÃ©e du Futur"        "ArmÃ©e de l'Internet"
+	 "ArmÃ©e perso du Major"  "ArmÃ©e des subs"        "ArmÃ©e des abonnÃ©s"
+	 "ArmÃ©e de $PROVINCE$" 
 }

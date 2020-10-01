@@ -1,6 +1,7 @@
 namespace = majorie_events
 
 ### Events 0X RP de base
+#start event
 country_event = {
 	id = majorie_events.01
 	title = "majorie_event.01t"
@@ -24,6 +25,7 @@ country_event = {
 	}
 }
 
+#les illuminatos prennent le contrôle
 country_event = {
 	id = majorie_events.02
 	title = "majorie_event.02t"
@@ -61,7 +63,8 @@ country_event = {
 		}
 	}
 }
-		
+
+#conseil des illuminatos
 country_event = {
 	id = majorie_events.03
 	title = "majorie_event.03t"
@@ -77,6 +80,7 @@ country_event = {
 	}
 }
 
+#le major met de coté les illuminatos
 country_event = {
 	id = majorie_events.04
 	title = "majorie_event.04t"
@@ -114,6 +118,7 @@ country_event = {
 	}
 }
 
+#le major est immortel
 country_event = {
 	id = majorie_events.05
 	title = "majorie_event.05t"
@@ -133,6 +138,7 @@ country_event = {
 	}
 }
 
+#illuminatos mécontents
 country_event = {
 	id = majorie_events.06
 	title = "majorie_event.07t"
@@ -143,6 +149,7 @@ country_event = {
 		ai = yes
 		has_global_flag = angry_illuminatos
 		is_great_power = yes
+		NOT = { has_country_flag = illuminatos_alliance }
 	}
 	
 	mean_time_to_happen = {
@@ -156,14 +163,20 @@ country_event = {
 			change_government = republic
 		}
 		set_global_flag = traitres_illuminatos
+		set_country_flag = illuminatos_renegats
 		clr_global_flag = angry_illuminatos
 		country_event = {
 			id = majorie_events.03
 			days = 0
 		}
+		country_event = {
+			id = majorie_events.08
+			days = 1
+		}
 	}
 }
 
+#illuminatos traitres
 country_event = {
 	id = majorie_events.07
 	title = "majorie_event.07t"
@@ -192,6 +205,43 @@ country_event = {
 	}
 }
 
+#alliance des illuminatos
+country_event = {
+	id = majorie_events.08
+	title = "majorie_event.08t"
+	desc = "majorie_event.08t"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = illuminatos_renegats
+		NOT = { has_country_flag = illuminatos_alliance }
+	}
+
+	option = {
+		every_country = {
+			limit = { has_country_flag = illuminatos_alliance }
+			remove_historical_rival = ROOT
+			create_alliance = ROOT
+			add_trust = {
+				who = ROOT
+				value = 50
+				mutual = yes
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = illuminatos_renegats_modifier
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = illuminatos_renegats_modifier
+			}
+		}
+		set_country_flag = illuminatos_alliance
+	}
+}
+
 ### Events 1X Decisions
 country_event = {
 	id = majorie_events.10
@@ -204,10 +254,7 @@ country_event = {
 		name = "majorie_event.10a"
 		change_primary_culture = modern_french
 		set_ruler_culture = modern_french
-		capital_scope = {
-			limit = { LGW }
-			change_culture = modern_french
-		}
+		capital_scope = { change_culture = modern_french }
 	}
 	option = {
 		name = "error_event.0t"

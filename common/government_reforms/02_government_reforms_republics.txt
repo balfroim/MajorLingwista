@@ -2114,6 +2114,9 @@ appointment_by_major_reform = {
 		global_spy_defence = 0.25
 		tolerance_own = 1
 	}
+	effect = {
+		set_global_flag = angry_illuminatos
+	}
 }
 
 cooptation_reform = {

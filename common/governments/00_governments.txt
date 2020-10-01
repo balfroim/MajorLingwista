@@ -1,760 +1,2528 @@
+defaults_reform = {
+	valid_for_new_country = yes
+	allow_convert = yes
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	fixed_rank = 0
+	republican_name = no
+	militarised_society = no
+	government_abilities = { }
+	claim_states = no
+	religion = no
+	republic = no
+	dictatorship = no
+	is_elective = no
+	queen = no
+	heir = no
+	has_parliament = no
+	has_devotion = no
+	has_meritocracy = no
+	allow_force_tributary = yes
+	duration = 0
+	election_on_death = no
+	monarchy = no
+	tribal = no
+	different_religion_acceptance = 0
+	different_religion_group_acceptance = 0
+	boost_income = no
+	monastic = no
+	can_use_trade_post = no
+	native_mechanic = no
+	can_form_trade_league = no
+	free_city = no
+	is_trading_city = no
+	trade_city_reform = ""
+	maintain_dynasty = no
+	allow_migration = no
+	nation_designer_trigger = { }
+	nation_designer_cost = 0
+	papacy = no
+	has_harem = no
+	has_pashas = no
+	allow_vassal_war = no
+	allow_vassal_alliance = no
+	min_autonomy = 0
+	factions_frame = 2
+	factions = { }
+	foreign_slave_rulers = no
+	royal_marriage = yes
+	nomad = no
+	assimilation_cultures = { }
+	states_general_mechanic = { }
+	valid_for_nation_designer = yes
+	allow_normal_conversion = yes
+	start_territory_to_estates = 0.8
+	has_term_election = no
+	force_admiral_leader = no
+	admirals_become_rulers = no
+	generals_become_rulers = no
+	allow_banners = no
+	uses_revolutionary_zeal = no
+	revolutionary = no
+	revolutionary_client_state = no
+	disallowed_trade_goods = {}
+}
 
-monarchy = {
-	reform_levels = {
-		feudalism_vs_autocracy = {
-			reforms = {
-				feudalism_reform
-				autocracy_reform
-				plutocratic_reform
-				indian_sultanate_reform
-				nayankara_reform
-				misl_confederacy_reform
-				rajput_kingdom
-				#Specific:
-				grand_duchy_reform
-				daimyo
-				indep_daimyo
-				elective_monarchy
-				iqta
-				ottoman_government
-				prussian_monarchy
-				austrian_dual_monarchy
-				principality
-				tsardom
-				mamluk_government
-				feudal_theocracy
-				celestial_empire
-				shogunate
-				english_monarchy
-				mandala_reform
-				revolutionary_empire_reform
-				holy_state_reform
-				austrian_archduchy_reform
-				lingwista_monarchy_reform
+# legacy governments
+
+despotic_monarchy = {
+	# government mechanics flags go here
+	icon = "crown"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	monarchy = yes
+	modifiers = {
+    	governing_capacity = 50
+		global_unrest = -1
+		unjustified_demands = -0.1
+		max_absolutism = 5
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+feudal_monarchy = {
+	icon = "castle"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	monarchy = yes
+	modifiers = {
+		governing_capacity = 100
+		global_manpower_modifier = 0.1
+		vassal_income = 0.25
+	}
+	ai = {
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = {
+				has_idea_group = aristocracy_ideas
+				has_reform = feudal_monarchy
 			}
 		}
-		hereditary_vs_nobility = {
-			reforms = {
-				enforce_privileges_reform
-				quash_noble_power_reform
-				enforce_trader_privileges_reform
-				bengali_reform
-				sufi_syncretism_reform
-				poligar_reform
-				khalsa_reform
-				deccani_society_reform
-				mughal_government
-				black_army_reform
-				legion_of_honor_reform
-				imperial_nobility_reform
-				lingwista_monarchy1_reform
-			}
+	}
+}
+
+####################################
+#
+#Monarchies
+#
+####################################
+
+lingwista_monarchy = {
+	# government mechanics flags go here
+	icon = "paper_with_seal_3"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	monarchy = yes
+	trigger = {	tag = LGW	}
+	modifiers = {
+    	governing_capacity = 150
+		production_efficiency = 0.5
+		global_autonomy = -0.05
+		max_absolutism = 50
+	}
+
+	custom_attributes = {
+		blocked_call_diet = yes
+	}
+}
+
+administrative_monarchy = {
+	# government mechanics flags go here
+	icon = "paper_with_seal"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = no
+	monarchy = yes
+	modifiers = {
+    	governing_capacity = 150
+		production_efficiency = 0.1
+		global_tax_modifier = 0.05
+		global_autonomy = -0.025
+	}
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 3
+			has_idea_group = economic_ideas
 		}
-		bureaucracy = {
-			reforms = {
-				centralize_reform
-				decentralize_reform
-				sidhi_recruitment
-				mansabdari_reform
-				council_of_the_indies_reform
-				penal_colonies_reform
-				liberte_reform
-				fraternite_reform
-				lingwista_monarchy2_reform
-			}
+		modifier = {
+			factor = 3
+			has_idea_group = trade_ideas
 		}
-		growth_of_administration = {
-			reforms = {
-				clergy_in_administration_reform
-				of_noble_bearing_reform
-				meritocratic_focus_reform
-				dakhni_culture_reform
-				zabt_reform
-				permanent_marathas_council_reform
-				governmental_purbias_register_reform
-				revolutionary_principle_reform
-				equality_principle_reform
-				imperial_principle_reform
-				lingwista_monarchy3_reform
-			}
+	}
+}
+
+constitutional_monarchy = {
+	# government mechanics flags go here
+	icon = "constitution"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = no
+	monarchy = yes
+	modifiers = {
+    	governing_capacity = 150
+		years_of_nationalism = -5
+		legitimacy = 1
+		global_autonomy = -0.075
+		max_absolutism = -30
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
 		}
-		deliberative_assembly = {
-			reforms = {
-				parliamentary_reform
-				royal_decree_reform
-				aristocratic_court_reform
-				general_estates_reform
-				states_general_reform
-				legislative_sejm
-				integrated_sejmiks
-				feuillant_reform
-				two_chamber_reform
-				imperial_decree_reform
-				lingwista_monarchy4_reform
-			}
+		has_parliament = yes
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 2
+			has_idea_group = humanist_ideas
 		}
-		absolute_rule_vs_constitutional = {
-			reforms = {
-				letat_cest_moi_reform
-				regional_representation_reform
-				consulate_reform
-				military_electorate_reform
-				lingwista_monarchy5_reform
-			}
+		modifier = {
+			factor = 2
+			has_idea_group = innovativeness_ideas
 		}
-		separation_of_power = {
-			reforms = {
-				political_absolutism_reform
-				legislative_houses_reform
-				become_a_republic_reform
-				install_theocratic_government_reform
-				emperor_of_the_revolution_reform
-				enlightened_monarchy_reform
-				become_rev_republic_reform
-				lingwista_monarchy6_reform
+	}
+
+	custom_attributes = {
+		blocked_call_diet = yes
+	}
+}
+
+
+enlightened_despotism = {
+	# government mechanics flags go here
+	icon = "paper_with_seal_3"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = no
+	monarchy = yes
+	modifiers = {
+    	governing_capacity = 150
+		num_accepted_cultures = 2
+		global_manpower_modifier = 0.1
+		global_autonomy = -0.075
+		max_absolutism = 10
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+holy_state_legacy = {
+	icon = "religious_leader"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_trigger = {
+		religion = catholic
+	}
+	monarchy = yes
+	modifiers = {
+    	governing_capacity = 100
+		cb_on_religious_enemies = yes
+		manpower_recovery_speed = 0.15
+		global_autonomy = -0.2
+	}
+}
+
+revolutionary_empire = {
+	# government mechanics flags go here
+	icon = "rioting_burning"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	monarchy = yes
+	revolutionary = yes
+	modifiers = {
+    	governing_capacity = 150
+		global_manpower_modifier = 0.25
+		land_morale = 0.10
+		global_autonomy = -0.2
+	}
+	removed_effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = is_revolutionary_china_flag
+					is_revolutionary = no
+				}
+				clr_country_flag = is_revolutionary_china_flag
+				restore_country_name = yes
+				override_country_name = CHINA_STRING
+				set_country_flag = is_china_flag
+			}
+			if = {
+				limit = {
+					has_country_flag = is_revolutionary_turkey_flag
+					is_revolutionary = no
+				}
+				clr_country_flag = is_revolutionary_turkey_flag
+				restore_country_name = yes
+				override_country_name = TURKEY_STRING
+				set_country_flag = is_turkey_flag
+			}
+			if = {
+				limit = {
+					has_country_flag = is_revolutionary_gurkani_flag
+					is_revolutionary = no
+				}
+				clr_country_flag = is_revolutionary_gurkani_flag
+				restore_country_name = yes
+				override_country_name = GURKANI_EMPIRE_STRING
+				set_country_flag = is_gurkani_flag
 			}
 		}
 	}
 
-	basic_reform = monarchy_mechanic
+	ai = {
+		factor = 0
+	}
+}
 
-	legacy_government = {
-		despotic_monarchy
-		feudal_monarchy
-		administrative_monarchy
-		constitutional_monarchy
-		enlightened_despotism
-		revolutionary_empire
-		english_monarchy_legacy
-		mamluk_government_legacy
-		feudal_theocracy_legacy
-		elective_monarchy_legacy
-		celestial_empire_legacy
-		ottoman_government_legacy
-		prussian_monarchy_legacy
-		iqta_legacy
-		daimyo_legacy
-		shogunate_legacy
-		indep_daimyo_legacy
-		principality_legacy
-		tsardom_legacy
-		holy_state_legacy
-		lingwista_monarchy
+####################################
+#
+#Republics
+#
+####################################
+
+illuminatos_council = {
+	# government mechanics flags go here
+	icon = "people_walking"
+	allow_normal_conversion = no
+	legacy_government = yes
+	republic = yes
+	valid_for_new_country = no
+	allow_convert = no
+	valid_for_nation_designer = no
+	republican_name = yes
+	royal_marriage = no
+	trigger = {	tag = LGW	}
+	modifiers = {
+		reform_progress_growth = 0.5
+		country_admin_power = 1
+		country_diplomatic_power = 1
+		country_military_power = 1
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+}
+
+merchant_republic = {
+	# government mechanics flags go here
+	icon = "politician"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	duration = 4
+
+	republican_name = yes
+	royal_marriage = no
+
+	boost_income = yes
+
+	factions = {
+		mr_aristocrats
+		mr_traders
+		mr_guilds
 	}
 
-	# Each group of exclusive reforms are mutually exclusive to each other
+	republic = yes
 
-	#Flavor
-	exclusive_reforms = {
-		iqta
-		indian_sultanate_reform
-		mamluk_government
-		tsardom
-		principality
-		parliamentary_reform
-		english_monarchy
-		states_general_reform
+	modifiers = {
+		merchants = 1
+		caravan_power = 0.33
+		max_absolutism = -50
+    	governing_capacity = 150
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			NOT = { has_dlc = "Mare Nostrum" }
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+		}
+		can_form_trade_league = yes
+		trade_city_reform = trading_city_legacy
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+		}
+		can_use_trade_post = yes
+		can_form_trade_league = yes
+		trade_city_reform = trading_city_legacy
 	}
 	
-	# Dictatorships etc
-	exclusive_reforms = {
-		military_dictatorship_reform
-		protectorate_parliament_reform
-		prussian_republic_reform
-		admiralty_reform
-		nepotism_reform
-		lottery_reform
-		dutch_republic
+	custom_attributes = {
+		is_merchant_republic = yes
 	}
 
-	#States General works with few others
-	exclusive_reforms = {
-		mamluk_government
-		feudal_theocracy
-		states_general_reform
-		mughal_government
-		ottoman_government
-		revolutionary_empire_reform
-		prussian_monarchy
-		elective_monarchy
-		celestial_empire
-	}
-
-	#Flavor
-	exclusive_reforms = {
-		daimyo
-		shogunate
-		indep_daimyo
-		states_general_reform
-		parliamentary_reform
-	}
-
-	#Effects conflict with each other
-	exclusive_reforms = {
-		mughal_government
-		decentralize_reform
-	}
-
-	color = { 179 25 25 }
-}
-
-republic = {
-	basic_reform = republic_mechanic
-
-	color = { 65 155 220 }
-	legacy_government = {
-		bureaucratic_despotism
-		revolutionary_republic
-		constitutional_republic
-		republican_dictatorship
-		administrative_republic
-		noble_republic
-		oligarchic_republic
-		pirate_republic
-		merchant_republic
-		venetian_merchant_republic
-		imperial_city
-		trading_city_legacy
-		ambrosian_republic_legacy
-		dutch_republic_legacy
-		colonial_government_legacy
-		american_republic_legacy
-		federal_republic_legacy
-		peasants_republic_legacy
-		veche_republic_legacy
-		cossacks_legacy_reform
-		pirate_kingdom
-		war_against_the_world_government
-		black_market_consortium_government
-		military_dictatorship
-		signoria
-		protectorate_parliament_legacy
-		prussian_republic
-		united_cantons_legacy
-		illuminatos_council
-	}
-	reform_levels = {
-		oligarchy_merchant_class_noble_elite = {
-			reforms = {
-				oligarchy_reform
-				merchants_reform
-				venice_merchants_reform
-				pirate_republic_reform
-				noble_elite_reform
-				free_city
-				trading_city
-				ambrosian_republic
-				veche_republic
-				american_republic
-				federal_republic
-				colonial_government
-				dutch_republic
-				peasants_republic
-				revolutionary_republic_reform
-				junior_revolutionary_republic_reform
-				presidential_despot_reform
-				cossacks_reform
-				military_dictatorship_reform
-				signoria_reform
-				protectorate_parliament_reform
-				prussian_republic_reform
-				united_cantons_reform
-				illuminatos_council_reform 
-			}
-		}
-		republican_virtues = {
-			reforms = {
-				republican_authoritarianism_reform
-				nepotism_reform
-				republicanism_reform
-				council_of_captains_reform
-				articles_of_agreement_reform
-				smugglers_haven_reform
-				liberte_reform
-				egalite_reform
-				fraternite_reform
-				gaullism_reform
-			}
-		}
-		frequent_elections_vs_consolidation_of_power = {
-			reforms = {
-				frequent_elections_reform
-				consolidation_of_power_reform
-				consolidate_power_in_doge_reform
-				consolidate_power_in_cities_reform
-				permanent_marathas_council_reform
-				governmental_purbias_register_reform
-				lottery_reform
-				council_of_the_indies_reform
-				legislative_assembly_reform
-				national_constituent_reform
-				illuminatos_alternance_reform
-			}
-		}
-		federalism_vs_unitarism_vs_confederacy = {
-			reforms = {
-				provincial_governments_reform
-				administrative_divisions_reform
-				union_of_states_reform
-				penal_colonies_reform
-				deconcentration_and_decentralization_reform
-			}
-		}
-		parliamentary_vs_presidential = {
-			reforms = {
-				parliamentary_reform
-				presidential_reform
-				pirate_king_reform
-				war_against_the_world_doctrine_reform
-				black_market_consortium_reform
-				imperial_diplomacy_reform
-				municipal_self_defense_reform
-				feuillant_reform
-				two_chamber_reform
-				majorism_reform
-			}
-		}
-		consolidation_of_power_category = {
-			reforms = {
-				broaden_executive_powers_reform
-				devolution_of_powers_reform
-				absolute_president_reform
-				revolutionary_council_reform
-				modernization_population_reform
-			}
-		}
-		guiding_principle_of_administration = {
-			reforms = {
-				political_principle_reform
-				moral_principle_reform
-				revolutionary_principle_reform
-				equality_principle_reform
-				imperial_principle_reform
-				civilising_mission_reform 
-			}
-		}
-		electorate = {
-			reforms = {
-				landholders_reform
-				citizenry_reform
-				admiralty_reform
-				equal_electorate_reform
-				three_classes_reform
-				military_electorate_reform
-				major_sole_elector_reform
-				illuminatos_electors_reform
-			}
-		}
-		office_selection = {
-			reforms = {
-				appointment_by_committee_reform
-				bureaucratic_aparatus_reform
-				universal_suffrage_reform
-				appointment_by_major_reform
-				cooptation_reform
-			}
-		}
-		question_of_dictatorship = {
-			reforms = {
-				seize_executive_power_reform
-				proclaim_divine_guidance_reform
-				strengthen_executive_powers_reform
-				reinforce_republican_values_reform
-				pirates_become_republic_reform
-				president_for_life_reform
-				government_for_people_reform
-				become_rev_empire_reform
-				lingwista_took_control
-				illuminatos_bureau
-			}
-		}
-	}
-	exclusive_reforms = {
-		parliamentary_reform
-		dutch_republic
-		merchants_reform
-		veche_republic
-		federal_republic
-		free_city
-		trading_city
-		american_republic
-		revolutionary_republic_reform
-		pirate_republic_reform
-		protectorate_parliament_reform
-		prussian_republic_reform
-	}
-	exclusive_reforms = {
-		lottery_reform
-		venice_merchants_reform
-		dutch_republic
-		pirate_republic_reform
-		admiralty_reform
-		prussian_republic_reform
-		military_dictatorship_reform
-	}
-	exclusive_reforms = {
-		free_city
-		administrative_divisions_reform
-	}
-	exclusive_reforms = {
-		free_city
-		presidential_reform
-	}
-	exclusive_reforms = {
-		feuillant_reform
-		military_electorate_reform
+	ai = {
+		factor = 0
 	}
 }
 
-tribal = {
-	color = { 220 165 95 }
-	basic_reform = tribe_mechanic
+venetian_merchant_republic = {
+	# government mechanics flags go here
+	icon = "politician"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	has_term_election = no
 
-	legacy_government = {
-		tribal_despotism_legacy
-		tribal_kingdom_legacy
-		tribal_democracy_legacy
-		tribal_federation_legacy
-		steppe_horde_legacy
-		siberian_native_council
+	republican_name = yes
+	royal_marriage = no
+
+	boost_income = yes
+
+	factions = {
+		mr_aristocrats
+		mr_traders
+		mr_guilds
 	}
 
-	reform_levels = {
-		tribal_administration = {
-			reforms = {
-				steppe_horde
-				tribal_federation
-				tribal_despotism
-				tribal_kingdom
-				siberian_tribe
-				gond_kingdom
-				great_mongol_state_reform
+	republic = yes
+
+	modifiers = {
+		merchants = 1
+		caravan_power = 0.33
+		max_absolutism = -50
+    	governing_capacity = 150
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			NOT = { has_dlc = "Mare Nostrum" }
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+		}
+		can_form_trade_league = yes
+		trade_city_reform = trading_city_legacy
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+		}
+		can_use_trade_post = yes
+		can_form_trade_league = yes
+		trade_city_reform = trading_city_legacy
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		lottery_election = yes
+		election_on_death = yes
+		is_merchant_republic = yes
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+
+oligarchic_republic = {
+	# government mechanics flags go here
+	icon = "nobleman"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	duration = 4
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+
+	republican_name = yes
+	royal_marriage = no
+	
+	republic = yes
+	modifiers = {
+		global_tax_modifier = 0.05
+		stability_cost_modifier = -0.05
+		global_autonomy = -0.025
+		max_absolutism = -40
+    	governing_capacity = 100
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+
+prussian_republic = {
+	icon = "prussian_monarchy"
+	allow_normal_conversion = yes
+	republic = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	has_term_election = no
+	republican_name = yes
+	royal_marriage = no
+	
+	nation_designer_trigger = {
+		primary_culture =  prussian
+	}
+	
+	trigger = {
+		OR = {
+			is_playing_custom_nation = yes
+			religion = protestant
+			religion = reformed
+		}
+	}
+	
+	modifiers = {
+		war_exhaustion = -0.02
+		global_unrest = -2
+		global_autonomy = -0.075
+		republican_tradition = -0.5
+		governing_capacity_modifier = -0.5
+	}
+	
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		militarised_society = yes
+	}
+	
+	custom_attributes = {
+		generals_become_rulers = yes
+	}
+}
+
+signoria = {
+	icon = "man_and_children"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	duration = 12
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_trigger = {
+		culture_group = latin
+	}
+	nation_designer_cost = 0
+	republican_name = yes
+	royal_marriage = yes
+
+	republic = yes
+	modifiers = {
+		global_tax_modifier = 0.05
+		stability_cost_modifier = -0.05
+		global_autonomy = -0.025
+		max_absolutism = -30
+    	governing_capacity = 100
+	}
+	
+	custom_attributes = {
+		enables_nepotism = yes
+	}
+}
+
+pirate_republic = {
+	icon = "trading_city" # should have a unique icon
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	duration = 4
+	
+	republican_name = yes
+	royal_marriage = no
+	
+	republic = yes
+	can_form_trade_league = no
+
+	nation_designer_trigger = {
+		has_dlc = "Golden Century"
+		capital_scope = {
+			has_port = yes
+			OR = {
+				province_is_on_an_island = yes
+				region = maghreb_region
 			}
 		}
-		tribal_cultural_values = {
-			reforms = {
-				martial_society_reform
-				civil_society_reform
+		NOT = { technology_group = andean }
+		NOT = { technology_group = north_american }
+		NOT = { technology_group = south_american }
+		NOT = { technology_group = mesoamerican }
+	}
+	
+	potential = {	
+		has_dlc = "Golden Century"
+	}
+	
+	factions_frame = 9
+	factions = {
+		pr_buccaneers
+		pr_smugglers
+		pr_captains
+	}
+	
+	modifiers = {
+		republican_tradition = -1
+		max_absolutism = -50
+		naval_forcelimit_modifier = 0.5
+		capture_ship_chance = 0.33
+		may_perform_slave_raid_on_same_religion = yes
+	}
+	
+	custom_attributes = {
+		force_admiral_leader = yes
+	}
+	
+	ai = {
+		factor = 0
+	}
+}
+
+pirate_kingdom = {
+	icon = "trading_city" # should have a unique icon
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	has_term_election = no
+	
+	
+	republican_name = yes
+	royal_marriage = no
+	
+	republic = yes
+	
+	potential = {	
+		has_dlc = "Golden Century"
+	}
+	
+	nation_designer_trigger = {
+		capital_scope = {
+			has_port = yes
+			OR = {
+				province_is_on_an_island = yes
+				region = maghreb_region
 			}
 		}
-		tribal_religion = {
-			reforms = {
-				religious_societies_reform
-				lip_service_reform
+	}
+	
+	factions_frame = 9
+	factions = {
+		pr_buccaneers
+		pr_smugglers
+		pr_captains
+	}
+	
+	modifiers = {
+		republican_tradition = -1
+		max_absolutism = -50
+		naval_forcelimit_modifier = 0.5
+		capture_ship_chance = 0.33
+		pr_captains_influence = 0.1
+		harsh_treatment_cost = -0.2
+		leader_naval_fire = 1
+		may_perform_slave_raid_on_same_religion = yes
+	}
+	
+	custom_attributes = {
+		admirals_become_rulers = yes
+	}
+	
+	ai = {
+		factor = 0
+	}
+}
+
+war_against_the_world_government = {
+	icon = "trading_city" # should have a unique icon
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	duration = 4
+	disallowed_trade_goods = { slaves }
+	
+	republican_name = yes
+	royal_marriage = no
+	
+	republic = yes
+	
+	potential = {	
+		has_dlc = "Golden Century"
+	}
+	
+	factions_frame = 9
+	factions = {
+		pr_buccaneers
+		pr_smugglers
+		pr_captains
+	}
+	
+	modifiers = {
+		republican_tradition = -1
+		max_absolutism = -50
+		naval_forcelimit_modifier = 0.5
+		capture_ship_chance = 0.33
+		pr_buccaneers_influence = 0.1
+		years_of_nationalism = -5
+		global_manpower_modifier = 0.1
+		may_perform_slave_raid_on_same_religion = yes
+	}
+	
+	custom_attributes = {
+		force_admiral_leader = yes
+	}
+	
+	ai = {
+		factor = 0
+	}
+}
+
+black_market_consortium_government = {
+	icon = "trading_city" # should have a unique icon
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	duration = 4
+	
+	republican_name = yes
+	royal_marriage = no
+	
+	republic = yes
+	
+	nation_designer_trigger = {
+		capital_scope = {
+			has_port = yes
+			OR = {
+				province_is_on_an_island = yes
+				region = maghreb_region
 			}
 		}
-		tribal_modernization = {
-			reforms = {
-				centralize_tribal_power_reform
-				retain_tribal_hierarchy_reform
-			}
+	}
+	
+	factions_frame = 9
+	factions = {
+		pr_buccaneers
+		pr_smugglers
+		pr_captains
+	}
+	
+	modifiers = {
+		republican_tradition = -1
+		max_absolutism = -50
+		naval_forcelimit_modifier = 0.5
+		capture_ship_chance = 0.33
+		pr_smugglers_influence = 0.1
+		global_foreign_trade_power = 0.3
+		may_perform_slave_raid_on_same_religion = yes
+	}
+	
+	custom_attributes = {
+		force_admiral_leader = yes
+	}
+	
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
 		}
-		tribal_reformation = {
-			reforms = {
-				horde_barbaric_despoilers_reform
-				horde_tribal_unity_reform
-				tribe_becomes_monarchy_reform
-				tribe_becomes_republic_reform
-				tribe_becomes_theocracy_reform
-				tribe_becomes_horde_reform
+		can_use_trade_post = yes
+	}
+	boost_income = yes
+	
+	ai = {
+		factor = 0
+	}
+}
+
+noble_republic = {
+	# government mechanics flags go here
+	icon = "paper_money_map"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = no
+	duration = 4
+
+	republican_name = yes
+	royal_marriage = yes
+
+	monarchy = yes
+	modifiers = {
+   		governing_capacity = 100
+		tolerance_heretic = 1
+		land_morale = 0.1
+		max_absolutism = -40
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+
+
+administrative_republic = {
+	# government mechanics flags go here
+	icon = "paper_with_seal"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = no
+	duration = 5
+
+	republican_name = yes
+	royal_marriage = no
+
+
+	republic = yes
+	modifiers = {
+    	governing_capacity = 150
+		years_of_nationalism = -5
+		production_efficiency = 0.1
+		global_autonomy = -0.05
+		max_absolutism = -30
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					has_reform = merchant_republic
+					capital_scope = { has_port = no }
+				}
+				AND = {
+					has_reform = republican_dictatorship
+					NOT = { dip = 4 }
+					NOT = { adm = 4 }
+					NOT = { mil = 4 }
+				}
 			}
 		}
 	}
 }
 
-native = {
-	basic_reform = native_basic_reform
+military_dictatorship = {
+	icon = "paper_with_seal_3"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	has_term_election = no
+	
+	republican_name = yes
+	royal_marriage = no
+	republic = yes
 
-	legacy_government = {
-		native_council_legacy
+	modifiers = {
+		global_autonomy = -0.075
+		land_morale = 0.1
 	}
-	color = { 194 127 209 }
+	custom_attributes = {
+		generals_become_rulers = yes
+	}
+}
+
+protectorate_parliament_legacy = {
+	icon = "parliament_hall"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	has_term_election = no
+	
+	republican_name = yes
+	royal_marriage = no
+	republic = yes
+	
+	modifiers = {
+		global_autonomy = -0.05
+		land_morale = 0.05
+		max_absolutism = -20
+	}
+	conditional = {
+		allow = { has_dlc = "Common Sense" }
+		has_parliament = yes
+	}
+	has_term_election = no
+
+	custom_attributes = {
+		blocked_call_diet = yes
+	}
 }
 
 
-theocracy = {
-	color = { 75 170 75 }
-	basic_reform = theocracy_mechanic
+republican_dictatorship = {
+	# government mechanics flags go here
+	icon = "paper_with_seal_3"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = no
+	has_term_election = no
 
-	legacy_government = {
-		papal_government
-		theocratic_government
-		monastic_order_government
-		holy_state_legacy
+
+	republican_name = yes
+	royal_marriage = no
+
+
+	dictatorship = yes
+	modifiers = {
+    	governing_capacity = 150
+		global_autonomy = -0.075
+		tolerance_heathen = 1
+		land_morale = 0.1
 	}
-	reform_levels = {
-		theocratic_leadership = {
-			reforms = {
-				leading_clergy_reform
-				monastic_order_reform
-				papacy_reform
-				holy_state_reform
-				united_cantons_reform
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					has_reform = merchant_republic
+					capital_scope = { has_port = no }
+				}
+				has_reform = administrative_republic
+				has_reform = constitutional_republic
 			}
 		}
-		internal_vs_external_mission = {
-			reforms = {
-				internal_mission_reform
-				external_mission_reform
-				mission_to_civilize_reform
-				mission_to_kill_pirates_reform
-			}
-		}
-		divine_cause = {
-			reforms = {
-				safeguard_holy_sites_reform
-				combat_heresy_reform
-				expel_heathens_reform
-				guru_advisors_reform
-				kingdom_of_god_reform
-			}
-		}
-		clergy_in_administration = {
-			reforms = {
-				subservient_administrators_reform
-				religious_administrators_reform
-				permanent_marathas_council_reform
-				governmental_purbias_register_reform
-				loyal_nobility_reform
-				pious_merchants_reform
-				monastic_breweries_reform
-				warrior_monks_reform
-			}
-		}
-		secularization = {
-			reforms = {
-				partial_secularisation_reform
-				maintain_religious_head_reform
-				hereditary_religious_leadership_reform
-				crown_leader_reform
-				proclaim_republic_reform
-				battle_pope_reform
-				conciliarism_reform
-			}
-		}
-		separation_of_power_theocracy = {
-			reforms = {
-				clerical_commission_reform
-				divine_guidance_reform
-				theocratic_democracy_reform
-				regionally_elected_commanders
-				monastic_elections_reform
-				commander_king_reform
-				admiral_king_reform
-			}
-		}
-		nature_of_faith = {
-			reforms = {
-				church_and_state_reform
-				religious_harmony_reform
-				god_and_man_reform
-				organising_our_religion_reform
-			}
-		}
-		faith_and_the_world = {
-			reforms = {
-				religion_in_one_country_reform
-				religious_permanent_revolution_reform
-				many_fingers_of_god_reform
-				priestly_autonomy_reform
-				proclaim_religious_head_reform
-				all_under_tengri_reform
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					dip = 5
+					adm = 5
+					mil = 5
+				}
 			}
 		}
 	}
 }
 
-pre_dharma_mapping = {
-	despotic_monarchy = {
-		government = monarchy
-		legacy_government = despotic_monarchy
+constitutional_republic = {
+	# government mechanics flags go here
+	icon = "constitution"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = no
+	duration = 5
+
+	republican_name = yes
+	royal_marriage = no
+
+	republic = yes
+	modifiers = {
+    	governing_capacity = 150
+		production_efficiency = 0.1
+		trade_efficiency = 0.1
+		global_autonomy = -0.075
+		max_absolutism = -30
 	}
-	feudal_monarchy = {
-		government = monarchy
-		legacy_government = feudal_monarchy
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		has_parliament = yes
 	}
-	administrative_monarchy = {
-		government = monarchy
-		legacy_government = administrative_monarchy
+
+	custom_attributes = {
+		blocked_call_diet = yes
 	}
-	constitutional_monarchy = {
-		government = monarchy
-		legacy_government = constitutional_monarchy
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				has_reform = administrative_republic
+				AND = {
+					has_reform = merchant_republic
+					capital_scope = { has_port = no }
+				}
+				AND = {
+					has_reform = republican_dictatorship
+					NOT = { dip = 4 }
+					NOT = { adm = 4 }
+					NOT = { mil = 4 }
+				}
+			}
+		}
 	}
-	enlightened_despotism = {
-		government = monarchy
-		legacy_government = enlightened_despotism
+}
+
+revolutionary_republic = {
+	# government mechanics flags go here
+	icon = "rioting_burning"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	duration = 4
+
+	republican_name = yes
+	royal_marriage = no
+	revolutionary = yes
+
+    fixed_rank = 3
+	republic = yes
+	modifiers = {
+    	governing_capacity = 150
+		tolerance_heretic = 2
+		land_morale = 0.1
+		global_autonomy = -0.2
 	}
-	revolutionary_empire = {
-		government = monarchy
-		legacy_government = revolutionary_empire
+
+	conditional = {
+		allow = {
+			has_dlc = "Rights of Man"
+		}
+		factions = {
+			rr_jacobins
+			rr_royalists
+			rr_girondists
+		}
 	}
-	merchant_republic = {
-		government = republic
-		legacy_government = merchant_republic
+	removed_effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = is_revolutionary_china_flag
+					is_revolutionary = no
+				}
+				clr_country_flag = is_revolutionary_china_flag
+				restore_country_name = yes
+				override_country_name = CHINA_STRING
+				set_country_flag = is_china_flag
+			}
+			if = {
+				limit = {
+					has_country_flag = is_revolutionary_turkey_flag
+					is_revolutionary = no
+				}
+				clr_country_flag = is_revolutionary_turkey_flag
+				restore_country_name = yes
+				override_country_name = TURKEY_STRING
+				set_country_flag = is_turkey_flag
+			}
+			if = {
+				limit = {
+					has_country_flag = is_revolutionary_gurkani_flag
+					is_revolutionary = no
+				}
+				clr_country_flag = is_revolutionary_gurkani_flag
+				restore_country_name = yes
+				override_country_name = GURKANI_EMPIRE_STRING
+				set_country_flag = is_gurkani_flag
+			}
+		}
 	}
-	oligarchic_republic = {
-		government = republic
-		legacy_government = oligarchic_republic
+
+
+	ai = {
+		factor = 0
 	}
-	noble_republic = {
-		government = republic
-		legacy_government = noble_republic
+}
+
+bureaucratic_despotism = {
+	# government mechanics flags go here
+	icon = "parliament"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = no
+
+	republican_name = yes
+	royal_marriage = no
+
+	republic = yes
+	modifiers = {
+    	governing_capacity = 150
+		global_autonomy = -0.075
+			stability_cost_modifier = -0.20
 	}
-	administrative_republic = {
-		government = republic
-		legacy_government = administrative_republic
+
+	ai = {
+		factor = 0
 	}
-	republican_dictatorship = {
-		government = republic
-		legacy_government = republican_dictatorship
+}
+
+####################################
+#
+#Religious Governments
+#
+####################################
+
+alien_government = {
+	# government mechanics flags go here
+	icon = "religious_leader"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	allow_convert = no
+	valid_for_nation_designer = no
+
+	rulers_can_be_generals = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+
+	royal_marriage = no
+	trigger = {	tag = ALI	}
+	modifiers = {
+		reform_progress_growth = 0.5
+		country_admin_power = 3
+		country_diplomatic_power = 3
+		country_military_power = 3
 	}
-	constitutional_republic = {
-		government = republic
-		legacy_government = constitutional_republic
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+
+		has_devotion = yes
 	}
-	bureaucratic_despotism = {
-		government = republic
-		legacy_government = bureaucratic_despotism
+
+	ai = {
+		factor = 0
 	}
-	revolutionary_republic = {
-		government = republic
-		legacy_government = revolutionary_republic
+}
+
+
+theocratic_government = {
+	# government mechanics flags go here
+	icon = "religious_leader"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = yes
+
+	rulers_can_be_generals = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+
+	royal_marriage = no
+
+	different_religion_acceptance = -20
+	different_religion_group_acceptance = -50
+
+	religion = yes
+	modifiers = {
+    	governing_capacity = 150
+		tolerance_own = 2
+		tolerance_heretic = -1
 	}
-	theocratic_government = {
-		government = theocracy
-		legacy_government = theocratic_government
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+
+		has_devotion = yes
 	}
-	monastic_order_government = {
-		government = theocracy
-		legacy_government = monastic_order_government
+
+	ai = {
+		factor = 0
 	}
-	papal_government = {
-		government = theocracy
-		legacy_government = papal_government
+}
+
+monastic_order_government = {
+	# government mechanics flags go here
+	icon = "reform_soldiers"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = yes
+	rulers_can_be_generals = yes
+
+	royal_marriage = no
+	
+	rulers_can_be_generals = yes
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+
+	different_religion_acceptance = -20
+	different_religion_group_acceptance = -50
+
+    fixed_rank = 1
+	religion = yes
+	monastic = yes
+	modifiers = {
+    	governing_capacity = 150
+		tolerance_own = 1
+		fort_maintenance_modifier = -0.2
 	}
-	steppe_horde = {
-		government = tribal
-		legacy_government = steppe_horde_legacy
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+
+		has_devotion = yes
 	}
-	tribal_despotism = {
-		government = tribal
-		legacy_government = tribal_despotism_legacy
+
+	ai = {
+		factor = 0
 	}
-	tribal_kingdom = {
-		government = tribal
-		legacy_government = tribal_kingdom_legacy
+}
+
+holy_state_theocracy = {
+	icon = "religious_leader"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_trigger = {
+		religion = catholic
 	}
-	tribal_federation = {
-		government = tribal
-		legacy_government = tribal_federation_legacy
+	religion = yes
+	monastic = yes
+	modifiers = {
+    	governing_capacity = 100
+		# cb_on_religious_enemies = yes
+		manpower_recovery_speed = 0.15
+		global_autonomy = -0.2
 	}
-	tribal_democracy = {
-		government = tribal
-		legacy_government = tribal_federation_legacy
+	
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+
+		has_devotion = yes
 	}
-	native_council = {
-		government = native
-		legacy_government = native_council_legacy
+}
+
+papal_government = {
+	# government mechanics flags go here
+	icon = "pope"
+	allow_normal_conversion = no
+	allow_convert = no
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	rulers_can_be_generals = no
+	papacy = yes
+
+	royal_marriage = no
+
+	different_religion_acceptance = -20
+	different_religion_group_acceptance = -50
+
+    fixed_rank = 2
+	religion = yes
+	monastic = yes
+	modifiers = {
+    	governing_capacity = 50
+		tolerance_own = 1
+		prestige_per_development_from_conversion = 0.33
+		global_autonomy = -0.05
 	}
-	siberian_native_council = {
-		government = tribal
-		legacy_government = siberian_native_council
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+
+		has_devotion = yes
 	}
-	english_monarchy = {
-		government = monarchy
-		legacy_government = english_monarchy_legacy
+
+	ai = {
+		factor = 0
 	}
-	mamluk_government = {
-		government = monarchy
-		legacy_government = mamluk_government_legacy
+}
+
+steppe_horde_legacy = {
+	# government mechanics flags go here
+	icon = "tribal_council"
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	allow_normal_conversion = no
+	allow_convert = no
+	tribal = yes
+	nomad = yes
+
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+		technology_group = nomad_group
 	}
-	feudal_theocracy = {
-		government = monarchy
-		legacy_government = feudal_theocracy_legacy
+
+	monarchy = yes
+	start_territory_to_estates = 0.5
+	modifiers = {
+    	governing_capacity = 50
+		global_manpower_modifier = 0.2
+		land_forcelimit_modifier = 0.2
+		loot_amount = 0.50
+		global_institution_spread = -0.15
+		reinforce_cost_modifier = -0.5
+		cav_to_inf_ratio = 0.25
+		movement_speed = 0.2
 	}
-	elective_monarchy = {
-		government = monarchy
-		legacy_government = elective_monarchy_legacy
+	ai = {
+		factor = 0
 	}
-	imperial_city = {
-		government = republic
-		legacy_government = imperial_city
+}
+
+great_mongol_state_legacy = {
+	# government mechanics flags go here
+	icon = "tribal_council"
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	allow_normal_conversion = no
+	allow_convert = no
+	tribal = yes
+	nomad = yes
+
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+		technology_group = nomad_group
 	}
-	trading_city = {
-		government = republic
-		legacy_government = imperial_city_legacy
+
+	monarchy = yes
+	start_territory_to_estates = 0.5
+	modifiers = {
+		horde_unity = 1
+    	governing_capacity = 50
+		global_manpower_modifier = 0.2
+		land_forcelimit_modifier = 0.2
+		loot_amount = 0.50
+		reinforce_cost_modifier = -0.5
+		cav_to_inf_ratio = 0.25
+		movement_speed = 0.2
 	}
-	ambrosian_republic = {
-		government = republic
-		legacy_government = ambrosian_republic_legacy
+	conditional = {
+		allow = { has_dlc = "Mandate of Heaven" }
+		allow_banners = yes
 	}
-	dutch_republic = {
-		government = republic
-		legacy_government = dutch_republic_legacy
+	ai = {
+		factor = 0
 	}
-	celestial_empire = {
-		government = monarchy
-		legacy_government = celestial_empire_legacy
+}
+
+tribal_despotism_legacy = {
+	# government mechanics flags go here
+	icon = "king_2"
+	legacy_government = yes
+	valid_for_new_country = yes
+	allow_normal_conversion = no
+	tribal = yes
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+
+
+	monarchy = yes
+	modifiers = {
+    	governing_capacity = 50
+		core_creation = -0.1
+		global_unrest = -1
+		diplomatic_upkeep = -1
+		global_institution_spread = -0.05
 	}
-	ottoman_government = {
-		government = monarchy
-		legacy_government = ottoman_government_legacy
+	ai = {
+		factor = 0
 	}
-	prussian_monarchy = {
-		government = monarchy
-		legacy_government = prussian_monarchy_legacy
+}
+
+tribal_kingdom_legacy = {
+	# government mechanics flags go here
+	icon = "shaman"
+	legacy_government = yes
+	valid_for_new_country = yes
+	allow_normal_conversion = no
+	tribal = yes
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+
+	monarchy = yes
+	modifiers = {
+		vassal_income = 0.20
+		stability_cost_modifier = -0.1
+		diplomatic_upkeep = -1
+		global_institution_spread = -0.025
 	}
-	iqta = {
-		government = monarchy
-		legacy_government = iqta_legacy
+	ai = {
+		factor = 0
 	}
-	daimyo = {
-		government = monarchy
-		legacy_government = daimyo_legacy
+}
+
+tribal_federation_legacy = {
+	# government mechanics flags go here
+	icon = "soldiers_2"
+	allow_normal_conversion = no
+	legacy_government = yes
+	allow_convert = no
+	tribal = yes
+
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+
+	monarchy = yes
+	modifiers = {
+		years_of_nationalism = -5
+		cav_to_inf_ratio = 0.25
+		province_warscore_cost = -0.10
 	}
-	shogunate = {
-		government = monarchy
-		legacy_government = shogunate_legacy
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			tribal_federation_mechanic
+		}
 	}
-	indep_daimyo = {
-		government = monarchy
-		legacy_government = indep_daimyo_legacy
+	ai = {
+		factor = 0
 	}
-	colonial_government = {
-		government = republic
-		legacy_government = colonial_government_legacy
+}
+
+tribal_democracy_legacy = {
+	# government mechanics flags go here
+	icon = "assembly_hall"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = yes
+	tribal = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+
+	republic = yes
+	modifiers = {
+		global_unrest = -1
+		stability_cost_modifier = -0.15
+		diplomatic_upkeep = -1
+		global_institution_spread = -0.05
 	}
-	american_republic = {
-		government = republic
-		legacy_government = american_republic_legacy
+	ai = {
+		factor = 0
 	}
-	federal_republic = {
-		government = republic
-		legacy_government = federal_republic_legacy
+}
+
+native_council_legacy = {
+	# government mechanics flags go here
+	icon = "shaman"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	allow_convert = no
+	native_mechanic = yes
+	allow_migration = yes
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+		OR = {
+			technology_group = north_american
+			technology_group = south_american
+		}
+		capital_scope = {
+			OR = {
+				continent = north_america
+				continent = south_america
+				continent = new_world
+			}
+		}
 	}
-	peasants_republic = {
-		government = republic
-		legacy_government = peasants_republic_legacy
+
+    fixed_rank = 1
+	modifiers = {
+		stability_cost_modifier = -0.33
+		land_maintenance_modifier = -0.25
+		diplomatic_upkeep = -1
+		global_institution_spread = -0.025
 	}
-	veche_republic = {
-		government = republic
-		legacy_government = veche_republic_legacy
+	ai = {
+		factor = 0
 	}
-	principality = {
-		government = monarchy
-		legacy_government = principality_legacy
+}
+
+siberian_native_council = {
+	# government mechanics flags go here
+	icon = "shaman"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = yes
+	allow_convert = no
+	native_mechanic = no
+	allow_migration = yes
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = -10
+
+    fixed_rank = 1
+	modifiers = {
+		stability_cost_modifier = -0.33
+		global_institution_spread = -0.2
 	}
-	tsardom = {
-		government = monarchy
-		legacy_government = tsardom_legacy
+	ai = {
+		factor = 0
 	}
-	pirate_republic_reform = {
-		government = republic
-		legacy_government = pirate_republic
+}
+
+##########################################
+#
+#Unique Governments for special countries
+#
+##########################################
+
+#Somewhat special for Austria
+austrian_archduchy = {
+	icon = "king"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_nation_designer = yes
+	potential = {
+		OR = {
+			tag = HAB
+			was_tag = HAB
+			has_reform = austrian_archduchy_reform
+		}
 	}
-	all_mechanics = {
-		government = monarchy
-		legacy_government = despotic_monarchy
+	monarchy = yes
+	nation_designer_cost = 5
+	modifiers = {
+		governing_capacity = 100
+		prestige = 0.5
+		liberty_desire_from_subject_development = -0.33
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+#Special for England
+english_monarchy_legacy = {
+	# government mechanics flags go here
+	icon = "british_queen"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	allow_convert = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 15
+	nation_designer_trigger = {
+		has_dlc = "Common Sense"
+	}
+
+	monarchy = yes
+	start_territory_to_estates = 0.3
+	modifiers = {
+		legitimacy = 0.5
+		global_unrest = -1
+		global_autonomy = -0.05
+		max_absolutism = -30
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+
+		has_parliament = yes
+	}
+	ai = {
+		factor = 5
+	}
+
+	custom_attributes = {
+		blocked_call_diet = yes
+	}
+}
+
+#Special for Mamluks
+mamluk_government_legacy = {
+	# government mechanics flags go here
+	icon = "muslim"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	allow_convert = no
+
+	heir = no
+	queen = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 60
+
+	monarchy = yes
+	modifiers = {
+		num_accepted_cultures = 3
+		global_autonomy = -0.025
+		monarch_admin_power = 2
+		same_culture_advisor_cost = -0.25
+		promote_culture_cost = -0.5
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			mamluk_mechanic
+		}
+		foreign_slave_rulers = yes
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+#Special for Persia, Ardabil, Oman and Rassids
+feudal_theocracy_legacy = { #Imamates, Sheikdoms
+	# government mechanics flags go here
+	icon = "muslim"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	allow_convert = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 60
+
+	monarchy = yes
+	modifiers = {
+		missionaries = 1
+		global_missionary_strength = 0.01
+		tolerance_own = 1
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			feudal_theocracy_mechanic
+		}
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+
+#Special for Poland
+elective_monarchy_legacy = {
+	# government mechanics flags go here
+	allow_normal_conversion = no
+	legacy_government = yes
+	icon = "crown"
+
+	valid_for_new_country = no
+	allow_convert = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		has_dlc = "Res Publica"
+	}
+
+	monarchy = yes
+	modifiers = {
+		vassal_income = 0.25
+		global_unrest = -1
+		global_autonomy = -0.025
+		max_absolutism = -30
+	}
+
+	conditional = {
+		allow = { has_dlc = "Res Publica" }
+		is_elective = yes
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+#Special for HRE free cities
+imperial_city = {
+	# government mechanics flags go here
+	icon = "judge"
+	allow_normal_conversion = no
+	legacy_government = yes
+
+	free_city = yes
+
+	valid_for_new_country = no
+	allow_convert = no
+	duration = 4
+
+	republican_name = yes
+	royal_marriage = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	nation_designer_trigger = {
+		has_dlc = "Common Sense"
+		capital_scope = { is_part_of_hre = yes }
+		NOT = { num_custom_nation_provinces = 2 }
+	}
+
+
+    fixed_rank = 1
+	republic = yes
+	modifiers = {
+		trade_efficiency = 0.1
+		development_cost = -0.1
+		max_absolutism = -20
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+# Special City States
+trading_city_legacy = {
+	# government mechanics flags go here
+	icon = "judge"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+
+	duration = 4
+
+	republican_name = yes
+	royal_marriage = no
+
+	is_trading_city = yes
+
+	factions = {
+		mr_aristocrats
+		mr_traders
+		mr_guilds
+	}
+
+    fixed_rank = 1
+	republic = yes
+	modifiers = {
+		global_trade_power = 0.1
+		max_absolutism = -20
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			NOT = { has_dlc = "Mare Nostrum" }
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+		}
+		can_form_trade_league = yes
+		trade_city_reform = merchant_republic # For trade cities this is their fallback government if they get more than 1 provinces
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+		}
+		can_use_trade_post = yes
+		can_form_trade_league = yes
+		trade_city_reform = merchant_republic # For trade cities this is their fallback government if they get more than 1 provinces
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+#Special for Milan
+ambrosian_republic_legacy = {
+	# government mechanics flags go here
+	icon = "judge"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	allow_convert = yes
+
+	duration = 4
+
+	republican_name = yes
+	royal_marriage = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+
+	republic = yes
+	modifiers = {
+		governing_capacity = 100
+		global_tax_modifier = 0.10
+		land_morale = 0.05
+		max_absolutism = -30
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+# Special for the Dutch
+dutch_republic_legacy = {
+	# government mechanics flags go here
+	icon = "dutch_flag"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+
+	duration = 4
+
+	allow_convert = no
+
+	republican_name = no
+	royal_marriage = yes
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	nation_designer_trigger = {
+		has_dlc = "Res Publica"
+	}
+
+	republic = yes
+	modifiers = {
+		governing_capacity = 100
+		heavy_ship_power = 0.10
+		trade_efficiency = 0.10
+		global_autonomy = -0.05
+		max_absolutism = -30
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+		}
+
+		states_general_mechanic = {
+			statists = {
+				naval_forcelimit_modifier = 0.10
+				global_trade_power = 0.05
+				republican_tradition = 1
+			}
+
+			orangists = {
+				land_forcelimit_modifier = 0.25
+				stability_cost_modifier = -0.10
+				republican_tradition = -1
+			}
+		}
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
+# China
+celestial_empire_legacy = {
+	# government mechanics flags go here
+	allow_normal_conversion = no
+	legacy_government = yes
+	monarchy = yes
+	icon = "crown"
+	maintain_dynasty = yes
+
+	allow_force_tributary = no
+
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	allow_convert = no
+	start_territory_to_estates = 0.9
+	nation_designer_trigger = {
+		culture_group = east_asian
+		technology_group = chinese
+		capital_scope = {
+			OR = {
+				region = north_china_region
+				region = xinan_region
+				region = south_china_region
+			}
+		}
+	}
+	factions = {
+		temples
+		enuchs
+		bureaucrats
+	}
+
+    fixed_rank = 3
+	modifiers = {
+		prestige = 0.5
+		embracement_cost = 0.1
+		governing_capacity = 250
+	}
+
+	conditional = {
+		allow = { has_dlc = "Mandate of Heaven" }
+		has_meritocracy = yes
+		factions = {}
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
+
+# Ottoman Empire
+ottoman_government_legacy = {
+	# government mechanics flags go here
+	allow_normal_conversion = no
+	icon = "crown"
+	legacy_government = yes
+	monarchy = yes
+	maintain_dynasty = yes
+	valid_for_new_country = no
+	allow_convert = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	nation_designer_trigger = {
+		religion_group = muslim
+	}
+
+
+	modifiers = {
+		governing_capacity = 250
+		unjustified_demands = -0.1
+		legitimacy = 0.5
+		max_absolutism = 5
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		has_harem = yes
+		has_pashas = yes
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
+prussian_monarchy_legacy = {
+	# government mechanics flags go here
+	allow_normal_conversion = no
+	icon = "crown"
+	legacy_government = yes
+	valid_for_new_country = no
+	allow_convert = no
+
+	potential = {
+		OR = {
+			is_playing_custom_nation = yes
+			religion = protestant
+			religion = reformed
+		}
+	}
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+
+	monarchy = yes
+	modifiers = {
+		war_exhaustion = -0.02
+		global_unrest = -2
+		global_autonomy = -0.075
+		max_absolutism = 10
+		monarch_military_power = 3
+		governing_capacity_modifier = -0.5
+	}
+
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		militarised_society = yes
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
+iqta_legacy = {
+	# government mechanics flags go here
+	allow_normal_conversion = no
+	icon = "muslim"
+	legacy_government = yes
+	queen = no
+
+	valid_for_new_country = no
+	allow_convert = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		religion_group = muslim
+	}
+
+	monarchy = yes
+	modifiers = {
+		governing_capacity = 100
+		vassal_income = 0.33
+		global_tax_modifier = 0.05
+		global_autonomy = -0.025
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			iqta_mechanic
+		}
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
+daimyo_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	legacy_government = yes
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	allow_convert = no
+
+	maintain_dynasty = yes
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+		culture_group = japanese_g
+		technology_group = chinese
+		capital_scope = { region = japan_region }
+	}
+
+    fixed_rank = 1
+	monarchy = yes
+	modifiers = {
+		land_morale = 0.10
+		infantry_power = 0.10
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
+indian_sultanate_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	legacy_government = yes
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	allow_convert = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+		capital_scope = {
+			superregion = india_superregion
+		}
+		religion_group = muslim
+	}
+
+	monarchy = yes
+	modifiers = {
+		tolerance_heathen = 3
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			iqta_mechanic
+		}
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
+shogunate_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	legacy_government = yes
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	allow_convert = no
+
+	maintain_dynasty = yes
+
+	allow_vassal_war = yes
+	allow_vassal_alliance = yes
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	nation_designer_trigger = {
+		culture_group = japanese_g
+		technology_group = chinese
+		capital_scope = { region = japan_region }
+		owns = 1020
+	}
+
+    fixed_rank = 2
+	monarchy = yes
+	modifiers = {
+		governing_capacity = 100
+		diplomats = 1
+		envoy_travel_time = -0.25
+		max_absolutism = 5
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
+indep_daimyo_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	legacy_government = yes
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	allow_convert = no
+
+	maintain_dynasty = yes
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+		culture_group = japanese_g
+		technology_group = chinese
+		capital_scope = { region = japan_region }
+	}
+
+	monarchy = yes
+	modifiers = {
+		governing_capacity = -150
+		land_morale = 0.1
+		infantry_power = 0.1
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
+colonial_government_legacy = {
+	# government mechanics flags go here
+	icon = "peasants"
+	legacy_government = yes
+	allow_normal_conversion = no
+
+	duration = 8
+
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	allow_convert = no
+
+	republican_name = yes
+	royal_marriage = no
+
+    fixed_rank = 1
+	republic = yes
+	modifiers = {
+		governing_capacity = 100
+		global_autonomy = -0.05
+		recover_army_morale_speed = 0.02
+		embracement_cost = -0.1
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+
+
+american_republic_legacy = {
+	# government mechanics flags go here
+	icon = "constitution"
+	legacy_government = yes
+	duration = 4
+	allow_normal_conversion = no
+
+	republican_name = yes
+	royal_marriage = no
+	valid_for_new_country = no
+	allow_convert = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 15
+	nation_designer_trigger = {
+		has_dlc = "American Dream"
+	}
+
+	republic = yes
+	modifiers = {
+		war_exhaustion = -0.02
+		stability_cost_modifier = -0.1
+		global_autonomy = -0.15
+		max_absolutism = -30
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		has_parliament = yes
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
+federal_republic_legacy = {
+	# government mechanics flags go here
+	icon = "parliament"
+	legacy_government = yes
+	duration = 4
+	allow_normal_conversion = no
+
+	republican_name = yes
+	royal_marriage = no
+
+	valid_for_new_country = no
+	allow_convert = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 15
+	nation_designer_trigger = {
+		has_dlc = "American Dream"
+	}
+
+	republic = yes
+	modifiers = {
+		diplomatic_reputation = 1
+		global_spy_defence = 0.10
+		global_autonomy = -0.15
+		max_absolutism = -30
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		has_parliament = yes
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
+
+peasants_republic_legacy = {
+	# government mechanics flags go here
+	icon = "fist_in_air"
+	legacy_government = yes
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+
+	duration = 5
+
+	republican_name = yes
+	royal_marriage = no
+
+	republic = yes
+	modifiers = {
+		governing_capacity = 50
+		production_efficiency = 0.1
+		land_morale = 0.05
+		global_autonomy = -0.05
+		max_absolutism = -50
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+
+veche_republic_legacy = {
+	# government mechanics flags go here
+	icon = "merchant"
+	legacy_government = yes
+	republic = yes
+	duration = 4
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	allow_convert = no
+
+	boost_income = yes
+	
+	republican_name = yes
+	royal_marriage = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+
+	nation_designer_trigger = {
+		culture_group = east_slavic
+	}
+
+	factions = {
+		mr_aristocrats
+		mr_traders
+		mr_guilds
+	}
+
+    fixed_rank = 1
+	modifiers = {
+		governing_capacity = 150
+		merchants = 1
+		max_absolutism = -50
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			NOT = { has_dlc = "Mare Nostrum" }
+			NOT = { has_dlc = "Third Rome" }
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+			NOT = { has_dlc = "Third Rome" }
+		}
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Third Rome" }
+		}
+		can_use_trade_post = yes
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Third Rome"
+			NOT = { has_dlc = "Mare Nostrum" }
+			NOT = { has_dlc = "Res Publica" }
+		}
+		government_abilities = {
+			russian_mechanic
+		}
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Third Rome"
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+		}
+		government_abilities = {
+			russian_mechanic
+		}
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Third Rome"
+			NOT = { has_dlc = "Mare Nostrum" }
+			has_dlc = "Res Publica"
+		}
+		government_abilities = {
+			russian_mechanic
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Third Rome"
+			has_dlc = "Mare Nostrum"
+			has_dlc = "Res Publica"
+		}
+		government_abilities = {
+			russian_mechanic
+		}
+		can_use_trade_post = yes
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+
+principality_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	legacy_government = yes
+	monarchy = yes
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	allow_convert = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 5
+	nation_designer_trigger = {
+		culture_group = east_slavic
+		religion = orthodox
+	}
+
+    fixed_rank = 1
+	modifiers = {
+		governing_capacity = 150
+		global_unrest = -1
+		global_tax_modifier = 0.05
+	}
+
+	conditional = {
+		allow = { has_dlc = "Third Rome" }
+		government_abilities = {
+			russian_mechanic
+		}
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
+tsardom_legacy = {
+	# government mechanics flags go here
+	icon = "king"
+	monarchy = yes
+	legacy_government = yes
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	allow_convert = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+
+	nation_designer_trigger = {
+		culture_group = east_slavic
+		religion = orthodox
+	}
+
+    fixed_rank = 3
+	modifiers = {
+		governing_capacity = 300
+		global_manpower_modifier = 0.20
+		yearly_absolutism = 0.5
+		global_autonomy = -0.05
+	}
+
+	conditional = {
+		allow = { has_dlc = "Third Rome" }
+		government_abilities = {
+			russian_mechanic
+		}
+		claim_states = yes
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
+cossacks_legacy_reform = {
+	# government mechanics flags go here
+	icon = "chieftain"
+	allow_normal_conversion = no
+
+	legacy_government = yes
+	valid_for_new_country = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 60
+
+
+	republic = yes
+	modifiers = {
+   		governing_capacity = 50
+		cavalry_power = 0.2
+		cavalry_cost = -0.2
+		cav_to_inf_ratio = 0.2
+	}
+
+	conditional = {
+		allow = { has_dlc = "The Cossacks" }
+		government_abilities = {
+			cossacks_mechanic
+		}
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
+united_cantons_legacy = {
+	# government mechanics flags go here
+	icon = "trading_city"
+	allow_normal_conversion = no
+
+	legacy_government = yes
+	valid_for_new_country = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+
+
+	republic = yes
+	modifiers = {
+   		governing_capacity = -150
+		possible_dip_policy = 1	
+		mercenary_manpower = 0.5
+	}
+
+	ai = {
+		factor = 5
 	}
 }

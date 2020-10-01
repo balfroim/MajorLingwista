@@ -138,7 +138,6 @@ PRO	= "countries/Provence.txt"
 SPI	= "countries/SardiniaPiedmont.txt"
 TOU	= "countries/Toulouse.txt"
 BER	= "countries/Berry.txt"
-LGW = "countries/Majorie.txt"
 	
 #HRE
 AAC = "countries/Aachen.txt" 
@@ -942,6 +941,11 @@ PGA = "countries/Perugia.txt"
 TTS = "countries/Two Sicilies.txt"
 FKN = "countries/Franconia.txt"
 SWA = "countries/Swabia.txt"
+
+# Mod Lingwista
+
+LGW = "countries/Majorie.txt"
+ALI = "countries/Aliens.txt"
 
 # ???
 JMN = "countries/Jan Mayen.txt"

@@ -183,6 +183,19 @@ groups = {
 		nation_designer_cost = {
 			value = 500
 		}
+	}	
+	
+	
+	alien = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_unit_type = alien
+		nation_designer_trigger = {
+			always = no
+		}
+		nation_designer_cost = {
+			value = 500
+		}
 	}
 }
 

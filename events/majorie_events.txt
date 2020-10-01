@@ -647,3 +647,92 @@ country_event = {
 		}
 	}
 }
+
+### Events 3X Boss
+
+country_event = {
+	id = majorie_events.30
+	title = "majorie_event.30t"
+	desc = "majorie_event.30d"
+	picture = ANGRY_MOB_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		ai = yes
+		is_great_power = yes
+		NOT = { has_reform = illuminatos_council_reform }
+		is_year = 1700
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = {
+		change_tag = ALI
+		change_unit_type = alien
+		if = {
+			limit = { primitives = yes }
+			set_primitive = no
+		}
+		if = {
+			limit = {
+				NOT = { government = theocracy }
+			}
+			change_government = theocracy
+		}
+		country_event = {
+			id = majorie_events.31
+			days = 0
+		}
+		set_global_flag = aliens_arrivent
+	}
+}
+
+country_event = {
+	id = majorie_events.31
+	title = "majorie_event.30t"
+	desc = "majorie_event.30d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		add_government_reform = alien1_reform
+		add_government_reform = alien2_reform
+		add_government_reform = alien3_reform
+		add_government_reform = alien4_reform
+		add_government_reform = alien5_reform
+		add_government_reform = alien6_reform
+		add_government_reform = alien7_reform
+		add_government_reform = alien8_reform
+	}
+}
+
+country_event = {
+	id = majorie_events.32
+	title = "majorie_event.30t"
+	desc = "majorie_event.30d"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		ai = no
+		has_global_flag = aliens_arrivent
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = {
+		name = "majorie_event.30t"
+		effect = {
+			subtract_variable = {
+				which = ControleIlluminatos
+				value = 1
+			}
+			clr_global_flag = aliens_arrivent
+		}
+	}
+}

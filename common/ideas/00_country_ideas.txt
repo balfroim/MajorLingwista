@@ -15204,3 +15204,42 @@ MAJ_ideas = {
 		global_unrest = -2
 	}
 }
+
+ALI_ideas = {
+	start = {
+		diplomatic_upkeep = -10
+		diplomatic_reputation = -10
+	}
+	
+	bonus = {
+		leader_land_fire = 2
+	}	
+
+	trigger = {
+		tag = ALI
+	}
+	free = yes
+	
+	ALI_idea1 = {
+		ae_impact = -0.5
+	}
+	ALI_idea2 = {
+		province_warscore_cost = -0.5
+	}
+	ALI_idea3 = {
+		unjustified_demands = -0.5
+	}
+	ALI_idea4 = {
+    		core_creation = -0.5
+	}
+	ALI_idea5 = {
+		years_of_nationalism = 20
+	}
+	ALI_idea6 = {
+		mercantilism_cost = -1.0
+	}
+	ALI_idea7 = {
+		privateer_efficiency = 0.5
+		embargo_efficiency = 0.5
+	}
+}

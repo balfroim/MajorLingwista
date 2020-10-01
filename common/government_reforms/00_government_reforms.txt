@@ -1092,6 +1092,42 @@ bureaucratic_despotism = {
 #
 ####################################
 
+alien_government = {
+	# government mechanics flags go here
+	icon = "religious_leader"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	allow_convert = no
+	valid_for_nation_designer = no
+
+	rulers_can_be_generals = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+
+	royal_marriage = no
+	trigger = {	tag = ALI	}
+	modifiers = {
+		reform_progress_growth = 0.5
+		country_admin_power = 3
+		country_diplomatic_power = 3
+		country_military_power = 3
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+
+		has_devotion = yes
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+
 
 theocratic_government = {
 	# government mechanics flags go here

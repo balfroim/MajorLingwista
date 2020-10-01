@@ -1,0 +1,12 @@
+# Xenomorphes
+
+type = cavalry
+unit_type = alien
+
+maneuver = 1
+offensive_morale = 6
+defensive_morale = 6
+offensive_fire = 4
+defensive_fire = 5
+offensive_shock = 6
+defensive_shock = 6

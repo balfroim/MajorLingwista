@@ -423,7 +423,6 @@ alien4_reform = {
 		tag = ALI
 	}
 	modifiers = {
-		land_forcelimit_modifier = 0.9
 		manpower_recovery_speed = 0.9
 	}
 }
@@ -851,8 +850,7 @@ alien6_reform = {
 		tag = ALI
 	}
 	modifiers = {
-		land_morale = 0.5
-		cav_to_inf_ratio = 0.5
+		cav_to_inf_ratio = 0.9
 	}
 }
 

@@ -1835,6 +1835,9 @@ lingwista_monarchy5_reform = {
 		max_absolutism = 50
 		yearly_absolutism = 1
 	}
+	effect = {
+		set_global_flag = angry_illuminatos
+	}
 }
 
 #separation_of_power
@@ -1981,5 +1984,8 @@ lingwista_monarchy6_reform = {
 	modifiers = {
 		siege_ability = 0.5
 		movement_speed = 0.5
+	}
+	effect = {
+		set_global_flag = angry_illuminatos
 	}
 }

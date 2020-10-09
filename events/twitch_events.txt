@@ -3,7 +3,7 @@ namespace = twitch_events
 country_event = {
 	id = twitch_events.0
 	title = "twitch_event.0t"
-	desc = "twitch_decision_desc"
+	desc = "twitch_event.0d"
 	#picture = CORRUPTION_eventPicture
 	
 	is_triggered_only = yes

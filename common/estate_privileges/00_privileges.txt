@@ -6846,10 +6846,6 @@ estate_plebe_discours = {
 	can_select = {
 	}
 	on_granted = {
-		add_estate_loyalty = {
-   			estate = estate_plebe
- 			loyalty = 10
-		}
 		country_event = {
 			id = council_events.2
 			days = 0
@@ -6871,6 +6867,14 @@ estate_plebe_coup_d_etat = {
 		NOT = { exists = LGW }
 	}
 	on_granted = {
+		add_estate_loyalty = {
+   			estate = estate_illuminatos
+ 			loyalty = -10
+		}
+		add_estate_loyalty = {
+   			estate = estate_plebe
+ 			loyalty = 10
+		}
 		country_event = {
 			id = majorie_events.04
 			days = 0

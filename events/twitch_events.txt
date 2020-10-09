@@ -10,43 +10,43 @@ country_event = {
 
 	option = {
 		name = "twitch_event.1t"
+		remove_estate_privilege = estate_illuminatos_twitch
 		country_event = {
 			id = twitch_events.1
 			days = 0
 		}
-		remove_estate_privilege = estate_illuminatos_twitch
 	}
 	option = {
 		name = "twitch_event.2t"
+		remove_estate_privilege = estate_illuminatos_twitch
 		country_event = {
 			id = twitch_events.2
 			days = 0
 		}
-		remove_estate_privilege = estate_illuminatos_twitch
 	}
 	option = {
 		name = "twitch_event.3t"
+		remove_estate_privilege = estate_illuminatos_twitch
 		country_event = {
 			id = twitch_events.3
 			days = 0
 		}
-		remove_estate_privilege = estate_illuminatos_twitch
 	}
 	option = {
 		name = "twitch_event.4t"
+		remove_estate_privilege = estate_illuminatos_twitch
 		country_event = {
 			id = twitch_events.4
 			days = 0
 		}
-		remove_estate_privilege = estate_illuminatos_twitch
 	}
 	option = {
 		name = "twitch_event.5t"
+		remove_estate_privilege = estate_illuminatos_twitch
 		country_event = {
 			id = twitch_events.5
 			days = 0
 		}
-		remove_estate_privilege = estate_illuminatos_twitch
 	}
 	option = {
 		name = "error_event.1t"
@@ -2986,7 +2986,6 @@ country_event = {
 
 
 ## Gift events
-# Inspiré par l'événement "Gift to the State" (https://eu4.paradoxwikis.com/Prestige_events)
 country_event = {
 	id = twitch_events.3
 	title = "twitch_event.3t"
@@ -3032,7 +3031,6 @@ country_event = {
 
 	immediate = {
 		every_owned_province = {
-			# if base_tax < min_base_tax
 			limit = {
 				NOT = { higher_development_than = event_target:least_dev }
 			}
@@ -3042,30 +3040,30 @@ country_event = {
 
 	option = {
 		name = "twitch_event.3a"
-		add_years_of_income = 1
+		add_years_of_income = 2
 	}
 	option = {
 		name = "twitch_event.3b"
-		trigger = {
-			NOT = { prestige = 100 }
+		if = {
+			limit = {
+				NOT = { prestige = 100 }
+			}
+			add_prestige = 25
 		}
-		add_prestige = 50
+		if = {
+			limit = {
+				NOT = { stability = 3 }
+			}
+			add_stability = 1
+		}
+		change_government_reform_progress = 25
+		add_adm_power = 25
 	}
 	option = {
 		name = "twitch_event.3c"
 		event_target:least_dev = {
 			add_base_tax = 1
-		}
-	}
-	option = {
-		name = "twitch_event.3c"
-		event_target:least_dev = {
 			add_base_production = 1
-		}
-	}
-	option = {
-		name = "twitch_event.3c"
-		event_target:least_dev = {
 			add_base_manpower = 1
 		}
 	}
@@ -3088,9 +3086,8 @@ country_event = {
 			save_event_target_as = most_developed_province
 		}
 		every_owned_province = {
-			# if base_tax > min_base_tax
 			limit = {   
-					higher_development_than = event_target:most_developed_province
+				higher_development_than = event_target:most_developed_province
 			}
 			save_event_target_as = most_developed_province		
 		}
@@ -3098,31 +3095,31 @@ country_event = {
 
 	option = {
 		name = "twitch_event.3a"
-		add_years_of_income = 5
+		add_years_of_income = 10
 	}
 	option = {
 		name = "twitch_event.3b"
-		trigger = {
-			NOT = { stability = 3 }
+		if = {
+			limit = {
+				NOT = { prestige = 100 }
+			}
+			add_prestige = 50
 		}
-		add_stability = 1
+		if = {
+			limit = {
+				NOT = { stability = 3 }
+			}
+			add_stability = 2
+		}
+		change_government_reform_progress = 50
+		add_adm_power = 50
 	}
 	option = {
 		name = "twitch_event.3e"
 		event_target:most_developed_province = {
-			add_base_tax = 1
-		}
-	}
-	option = {
-		name = "twitch_event.3e"
-		event_target:most_developed_province = {
-		add_base_production = 1
-		}
-	}
-	option = {
-		name = "twitch_event.3e"
-		event_target:most_developed_province = {
-			add_base_manpower = 1
+			add_base_tax = 3
+			add_base_production = 3
+			add_base_manpower = 3
 		}
 	}
 	option = {
@@ -3141,27 +3138,30 @@ country_event = {
 
 	option = {
 		name = "twitch_event.3a"
-		add_years_of_income = 10
+		add_years_of_income = 20
 	}
 	option = {
 		name = "twitch_event.3b"
+		if = {
+			limit = {
+				NOT = { prestige = 100 }
+			}
+			add_prestige = 100
+		}
+		if = {
+			limit = {
+				NOT = { stability = 3 }
+			}
+			add_stability = 3
+		}
 		change_government_reform_progress = 100
+		add_adm_power = 100
 	}
 	option = {
 		name = "twitch_event.3f"
 		every_owned_province = {
 			add_base_tax = 1
-		}
-	}
-	option = {
-		name = "twitch_event.3f"
-		every_owned_province = {
 			add_base_production = 1
-		}
-	}
-	option = {
-		name = "twitch_event.3f"
-		every_owned_province = {
 			add_base_manpower = 1
 		}
 	}
@@ -3224,9 +3224,6 @@ country_event = {
 		name = "twitch_event.41c"
 		add_manpower = 10
 	}
-	option = {
-		name = "error_event.1t"
-	}
 }
 
 country_event = {
@@ -3248,9 +3245,6 @@ country_event = {
 		name = "twitch_event.42c"
 		add_manpower = 1
 	}
-	option = {
-		name = "error_event.1t"
-	}
 }
 
 country_event = {
@@ -3262,18 +3256,15 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = "twitch_event.43a"
-		add_manpower = -1
+		add_yearly_manpower = -0.5
 	}
 	option = {
 		name = "twitch_event.43b"
-		add_manpower = -5
+		add_yearly_manpower = -2
 	}
 	option = {
 		name = "twitch_event.43c"
-		add_manpower = -10
-	}
-	option = {
-		name = "error_event.1t"
+		add_yearly_manpower = -5
 	}
 }
 
@@ -3331,9 +3322,6 @@ country_event = {
 		name = "twitch_event.51c"
 		add_dip_tech = 1
 	}
-	option = {
-		name = "error_event.1t"
-	}
 }
 
 country_event = {
@@ -3349,14 +3337,11 @@ country_event = {
 	}
 	option = {
 		name = "twitch_event.52b"
-		add_yearly_manpower = 0.5
+		add_yearly_manpower = 5
 	}
 	option = {
 		name = "twitch_event.52c"
-		add_yearly_sailors = 10
-	}
-	option = {
-		name = "error_event.1t"
+		add_yearly_sailors = 5
 	}
 }
 
@@ -3378,8 +3363,5 @@ country_event = {
 	option = {
 		name = "twitch_event.53c"
 		add_navy_tradition = -10
-	}
-	option = {
-		name = "error_event.1t"
 	}
 }

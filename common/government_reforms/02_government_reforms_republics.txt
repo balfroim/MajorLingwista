@@ -2093,7 +2093,7 @@ major_sole_elector_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_reform = illuminatos_council_reform
-		ai = no
+		has_country_flag = modlingwista
 	}
 	modifiers = {
 		ae_impact = -0.1
@@ -2109,7 +2109,7 @@ illuminatos_electors_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_reform = illuminatos_council_reform
-		ai = yes
+		NOT = { has_country_flag = modlingwista }
 	}
 	modifiers = {
 		defensiveness = 0.25
@@ -2174,7 +2174,7 @@ appointment_by_major_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_reform = illuminatos_council_reform
-		ai = no
+		has_country_flag = modlingwista
 	}
 	modifiers = {
 		liberty_desire_from_subject_development = -0.10
@@ -2191,7 +2191,7 @@ cooptation_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_reform = illuminatos_council_reform
-		ai = yes
+		NOT = { has_country_flag = modlingwista }
 	}
 	modifiers = {
 		diplomatic_upkeep = 2
@@ -2375,7 +2375,7 @@ lingwista_took_control = {
 	allow_normal_conversion = yes
 	potential = {
 		has_reform = illuminatos_council_reform
-		ai = no
+		has_country_flag = modlingwista
 	}
 	modifiers = {
 	}
@@ -2407,7 +2407,7 @@ illuminatos_bureau = {
 	allow_normal_conversion = yes
 	potential = {
 		has_reform = illuminatos_council_reform
-		ai = yes
+		NOT = { has_country_flag = modlingwista }
 	}
 	modifiers = {
 		administrative_efficiency = 0.2

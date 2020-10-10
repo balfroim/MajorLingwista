@@ -5,11 +5,11 @@ on_startup = {
 	if = {
 		limit = {
 			AND = {
-				NOT = { has_global_flag = modlingwista }
+				NOT = { has_country_flag = modlingwista }
 				ai = no
 			}
 		}
-		set_global_flag = modlingwista
+		set_country_flag = modlingwista
 		country_event = {
 			id = majorie_events.01
 			days = 0

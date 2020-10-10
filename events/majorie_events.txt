@@ -17,6 +17,7 @@ country_event = {
 			days = 0
 		}
 		hidden_effect = {
+			clr_global_flag = angry_illuminatos
 			set_variable = {
 				which = ControleIlluminatos
 				value = 0
@@ -131,10 +132,7 @@ country_event = {
 		name = "majorie_event.05t"
 		add_ruler_personality = immortal_personality
 		add_government_reform = lingwista_monarchy_reform
-		country_event = {
-			id = ideagroups.1
-			days = 0
-		}
+		swap_free_idea_group = yes
 	}
 }
 
@@ -772,10 +770,7 @@ country_event = {
 		add_government_reform = alien7_reform
 		add_government_reform = alien8_reform
 		every_province = { add_permanent_claim = ALI }
-		country_event = {
-			id = ideagroups.1
-			days = 0
-		}
+		swap_free_idea_group = yes
 	}
 }
 

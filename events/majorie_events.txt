@@ -221,6 +221,7 @@ country_event = {
 	option = {
 		every_country = {
 			limit = { has_country_flag = illuminatos_alliance }
+			white_peace = ROOT
 			remove_historical_rival = ROOT
 			create_alliance = ROOT
 			add_trust = {

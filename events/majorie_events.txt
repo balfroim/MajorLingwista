@@ -695,6 +695,7 @@ country_event = {
 		ai = yes
 		is_great_power = yes
 		NOT = { has_reform = illuminatos_council_reform }
+		NOT = { has_reform = lingwista_monarchy_reform }
 		is_year = 1700
 	}
 
@@ -705,6 +706,8 @@ country_event = {
 	option = {
 		change_tag = ALI
 		change_unit_type = alien
+		change_primary_culture = atlantean
+		set_ruler_culture = atlantean
 		if = {
 			limit = { primitives = yes }
 			set_primitive = no
@@ -714,6 +717,34 @@ country_event = {
 				NOT = { government = theocracy }
 			}
 			change_government = theocracy
+		}
+		if = {
+			limit = { is_emperor_of_china = yes }
+			dismantle_empire_of_china = yes
+		}
+		if = {
+			limit = { is_emperor = yes }
+			dismantle_hre = yes
+		}
+		if = {
+			limit = {
+				is_emperor = no
+				OR = {
+					is_part_of_hre = yes
+					any_owned_province = {
+						is_part_of_hre = yes
+					}
+				}
+			}
+			set_in_empire = no
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
 		}
 		country_event = {
 			id = majorie_events.31
@@ -740,6 +771,7 @@ country_event = {
 		add_government_reform = alien6_reform
 		add_government_reform = alien7_reform
 		add_government_reform = alien8_reform
+		every_province = { add_permanent_claim = ALI }
 		country_event = {
 			id = ideagroups.1
 			days = 0

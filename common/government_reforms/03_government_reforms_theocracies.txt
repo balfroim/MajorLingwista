@@ -243,7 +243,6 @@ alien3_reform = {
 	}
 	modifiers = {
 		global_regiment_cost = -0.9
-		manpower_recovery_speed = 0.9
 	}
 }
 

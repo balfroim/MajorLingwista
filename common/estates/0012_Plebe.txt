@@ -68,6 +68,7 @@ estate_plebe =
 	}
 
 	agendas = {
+		estate_plebe_fire_natif_advisor
 	}
 
 	color = { 229 160 172 }

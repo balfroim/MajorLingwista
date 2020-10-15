@@ -53,6 +53,7 @@ estate_illuminatos =
 	}
 
 	agendas = {
+		estate_illuminatos_hire_advisor
 	}
 
 	color = { 230 145 20 }

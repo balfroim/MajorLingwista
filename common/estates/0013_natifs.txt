@@ -68,6 +68,9 @@ estate_natifs =
 	}
 
 	agendas = {
+		estate_natifs_restore_currency
+		estate_natifs_recovery_from_hyperinflation
+		estate_natifs_get_cash
 	}
 
 	color = { 200 150 0 }

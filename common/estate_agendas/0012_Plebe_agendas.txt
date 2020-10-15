@@ -1,0 +1,59 @@
+
+
+estate_plebe_fire_natif_advisor = {
+	can_select = {
+		employed_advisor = {
+			NOT = { culture = modern_french }
+		}
+	}
+	selection_weight = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			always = yes
+		}
+	}
+	immediate_effect = {
+		hidden_effect = {
+			set_country_flag = need_to_fire_foreign_advisor
+		}
+	}
+	on_invalid = {
+		clr_country_flag = need_to_fire_foreign_advisor
+	}
+	task_requirements = {
+		custom_trigger_tooltip = {
+			tooltip = fire_foreign_advisor_tooltip
+			has_country_flag = just_fired_foreign_advisor
+		}
+	}
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_plebe
+			loyalty = 10
+		}
+		add_estate_loyalty = {
+			estate = estate_natifs
+			loyalty = -10
+		}
+		clr_country_flag = just_fired_foreign_advisor
+		clr_country_flag = need_to_fire_foreign_advisor
+	}
+	invalid_trigger = {
+		NOT = {
+			employed_advisor = {
+				culture = modern_french
+			}
+		}
+		NOT = { has_country_flag = just_fired_foreign_advisor }
+	}
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = estate_plebe
+			desc = estate_lingwista_echec
+			loyalty = -5
+			duration = 7300
+        }
+		clr_country_flag = need_to_fire_foreign_advisor
+    }
+}

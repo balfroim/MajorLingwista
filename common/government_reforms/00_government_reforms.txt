@@ -124,16 +124,13 @@ lingwista_monarchy = {
 	valid_for_new_country = no
 	valid_for_nation_designer = no
 	monarchy = yes
+	maintain_dynasty = yes
 	trigger = {	tag = LGW	}
 	modifiers = {
-    	governing_capacity = 150
+    		governing_capacity = 150
 		production_efficiency = 0.5
 		global_autonomy = -0.05
 		max_absolutism = 50
-	}
-
-	custom_attributes = {
-		blocked_call_diet = yes
 	}
 }
 

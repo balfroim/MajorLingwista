@@ -1,6 +1,6 @@
-estate_natifs =
+estate_plebe =
 {
-	icon = 1
+	icon = 8
 
 	# If true, country will get estate
 	trigger = {
@@ -12,28 +12,28 @@ estate_natifs =
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
-		global_unrest = -1
+		production_efficiency = 1.0
 	}
 	country_modifier_neutral = {
-		global_unrest = 1
+		production_efficiency = 0.5
 	}	
 	country_modifier_angry = {
-		global_unrest = 2
+		administrative_efficiency = -0.1
 	}
 
 	land_ownership_modifier = {
-		natifs_loyalty_modifier = 0.2
+		plebe_loyalty_modifier = 0.2
 	}
 
 	province_independence_weight = {
 		factor = 1
 		modifier = {
 			factor = 0.1
-			NOT = { culture_group = owner }
+			NOT = { culture_group = french }
 		}
 		modifier = {
 			factor = 0.5
-			NOT = { culture = owner }
+			NOT = { culture = modern_french }
 		}
 		modifier = {
 			factor = 0.67
@@ -46,31 +46,31 @@ estate_natifs =
 	}
 
 	# Influence modifiers
-	base_influence = 40
+	base_influence = 20
 	influence_modifier = {
-		desc = cultural_majority_natifs
-		trigger = { 
+		desc = cultural_minority_plebe
+		trigger = {
 			NOT = { dominant_culture = modern_french }
-		}
-		influence = 20
+		}	
+		influence = -10
 	}
 	influence_modifier = {
-		desc = cultural_minority_natifs
+		desc = cultural_majority_plebe
 		trigger = { dominant_culture = modern_french }
-		influence = -20
+		influence = 10
 	}
 	
 	privileges = {
-		estate_natifs_conscription
-		estate_natifs_conscription_reduite
-		estate_natifs_taxation_exceptionnelle
-		estate_natifs_taxation_reduite
+		estate_plebe_discours
+		estate_plebe_coup_d_etat
+		estate_plebe_education
+		estate_plebe_apartheid
 	}
 
 	agendas = {
 	}
 
-	color = { 200 150 0 }
+	color = { 229 160 172 }
 
 	influence_from_dev_modifier = 1.0
 }

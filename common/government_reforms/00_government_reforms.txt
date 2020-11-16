@@ -124,16 +124,13 @@ lingwista_monarchy = {
 	valid_for_new_country = no
 	valid_for_nation_designer = no
 	monarchy = yes
+	maintain_dynasty = yes
 	trigger = {	tag = LGW	}
 	modifiers = {
-    	governing_capacity = 150
+    		governing_capacity = 150
 		production_efficiency = 0.5
 		global_autonomy = -0.05
 		max_absolutism = 50
-	}
-
-	custom_attributes = {
-		blocked_call_diet = yes
 	}
 }
 
@@ -1091,6 +1088,42 @@ bureaucratic_despotism = {
 #Religious Governments
 #
 ####################################
+
+alien_government = {
+	# government mechanics flags go here
+	icon = "religious_leader"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	allow_convert = no
+	valid_for_nation_designer = no
+
+	rulers_can_be_generals = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+
+	royal_marriage = no
+	trigger = {	tag = ALI	}
+	modifiers = {
+		reform_progress_growth = 0.5
+		country_admin_power = 3
+		country_diplomatic_power = 3
+		country_military_power = 3
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+
+		has_devotion = yes
+	}
+
+	ai = {
+		factor = 0
+	}
+}
 
 
 theocratic_government = {

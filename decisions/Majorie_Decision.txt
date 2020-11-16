@@ -1,64 +1,57 @@
 country_decisions = {
 
-	form_majorie_decision = {
-		allow = {
-			ai = no
-			NOT = { exists = LGW }
-		}
+	adopt_majorie_culture = {
 		potential = {
-			NOT = { exists = LGW }
+			NOT = { primary_culture = modern_french }
+			OR = {
+				AND = {
+					ai = no
+					has_reform = modernization_population_reform
+				}
+				has_reform = lingwista_monarchy1_reform
+			}
 		}
 		effect = {
 			country_event = {
-				id = majorie_events.1
+				id = majorie_events.10
 				days = 0
 			}
 		}
 	}
 
 	adopt_majorie_faith = {
-		allow = {
-			tag = LGW
-			NOT = { religion = blue_moon }
-		}
 		potential = {
 			NOT = { religion = blue_moon }
+			OR = {
+				AND = {
+					ai = no
+					has_reform = modernization_population_reform
+				}
+				has_reform = lingwista_monarchy1_reform
+			}
 		}
 		effect = {
 			country_event = {
-				id = majorie_events.3
+				id = majorie_events.11
 				days = 0
 			}
 		}
 	}
 
-	adopt_majorie_culture = {
-		allow = {
-			tag = LGW
-			NOT = { primary_culture = aquitaine }
-		}
+	adopt_futuristic_weapons = {
 		potential = {
-			NOT = { primary_culture = aquitaine }
-		}
-		effect = {
-			country_event = {
-				id = majorie_events.4
-				days = 0
+			NOT = { has_country_flag = futuristic_weapon }
+			OR = {
+				AND = {
+					ai = no
+					has_reform = civilising_mission_reform
+				}
+				has_reform = lingwista_monarchy1_reform
 			}
 		}
-	}
-
-	adopt_majorie_ideas = {
-		allow = {
-			tag = LGW
-			NOT = {	has_idea = MAJ_idea1	}
-		}
-		potential = {
-			NOT = {	has_idea = MAJ_idea1	}
-		}
 		effect = {
 			country_event = {
-				id = ideagroups.1 #Swap Ideas
+				id = majorie_events.12
 				days = 0
 			}
 		}

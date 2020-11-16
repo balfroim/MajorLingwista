@@ -1614,20 +1614,15 @@ blue_moon_group = {
 	flag_emblem_index_range = { 107 109 }
 	blue_moon = {
 		icon = 21
-		color = { 0 0 200 }
-		province = {
-			local_defensiveness = 0.5
-			local_friendly_movement_speed = 0.2
-		}
+		color = { 25 125 200 }
 		country = {
 			tolerance_own = 2
-			yearly_absolutism = 1
-			max_absolutism = 20
-			free_policy = 1
+			institution_spread_from_true_faith = 0.5
+			innovativeness_gain = 0.5
+			tolerance_heathen = 2
 		}
 		country_as_secondary = {
-			free_policy = 1
-			tolerance_own = 1
+			tolerance_heathen = 1
 		}
 		
 		heretic = { redmoon }	

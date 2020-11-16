@@ -1,0 +1,6 @@
+government = theocracy
+add_government_reform = alien1_reform
+primary_culture = modern_french
+religion = blue_moon
+technology_group = alien
+capital = 192 #Dijon

@@ -1089,12 +1089,6 @@ illuminatos_council_reform = {
 	lock_level_when_selected = yes
 	allow_normal_conversion = yes
 	icon = "illuminatos"
-	potential = {
-		OR = {
-			tag = LGW
-			ai = yes
-		}
-	}
 	valid_for_nation_designer = no
 	legacy_equivalent = illuminatos_council
 	modifiers = {
@@ -1120,6 +1114,7 @@ republican_authoritarianism_reform = {
 	icon = "merchant"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		NOT = {
 			has_reform = pirate_republic_reform
 		}
@@ -1140,6 +1135,7 @@ nepotism_reform = {
 	icon = "man_and_children"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		NOT = {
 			has_reform = pirate_republic_reform
 		}
@@ -1165,6 +1161,7 @@ republicanism_reform = {
 	icon = "assembly_hall"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		NOT = {
 			has_reform = pirate_republic_reform
 		}
@@ -1186,6 +1183,7 @@ council_of_captains_reform = {
 	allow_normal_conversion = yes
 	legacy_equivalent = oligarchic_republic
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		has_reform = pirate_republic_reform
 	}
 	modifiers = {
@@ -1201,6 +1199,7 @@ articles_of_agreement_reform = {
 	icon = "articles_of_agreement"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		has_reform = pirate_republic_reform
 	}
 	modifiers = {
@@ -1217,6 +1216,7 @@ smugglers_haven_reform = {
 	icon = "smugglers_haven"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		has_reform = pirate_republic_reform
 	}
 	modifiers = {
@@ -1232,6 +1232,7 @@ liberte_reform = {
 	icon = "liberte_reform"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		is_revolutionary = yes
 		has_dlc = "Emperor"
 	}
@@ -1248,6 +1249,7 @@ egalite_reform = {
 	icon = "egalite_reform"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		is_revolutionary = yes
 		has_dlc = "Emperor"
 	}
@@ -1264,6 +1266,7 @@ fraternite_reform = {
 	icon = "fraternite_reform"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		is_revolutionary = yes
 		has_dlc = "Emperor"
 	}
@@ -1296,6 +1299,7 @@ frequent_elections_reform = {
 	icon = "ballot_box"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		OR = {
 			is_revolutionary = no
 			NOT = { has_dlc = "Emperor" }
@@ -1323,6 +1327,7 @@ consolidation_of_power_reform = {
 	icon = "constitution"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		OR = {
 			is_revolutionary = no
 			NOT = { has_dlc = "Emperor" }
@@ -1338,6 +1343,7 @@ lottery_reform = {
 	icon = "paper_with_seal_3"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		is_colonial_nation = no
 		OR = {
 			is_revolutionary = no
@@ -1373,6 +1379,7 @@ consolidate_power_in_doge_reform = {
 	icon = "consolidate_power_in_doge_reform"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		OR = {
 			has_reform = venice_merchants_reform
 			has_reform = merchants_reform
@@ -1403,6 +1410,7 @@ consolidate_power_in_cities_reform = {
 	icon = "consolidate_power_in_cities_reform"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		OR = {
 			has_reform = venice_merchants_reform
 			has_reform = merchants_reform
@@ -1433,6 +1441,7 @@ legislative_assembly_reform = {
 	icon = "legislative_assembly_reform"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		is_revolutionary = yes
 		has_dlc = "Emperor"
 	}
@@ -1448,6 +1457,7 @@ national_constituent_reform = {
 	icon = "national_constituent_reform"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		is_revolutionary = yes
 		has_dlc = "Emperor"
 	}
@@ -1478,6 +1488,9 @@ illuminatos_alternance_reform = {
 provincial_governments_reform = {
 	icon = "landscape"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
+	}
 	modifiers = {
 		state_maintenance_modifier = -0.25
 	}
@@ -1489,6 +1502,9 @@ provincial_governments_reform = {
 administrative_divisions_reform = {
 	icon = "map"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
+	}
 	modifiers = {
 		governing_capacity = 250
 	}
@@ -1526,6 +1542,9 @@ administrative_divisions_reform = {
 union_of_states_reform = {
 	icon = "merchant_ship"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
+	}
 	modifiers = {
 		global_trade_power = 0.1
 	}
@@ -1566,6 +1585,9 @@ deconcentration_and_decentralization_reform = {
 presidential_reform = {
 	icon = "man_on_podium"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
+	}
 	modifiers = {
 		embracement_cost = -0.1
 	}
@@ -1586,6 +1608,7 @@ imperial_diplomacy_reform = {
 	icon = "king"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		has_reform = free_city
 	}
 	modifiers = {
@@ -1617,6 +1640,7 @@ municipal_self_defense_reform = {
 	icon = "soldiers_7"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		has_reform = free_city
 	}
 	modifiers = {
@@ -1632,6 +1656,7 @@ feuillant_reform = {
 	icon = "feuillant_reform"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		is_revolutionary = yes
 		has_dlc = "Emperor"
 	}
@@ -1668,6 +1693,7 @@ two_chamber_reform = {
 	icon = "parliament_hall"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		is_revolutionary = yes
 		has_dlc = "Emperor"
 	}
@@ -1686,8 +1712,8 @@ majorism_reform = {
 	allow_normal_conversion = yes
 	potential = {	has_reform = illuminatos_council_reform	}
 	modifiers = {
-		fire_damage = 0.1
-		fire_damage_received = -0.1
+		years_of_nationalism = -5
+		global_autonomy = -0.05
 	}
 	ai = {
 		factor = 100
@@ -1700,6 +1726,9 @@ majorism_reform = {
 broaden_executive_powers_reform = {
 	icon = "castle"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
+	}
 	modifiers = {
 		stability_cost_modifier = -0.15
 	}
@@ -1711,6 +1740,9 @@ broaden_executive_powers_reform = {
 devolution_of_powers_reform = {
 	icon = "generic_people"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
+	}
 	modifiers = {
 		diplomats = 1
 	}
@@ -1724,6 +1756,7 @@ pirate_king_reform = {
 	allow_normal_conversion = yes
 	legacy_equivalent = pirate_kingdom
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		has_reform = pirate_republic_reform
 	}
 	modifiers = {
@@ -1746,6 +1779,7 @@ war_against_the_world_doctrine_reform = {
 	legacy_equivalent = war_against_the_world_government
 	disallowed_trade_goods = { slaves }
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		has_reform = pirate_republic_reform
 	}
 	modifiers = {
@@ -1766,6 +1800,7 @@ black_market_consortium_reform = {
 	allow_normal_conversion = yes
 	legacy_equivalent = black_market_consortium_government
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		has_reform = pirate_republic_reform
 	}
 	modifiers = {
@@ -1787,6 +1822,7 @@ absolute_president_reform = {
 	icon = "king"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		is_revolutionary = yes
 		has_dlc = "Emperor"
 	}
@@ -1803,6 +1839,7 @@ revolutionary_council_reform = {
 	icon = "revolutionary_council_reform"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		has_dlc = "Emperor"
 		is_revolutionary = yes
 	}
@@ -1824,6 +1861,10 @@ modernization_population_reform = {
 		missionaries = 1
 		culture_conversion_cost = -0.25
 	}
+	effect = {
+		custom_tooltip = "tooltype_majorie_faith"
+		custom_tooltip = "tooltype_majorie_culture"
+	}
 	ai = {
 		factor = 100
 	}
@@ -1834,6 +1875,9 @@ modernization_population_reform = {
 political_principle_reform = {
 	icon = "paper_with_seal_3"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
+	}
 	modifiers = {
 		possible_adm_policy = 1
 	}
@@ -1842,6 +1886,9 @@ political_principle_reform = {
 moral_principle_reform = {
 	icon = "parliament_hall"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
+	}
 	modifiers = {
 		possible_dip_policy = 1
 	}
@@ -1851,6 +1898,7 @@ revolutionary_principle_reform = {
 	icon = "revolutionary_republic"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		is_revolutionary = yes
 		has_dlc = "Emperor"
 	}
@@ -1868,6 +1916,7 @@ equality_principle_reform = {
 	icon = "equal_electorate_reform"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		is_revolutionary = yes
 		has_dlc = "Emperor"
 	}
@@ -1885,6 +1934,7 @@ imperial_principle_reform = {
 	icon = "imperial_nobility_reform"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		is_revolutionary = yes
 		has_dlc = "Emperor"
 	}
@@ -1903,9 +1953,10 @@ civilising_mission_reform = {
 	allow_normal_conversion = yes
 	potential = {	has_reform = illuminatos_council_reform	}
 	modifiers = {
-		discipline = 0.1
-		artillery_bonus_vs_fort = 2
-		backrow_artillery_damage = 0.1
+		cb_on_religious_enemies = yes
+	}
+	effect = {
+		custom_tooltip = "tooltype_majorie_weapons"
 	}
 	ai = {
 		factor = 100
@@ -1918,6 +1969,7 @@ landholders_reform = {
 	icon = "dutch_flag"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		OR = {
 			is_revolutionary = no
 			NOT = { has_dlc = "Emperor" }
@@ -1935,6 +1987,7 @@ citizenry_reform = {
 	icon = "people_walking"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		OR = {
 			is_revolutionary = no
 			NOT = { has_dlc = "Emperor" }
@@ -1953,6 +2006,7 @@ admiralty_reform = {
 	allow_normal_conversion = yes
 	# no legacy equivalent. own Dharama or Emperor
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		is_revolutionary = no
 	}
 	trigger = {
@@ -1977,6 +2031,7 @@ equal_electorate_reform = {
 	icon = "equal_electorate_reform"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		is_revolutionary = yes
 		has_dlc = "Emperor"
 	}
@@ -1996,6 +2051,7 @@ three_classes_reform = {
 	icon = "three_classes_reform"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		is_revolutionary = yes
 		has_dlc = "Emperor"
 	}
@@ -2013,6 +2069,7 @@ military_electorate_reform = {
 	icon = "military_dictatorship_reform"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		is_revolutionary = yes
 		has_dlc = "Emperor"
 	}
@@ -2036,7 +2093,7 @@ major_sole_elector_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_reform = illuminatos_council_reform
-		tag = LGW
+		has_country_flag = modlingwista
 	}
 	modifiers = {
 		ae_impact = -0.1
@@ -2052,11 +2109,11 @@ illuminatos_electors_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_reform = illuminatos_council_reform
-		NOT = { tag = LGW }
+		NOT = { has_country_flag = modlingwista }
 	}
 	modifiers = {
-		defensiveness = 0.5
-		reinforce_cost_modifier = -0.5
+		defensiveness = 0.25
+		reinforce_cost_modifier = -0.25
 	}
 	ai = {
 		factor = 100
@@ -2068,6 +2125,9 @@ illuminatos_electors_reform = {
 appointment_by_committee_reform = {
 	icon = "politician"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
+	}
 	modifiers = {
 		advisor_pool = 1
 		advisor_cost = -0.05
@@ -2077,6 +2137,9 @@ appointment_by_committee_reform = {
 bureaucratic_aparatus_reform = {
 	icon = "map_2"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
+	}
 	modifiers = {
 		min_autonomy_in_territories = -0.10
 	}
@@ -2086,6 +2149,9 @@ bureaucratic_aparatus_reform = {
 universal_suffrage_reform = {
 	icon = "paper_with_seal"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
+	}
 	modifiers = {
 		num_accepted_cultures = 1
 	}
@@ -2108,12 +2174,15 @@ appointment_by_major_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_reform = illuminatos_council_reform
-		tag = LGW
+		has_country_flag = modlingwista
 	}
 	modifiers = {
-		liberty_desire_from_subject_development = -0.25
-		global_spy_defence = 0.5
+		liberty_desire_from_subject_development = -0.10
+		global_spy_defence = 0.25
 		tolerance_own = 1
+	}
+	effect = {
+		set_global_flag = angry_illuminatos
 	}
 }
 
@@ -2122,7 +2191,7 @@ cooptation_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_reform = illuminatos_council_reform
-		NOT = { tag = LGW }
+		NOT = { has_country_flag = modlingwista }
 	}
 	modifiers = {
 		diplomatic_upkeep = 2
@@ -2140,6 +2209,7 @@ pirates_become_republic_reform = {
 	allow_normal_conversion = yes
 	
 	potential = {
+		NOT = { has_reform = illuminatos_council_reform }
 		has_reform = pirate_republic_reform
 	}
 	effect = {
@@ -2156,6 +2226,7 @@ seize_executive_power_reform = {
 	allow_normal_conversion = yes
 
 	trigger = {
+		NOT = { has_reform = illuminatos_council_reform }
 		NOT = { has_government_attribute_short_desc = locked_government_type }
 	}
 
@@ -2184,6 +2255,7 @@ proclaim_divine_guidance_reform = {
 	icon = "religious_leader_highlighted"
 	allow_normal_conversion = yes
 	trigger = {
+		NOT = { has_reform = illuminatos_council_reform }
 		NOT = { has_government_attribute_short_desc = locked_government_type }
 	}
 	modifiers = {
@@ -2202,6 +2274,7 @@ strengthen_executive_powers_reform = {
 	icon = "soldiers_2"
 	allow_normal_conversion = yes
 	potential = { 
+		NOT = { has_reform = illuminatos_council_reform }
 		is_revolutionary = no 
 	}
 	modifiers = {
@@ -2212,6 +2285,9 @@ strengthen_executive_powers_reform = {
 reinforce_republican_values_reform = {
 	icon = "parliament_hall"
 	allow_normal_conversion = yes
+	potential = { 
+		NOT = { has_reform = illuminatos_council_reform }
+	}
 	modifiers = {
 		free_adm_policy = 1
 		reelection_cost = -0.1
@@ -2223,6 +2299,7 @@ president_for_life_reform = {
 	allow_normal_conversion = yes
 	has_term_election = no
 	potential = { 
+		NOT = { has_reform = illuminatos_council_reform }
 		is_revolutionary = yes
 		has_dlc = "Emperor"
 	}
@@ -2237,6 +2314,7 @@ government_for_people_reform = {
 	icon = "government_for_people_reform"
 	allow_normal_conversion = yes
 	potential = { 
+		NOT = { has_reform = illuminatos_council_reform }
 		is_revolutionary = yes
 		has_dlc = "Emperor"
 	}
@@ -2250,6 +2328,7 @@ become_rev_empire_reform = {
 	allow_normal_conversion = yes
 
 	potential = { 
+		NOT = { has_reform = illuminatos_council_reform }
 		is_revolutionary = yes
 	}
 	
@@ -2296,11 +2375,12 @@ lingwista_took_control = {
 	allow_normal_conversion = yes
 	potential = {
 		has_reform = illuminatos_council_reform
-		tag = LGW
+		has_country_flag = modlingwista
 	}
 	modifiers = {
 	}
 	effect = {
+		change_tag = LGW
 		lose_reforms = 5
 		change_government = monarchy
 		add_stability = 3
@@ -2312,8 +2392,12 @@ lingwista_took_control = {
 			age = 20
 			claim = 100
 			male = yes
-			culture = aquitaine
+			culture = modern_french
 			religion = blue_moon
+		}
+		country_event = {
+			id = majorie_events.05
+			days = 1
 		}
 	}
 }
@@ -2321,7 +2405,10 @@ lingwista_took_control = {
 illuminatos_bureau = {
 	icon = "illuminatos"
 	allow_normal_conversion = yes
-	potential = {	has_reform = illuminatos_council_reform	}
+	potential = {
+		has_reform = illuminatos_council_reform
+		NOT = { has_country_flag = modlingwista }
+	}
 	modifiers = {
 		administrative_efficiency = 0.2
 	}

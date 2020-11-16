@@ -15165,12 +15165,12 @@ ICE_ideas = {
 
 MAJ_ideas = {
 	start = {
-		land_morale = 0.05
-		hostile_attrition = 1
+		infantry_power = 0.2
+		idea_cost = -0.1
 	}
 	
 	bonus = {
-		tolerance_own = 2
+		discipline = 0.1
 	}	
 
 	trigger = {
@@ -15179,26 +15179,67 @@ MAJ_ideas = {
 	free = yes
 	
 	MAJ_idea1 = {
-		global_unrest = -1
-		liberty_desire_from_subject_development = 0.15
+		technology_cost = -0.2
 	}
 	MAJ_idea2 = {
-		global_manpower_modifier = 0.2
+		global_manpower_modifier = 0.5
 	}
 	MAJ_idea3 = {
-		global_missionary_strength = 0.05
+		fire_damage = 0.1
+		land_attrition = -0.5
 	}
 	MAJ_idea4 = {
-		infantry_power = 0.15
+    		diplomatic_reputation = 2
+    		diplomatic_upkeep = 2
 	}
 	MAJ_idea5 = {
-		discipline = 0.05
+		heavy_ship_power = 0.15
+		naval_morale = 0.15
 	}
 	MAJ_idea6 = {
-		build_cost = -0.1
-		development_cost = -0.10
+		infantry_cost = -0.2
+		artillery_cost = -0.2
 	}
 	MAJ_idea7 = {
-		culture_conversion_cost = -0.2
+		global_unrest = -2
+	}
+}
+
+ALI_ideas = {
+	start = {
+		diplomatic_upkeep = -10
+		diplomatic_reputation = -10
+	}
+	
+	bonus = {
+		leader_land_fire = 2
+	}	
+
+	trigger = {
+		tag = ALI
+	}
+	free = yes
+	
+	ALI_idea1 = {
+		ae_impact = -0.5
+	}
+	ALI_idea2 = {
+		province_warscore_cost = -0.5
+	}
+	ALI_idea3 = {
+		unjustified_demands = -0.5
+	}
+	ALI_idea4 = {
+    		core_creation = -0.5
+	}
+	ALI_idea5 = {
+		years_of_nationalism = 20
+	}
+	ALI_idea6 = {
+		mercantilism_cost = -1.0
+	}
+	ALI_idea7 = {
+		privateer_efficiency = 0.5
+		embargo_efficiency = 0.5
 	}
 }

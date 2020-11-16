@@ -481,6 +481,7 @@ theocracy = {
 		theocratic_government
 		monastic_order_government
 		holy_state_legacy
+		alien_government
 	}
 	reform_levels = {
 		theocratic_leadership = {
@@ -490,6 +491,7 @@ theocracy = {
 				papacy_reform
 				holy_state_reform
 				united_cantons_reform
+				alien1_reform
 			}
 		}
 		internal_vs_external_mission = {
@@ -498,6 +500,7 @@ theocracy = {
 				external_mission_reform
 				mission_to_civilize_reform
 				mission_to_kill_pirates_reform
+				alien2_reform
 			}
 		}
 		divine_cause = {
@@ -507,6 +510,7 @@ theocracy = {
 				expel_heathens_reform
 				guru_advisors_reform
 				kingdom_of_god_reform
+				alien3_reform
 			}
 		}
 		clergy_in_administration = {
@@ -519,6 +523,7 @@ theocracy = {
 				pious_merchants_reform
 				monastic_breweries_reform
 				warrior_monks_reform
+				alien4_reform
 			}
 		}
 		secularization = {
@@ -530,6 +535,7 @@ theocracy = {
 				proclaim_republic_reform
 				battle_pope_reform
 				conciliarism_reform
+				alien5_reform
 			}
 		}
 		separation_of_power_theocracy = {
@@ -541,6 +547,7 @@ theocracy = {
 				monastic_elections_reform
 				commander_king_reform
 				admiral_king_reform
+				alien6_reform
 			}
 		}
 		nature_of_faith = {
@@ -549,6 +556,7 @@ theocracy = {
 				religious_harmony_reform
 				god_and_man_reform
 				organising_our_religion_reform
+				alien7_reform
 			}
 		}
 		faith_and_the_world = {
@@ -559,6 +567,7 @@ theocracy = {
 				priestly_autonomy_reform
 				proclaim_religious_head_reform
 				all_under_tengri_reform
+				alien8_reform
 			}
 		}
 	}

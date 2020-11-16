@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform
-primary_culture = burgundian
-religion = catholic
-technology_group = western
+add_government_reform = lingwista_monarchy_reform
+primary_culture = modern_french
+religion = blue_moon
+technology_group = majorie
 capital = 192 #Dijon

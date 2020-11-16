@@ -1,30 +1,26 @@
 estate_illuminatos =
 {
-	icon = 1
+	icon = 7
 
 	# If true, country will get estate
 	trigger = {
 		OR = {
 			has_reform = illuminatos_council_reform
-			has_reform = lingwista_monarchy_reform
+			tag = LGW
 		}
 	}
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
-		production_efficiency = 0.2
-		technology_cost = -0.1
-		idea_cost = -0.1
+		technology_cost = -0.2
+		idea_cost = -0.2
 		innovativeness_gain = 0.5
-		yearly_corruption = -0.1
 	}
 	country_modifier_neutral = {
-		production_efficiency = 0.2
+		technology_cost = -0.1
 	}	
 	country_modifier_angry = {
-		production_efficiency = -0.2
 		innovativeness_gain = -0.5
-		yearly_corruption = 0.1
 	}
 
 	land_ownership_modifier = {
@@ -32,49 +28,34 @@ estate_illuminatos =
 	}
 
 	province_independence_weight = {
-		factor = 1
-		modifier = {
-			factor = 0.1
-			NOT = { culture_group = owner }
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { culture = owner }
-		}
-		modifier = {
-			factor = 0.67
-			NOT = { is_state_core = owner }
-		}
-		modifier = {
-			factor = 1.2
-			base_tax = 10
-		}
+		factor = 0
 	}
 
 	# Influence modifiers
 	base_influence = 10
 	influence_modifier = {
-		desc = control_haute_marne
+		desc = cultural_minority_illuminatos
 		trigger = {
-			tag = LGW
-			owns = 192 #Haute-Marne
+			NOT = { dominant_culture = modern_french }
 		}	
-		influence = 20
+		influence = -5
 	}
 	influence_modifier = {
-		desc = control_nesblog
-		trigger = {
-			tag = LGW
-			owns = 4384 #Rennes
-		}	
-		influence = 20
+		desc = cultural_majority_illuminatos
+		trigger = { dominant_culture = modern_french }
+		influence = 5
 	}
-	influence_modifier = {
-		desc = cultural_minority
-		trigger = {
-			NOT = { dominant_culture = ROOT }
-		}	
-		influence = -15
+	
+	privileges = {
+		estate_illuminatos_twitch
+		estate_illuminatos_war_council
+		estate_illuminatos_subvention
 	}
+
+	agendas = {
+	}
+
+	color = { 230 145 20 }
+
 	influence_from_dev_modifier = 1.0
 }

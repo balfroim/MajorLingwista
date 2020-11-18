@@ -181,6 +181,52 @@ country_event = {
 	}
 }
 
+#illuminatos en trop a réduire
+country_event = {
+	id = majorie_events.061
+	title = "majorie_event.01t"
+	desc = "majorie_event.01d"
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		ai = yes
+		has_reform = illuminatos_council_reform
+		NOT = { has_country_flag = illuminatos_renegats }
+		NOT = { has_country_flag = illuminatos_coloniaux }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "majorie_event.01t"
+		change_government = monarchy
+		set_country_flag = retour_sur_les_rails
+	}
+}
+country_event = {
+	id = majorie_events.062
+	title = "majorie_event.01t"
+	desc = "majorie_event.01d"
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		ai = yes
+		has_country_flag = retour_sur_les_rails
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "majorie_event.01t"
+		change_government = republic
+		clr_country_flag = retour_sur_les_rails		
+	}
+}
+
 #illuminatos traitres
 country_event = {
 	id = majorie_events.07
@@ -391,7 +437,7 @@ country_event = {
 	}
 }
 
-### Events 2X estates
+#Illuminatos dans les colonies
 country_event = {
 	id = majorie_events.20
 	title = "majorie_event.20t"
@@ -413,11 +459,13 @@ country_event = {
 	}
 	option = {
 		name = "majorie_event.20t"
+		set_country_flag = illuminatos_coloniaux
 		remove_government_reform = colonial_government
 		add_government_reform = illuminatos_council_reform
 	}
 }
 
+#Estates Nesblog
 country_event = {
 	id = majorie_events.21
 	title = "majorie_event.21t"
@@ -449,6 +497,7 @@ country_event = {
 	}
 }
 
+#Estate Haute Marne
 country_event = {
 	id = majorie_events.22
 	title = "majorie_event.22t"
@@ -480,6 +529,7 @@ country_event = {
 	}
 }
 
+##Nombre d'Illuminatos
 country_event = {
 	id = majorie_events.23
 	title = "majorie_event.23t"
@@ -493,10 +543,6 @@ country_event = {
 		}
 		NOT = {
 			has_country_modifier = rares_illuminatos_modifier
-		}
-		check_variable = {
-			which = ControleIlluminatos
-			value = 0
 		}
 		NOT = {
 			check_variable = {
@@ -739,6 +785,7 @@ country_event = {
 	hidden = yes
 	
 	trigger = {
+		ai = no
 		has_country_flag = illuminatos_annexed
 	}
 
@@ -749,11 +796,33 @@ country_event = {
 	option = {
 		name = "majorie_event.27t"
 		effect = {
-			subtract_variable = {
-				which = ControleIlluminatos
-				value = 1
-			}
 			clr_country_flag = illuminatos_annexed
+			if = {
+				limit = {
+					has_reform = illuminatos_council_reform
+					check_variable = {
+						which = ControleIlluminatos
+						value = 2
+					}
+				}
+				subtract_variable = {
+					which = ControleIlluminatos
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					has_reform = lingwista_monarchy_reform
+					check_variable = {
+						which = ControleIlluminatos
+						value = 1
+					}
+				}
+				subtract_variable = {
+					which = ControleIlluminatos
+					value = 1
+				}
+			}
 		}
 	}
 }

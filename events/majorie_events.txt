@@ -704,8 +704,7 @@ country_event = {
 	picture = ANGRY_MOB_eventPicture
 
 	trigger = {
-		ai = no
-		has_global_flag = illuminatos_annexed
+		has_country_flag = illuminatos_annexed
 	}
 
 	mean_time_to_happen = {
@@ -719,7 +718,7 @@ country_event = {
 				which = ControleIlluminatos
 				value = 1
 			}
-			clr_global_flag = illuminatos_annexed
+			clr_country_flag = illuminatos_annexed
 		}
 	}
 }

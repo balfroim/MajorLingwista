@@ -76,8 +76,14 @@ country_event = {
 	option = {
 		name = "majorie_event.03t"
 		add_government_reform = illuminatos_council_reform
-		kill_ruler = yes
 		add_republican_tradition = 50
+		if = {
+			limit = {
+				NOT = { has_country_flag = retour_sur_les_rails }
+			}
+			kill_ruler = yes
+		}
+		clr_country_flag = retour_sur_les_rails		
 	}
 }
 
@@ -275,13 +281,40 @@ country_event = {
 			limit = {
 				NOT = { tag = LGW }
 			}
-			add_government_reform = illuminatos_council_reform
-			add_republican_tradition = 50
+			if = {
+				limit = {
+					NOT = { government = republic }
+				}
+				change_government = republic
+				set_country_flag = retour_sur_les_rails
+				country_event = {
+					id = majorie_events.03
+					days = 0
+				}
+			}
+			if = {
+				limit = { government = republic }
+				add_government_reform = illuminatos_council_reform
+				add_republican_tradition = 50
+			}
 		}
 		if = {
 			limit = { tag = LGW }
-			add_government_reform = lingwista_monarchy_reform
-			add_legitimacy = 50
+			if = {
+				limit = {
+					NOT = { government = monarchy }
+				}
+				change_government = monarchy
+				country_event = {
+					id = majorie_events.04
+					days = 0
+				}
+			}
+			if = {
+				limit = { government = monarchy }
+				add_government_reform = lingwista_monarchy_reform
+				add_legitimacy = 50
+			}
 		}
 	}
 }

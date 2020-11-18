@@ -1104,7 +1104,7 @@ illuminatos_council_reform = {
 	}
 	duration = 3
 	ai = {
-		factor = 100
+		factor = 0
 	}
 }
 

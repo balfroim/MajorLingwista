@@ -703,6 +703,8 @@ country_event = {
 	desc = "majorie_event.27d"
 	picture = ANGRY_MOB_eventPicture
 
+	hidden = yes
+	
 	trigger = {
 		has_country_flag = illuminatos_annexed
 	}

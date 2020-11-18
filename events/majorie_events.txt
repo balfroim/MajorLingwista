@@ -77,7 +77,7 @@ country_event = {
 		name = "majorie_event.03t"
 		add_government_reform = illuminatos_council_reform
 		kill_ruler = yes
-		add_stability = 1
+		add_republican_tradition = 50
 	}
 }
 
@@ -239,6 +239,50 @@ country_event = {
 			}
 		}
 		set_country_flag = illuminatos_alliance
+	}
+}
+
+#En cas de perte des réformes qui sont nécessaire au mod
+country_event = {
+	id = majorie_events.09
+	title = "majorie_event.02t"
+	desc = "majorie_event.02d"
+	picture = ANGRY_MOB_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		has_country_flag = modlingwista
+		OR = {
+			AND = {
+				NOT = { tag = LGW }
+				NOT = { has_reform = illuminatos_council_reform }
+			}
+			AND = {
+				tag = LGW
+				NOT = { has_reform = lingwista_monarchy_reform }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "majorie_event.03t"
+		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				NOT = { tag = LGW }
+			}
+			add_government_reform = illuminatos_council_reform
+			add_republican_tradition = 50
+		}
+		if = {
+			limit = { tag = LGW }
+			add_government_reform = lingwista_monarchy_reform
+			add_legitimacy = 50
+		}
 	}
 }
 

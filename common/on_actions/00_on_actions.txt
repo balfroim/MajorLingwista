@@ -1311,7 +1311,10 @@ on_annexed = {
 		}
 		if = {
 			limit = { has_reform = illuminatos_council_reform }
-			set_global_flag = illuminatos_annexed
+			any_country = {
+				limit = { has_country_flag = modlingwista }
+				set_country_flag = illuminatos_annexed
+			}
 		}
 	}
 }

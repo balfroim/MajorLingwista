@@ -328,6 +328,14 @@ country_event = {
 				NOT = { tag = LGW }
 			}
 			if = {
+				limit = { government = republic }
+				change_government = monarchy
+				country_event = {
+					id = majorie_events.091
+					days = 1
+				}
+			}
+			if = {
 				limit = {
 					NOT = { government = republic }
 				}
@@ -338,14 +346,17 @@ country_event = {
 					days = 0
 				}
 			}
-			if = {
-				limit = { government = republic }
-				add_government_reform = illuminatos_council_reform
-				add_republican_tradition = 50
-			}
 		}
 		if = {
 			limit = { tag = LGW }
+			if = {
+				limit = { government = monarchy }
+				change_government = republic
+				country_event = {
+					id = majorie_events.091
+					days = 1
+				}
+			}
 			if = {
 				limit = {
 					NOT = { government = monarchy }
@@ -356,10 +367,32 @@ country_event = {
 					days = 0
 				}
 			}
-			if = {
-				limit = { government = monarchy }
+		}
+	}
+}
+country_event = {
+	id = majorie_events.091
+	title = "majorie_event.02t"
+	desc = "majorie_event.02d"
+	picture = ANGRY_MOB_eventPicture
+
+	hidden = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { government = republic }
+				change_government = monarchy
 				add_government_reform = lingwista_monarchy_reform
 				add_legitimacy = 50
+			}
+		}
+		if = {
+			limit = { government = monarchy }
+				change_government = republic
+				add_government_reform = illuminatos_council_reform
+				add_republican_tradition = 50
 			}
 		}
 	}

@@ -10,7 +10,7 @@ country_event = {
 
 	option = {
 		name = "twitch_event.1t"
-		remove_estate_privilege = estate_illuminatos_twitch
+		hidden_effect = { remove_estate_privilege = estate_illuminatos_twitch }
 		country_event = {
 			id = twitch_events.1
 			days = 0
@@ -18,7 +18,7 @@ country_event = {
 	}
 	option = {
 		name = "twitch_event.2t"
-		remove_estate_privilege = estate_illuminatos_twitch
+		hidden_effect = { remove_estate_privilege = estate_illuminatos_twitch }
 		country_event = {
 			id = twitch_events.2
 			days = 0
@@ -26,7 +26,7 @@ country_event = {
 	}
 	option = {
 		name = "twitch_event.3t"
-		remove_estate_privilege = estate_illuminatos_twitch
+		hidden_effect = { remove_estate_privilege = estate_illuminatos_twitch }
 		country_event = {
 			id = twitch_events.3
 			days = 0
@@ -34,7 +34,7 @@ country_event = {
 	}
 	option = {
 		name = "twitch_event.4t"
-		remove_estate_privilege = estate_illuminatos_twitch
+		hidden_effect = { remove_estate_privilege = estate_illuminatos_twitch }
 		country_event = {
 			id = twitch_events.4
 			days = 0
@@ -42,7 +42,7 @@ country_event = {
 	}
 	option = {
 		name = "twitch_event.5t"
-		remove_estate_privilege = estate_illuminatos_twitch
+		hidden_effect = { remove_estate_privilege = estate_illuminatos_twitch }
 		country_event = {
 			id = twitch_events.5
 			days = 0
@@ -50,7 +50,7 @@ country_event = {
 	}
 	option = {
 		name = "error_event.1t"
-		remove_estate_privilege = estate_illuminatos_twitch
+		hidden_effect = { remove_estate_privilege = estate_illuminatos_twitch }
 	}
 }
 

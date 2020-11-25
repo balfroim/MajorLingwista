@@ -15,7 +15,7 @@ country_event = {
 		trigger = {
 			NOT = { has_country_modifier = illuminato_discipline_5 }
 		}
-		remove_estate_privilege = estate_illuminatos_war_council
+		hidden_effect = { remove_estate_privilege = estate_illuminatos_war_council }
 		if = {
 			limit = {
 				NOT = { has_country_modifier = illuminato_discipline_1 }
@@ -67,7 +67,7 @@ country_event = {
 		trigger = {
 			NOT = { has_country_modifier = illuminato_moral_5 }
 		}
-		remove_estate_privilege = estate_illuminatos_war_council
+		hidden_effect = { remove_estate_privilege = estate_illuminatos_war_council }
 		if = {
 			limit = {
 				NOT = { has_country_modifier = illuminato_moral_1 }
@@ -119,7 +119,7 @@ country_event = {
 		trigger = {
 			NOT = { has_country_modifier = illuminato_volontaires_5 }
 		}
-		remove_estate_privilege = estate_illuminatos_war_council
+		hidden_effect = { remove_estate_privilege = estate_illuminatos_war_council }
 		if = {
 			limit = {
 				NOT = { has_country_modifier = illuminato_volontaires_1 }
@@ -171,7 +171,7 @@ country_event = {
 		trigger = {
 			NOT = { has_country_modifier = illuminato_officiers_5 }
 		}
-		remove_estate_privilege = estate_illuminatos_war_council
+		hidden_effect = { remove_estate_privilege = estate_illuminatos_war_council }
 		if = {
 			limit = {
 				NOT = { has_country_modifier = illuminato_officiers_1 }
@@ -223,7 +223,7 @@ country_event = {
 		trigger = {
 			NOT = { has_country_modifier = illuminato_balistique_5 }
 		}
-		remove_estate_privilege = estate_illuminatos_war_council
+		hidden_effect = { remove_estate_privilege = estate_illuminatos_war_council }
 		if = {
 			limit = {
 				NOT = { has_country_modifier = illuminato_balistique_1 }
@@ -275,12 +275,12 @@ country_event = {
 		trigger = {
 			NOT = { army_professionalism = 1 }
 		}
-		remove_estate_privilege = estate_illuminatos_war_council
+		hidden_effect = { remove_estate_privilege = estate_illuminatos_war_council }
 		add_army_professionalism = 0.1
 	}
 	option = {
 		name = "error_event.1t"
-		remove_estate_privilege = estate_illuminatos_war_council
+		hidden_effect = { remove_estate_privilege = estate_illuminatos_war_council }
 	}
 }
 
@@ -294,7 +294,7 @@ country_event = {
 
 	option = {
 		name = "council_event.21t"
-		remove_estate_privilege = estate_plebe_discours
+		hidden_effect = { remove_estate_privilege = estate_plebe_discours }
 		country_event = {
 			id = council_events.21
 			days = 0
@@ -302,7 +302,7 @@ country_event = {
 	}
 	option = {
 		name = "council_event.22t"
-		remove_estate_privilege = estate_plebe_discours
+		hidden_effect = { remove_estate_privilege = estate_plebe_discours }
 		country_event = {
 			id = council_events.1
 			days = 0
@@ -310,7 +310,7 @@ country_event = {
 	}
 	option = {
 		name = "council_event.23t"
-		remove_estate_privilege = estate_plebe_discours
+		hidden_effect = { remove_estate_privilege = estate_plebe_discours }
 		country_event = {
 			id = council_events.23
 			days = 0
@@ -328,7 +328,7 @@ country_event = {
 			}
 		}
 		name = "council_event.24t"
-		remove_estate_privilege = estate_plebe_discours
+		hidden_effect = { remove_estate_privilege = estate_plebe_discours }
 		country_event = {
 			id = council_events.24
 			days = 0
@@ -336,7 +336,7 @@ country_event = {
 	}
 	option = {
 		name = "error_event.1t"
-		remove_estate_privilege = estate_plebe_discours
+		hidden_effect = { remove_estate_privilege = estate_plebe_discours }
 	}
 }
 

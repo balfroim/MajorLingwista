@@ -631,12 +631,6 @@ country_event = {
 		}
 	}
 	option = {
-		trigger = {
-			AND = {
-				NOT = { has_country_modifier = plebe_maquis_5 }
-				NOT = { unit_type = majorie }
-			}
-		}
 		name = "council_event.23e"
 		if = {
 			limit = { has_country_modifier = plebe_maquis_5 }

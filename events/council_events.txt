@@ -304,7 +304,7 @@ country_event = {
 		name = "council_event.22t"
 		remove_estate_privilege = estate_plebe_discours
 		country_event = {
-			id = council_events.22
+			id = council_events.1
 			days = 0
 		}
 	}
@@ -317,18 +317,20 @@ country_event = {
 		}
 	}
 	option = {
+		trigger = {
+			AND = {
+				NOT = { has_country_modifier = plebe_ae_5 }
+				NOT = { has_country_modifier = plebe_province_warscore_cost_5 }
+				NOT = { has_country_modifier = plebe_unjustified_demands_5 }
+				NOT = { has_country_modifier = plebe_controle_sujets_5 }
+				NOT = { has_country_modifier = plebe_espions_5 }
+				NOT = { has_country_modifier = plebe_aide_marchands_5 }
+			}
+		}
 		name = "council_event.24t"
 		remove_estate_privilege = estate_plebe_discours
 		country_event = {
 			id = council_events.24
-			days = 0
-		}
-	}
-	option = {
-		name = "council_event.25t"
-		remove_estate_privilege = estate_plebe_discours
-		country_event = {
-			id = council_events.25
 			days = 0
 		}
 	}
@@ -355,12 +357,11 @@ country_event = {
 		change_government_reform_progress = 100
 	}
 	option = {
-		name = "council_event.21b"
-		add_estate_loyalty = {
-   			estate = estate_plebe
- 			loyalty = 10
+		trigger = {
+			NOT = { has_country_modifier = plebe_fiscalite_5 }
 		}
-		add_years_of_income = 1
+		name = "council_event.21b"
+		add_inflation = -1
 		if = {
 			limit = {
 				NOT = { has_country_modifier = plebe_fiscalite_1 }
@@ -408,12 +409,11 @@ country_event = {
 		}
 	}
 	option = {
-		name = "council_event.21c"
-		add_estate_loyalty = {
-   			estate = estate_plebe
- 			loyalty = 10
+		trigger = {
+			NOT = { has_country_modifier = plebe_commerce_5 }
 		}
-		add_mercantilism = 2
+		name = "council_event.21c"
+		add_years_of_income = 1
 		if = {
 			limit = {
 				NOT = { has_country_modifier = plebe_commerce_1 }
@@ -466,21 +466,231 @@ country_event = {
 }
 
 country_event = {
-	id = council_events.22
-	title = "council_event.22t"
-	desc = "council_event.22d"
+	id = council_events.23
+	title = "council_event.23t"
+	desc = "council_event.23d"
 	picture = CORRUPTION_eventPicture
 	
 	is_triggered_only = yes
 
 	option = {
-		trigger = {
-			NOT = { has_country_modifier = plebe_maquis_5 }
+		name = "council_event.23a"
+		if = {
+			limit = { has_country_modifier = plebe_marine_5 }
+			add_yearly_sailors = 2
 		}
-		name = "council_event.22a"
-		add_estate_loyalty = {
-   			estate = estate_plebe
- 			loyalty = 10
+		else = { add_yearly_sailors = 0.5 }
+		if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_marine_1 }
+			}
+			add_country_modifier = {
+				name = plebe_marine_1
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_marine_2 }
+			}
+			add_country_modifier = {
+				name = plebe_marine_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_marine_3 }
+			}
+			add_country_modifier = {
+				name = plebe_marine_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_marine_4 }
+			}
+			add_country_modifier = {
+				name = plebe_marine_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_marine_5 }
+			}
+			add_country_modifier = {
+				name = plebe_marine_5
+				duration = -1
+			}
+		}
+	}
+	option = {
+		trigger = {
+			NOT = { has_country_modifier = plebe_fatigue_de_guerre_5 }
+		}
+		name = "council_event.23b"
+		add_manpower = 5
+		if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_fatigue_de_guerre_1 }
+			}
+			add_country_modifier = {
+				name = plebe_fatigue_de_guerre_1
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_fatigue_de_guerre_2 }
+			}
+			add_country_modifier = {
+				name = plebe_fatigue_de_guerre_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_fatigue_de_guerre_3 }
+			}
+			add_country_modifier = {
+				name = plebe_fatigue_de_guerre_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_fatigue_de_guerre_4 }
+			}
+			add_country_modifier = {
+				name = plebe_fatigue_de_guerre_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_fatigue_de_guerre_5 }
+			}
+			add_country_modifier = {
+				name = plebe_fatigue_de_guerre_5
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = "council_event.23c"
+		trigger = {
+			NOT = { has_country_modifier = plebe_financement_des_generaux_5 }
+		}
+		add_army_tradition = 10
+		if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_financement_des_generaux_1 }
+			}
+			add_country_modifier = {
+				name = plebe_financement_des_generaux_1
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_financement_des_generaux_2 }
+			}
+			add_country_modifier = {
+				name = plebe_financement_des_generaux_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_financement_des_generaux_3 }
+			}
+			add_country_modifier = {
+				name = plebe_financement_des_generaux_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_financement_des_generaux_4 }
+			}
+			add_country_modifier = {
+				name = plebe_financement_des_generaux_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_modifier = plebe_financement_des_generaux_5 }
+			}
+			add_country_modifier = {
+				name = plebe_financement_des_generaux_5
+				duration = -1
+			}
+		}
+	}
+	option = {
+		trigger = {
+			AND = {
+				NOT = { has_country_modifier = plebe_maquis_5 }
+				NOT = { unit_type = majorie }
+			}
+		}
+		name = "council_event.23e"
+		if = {
+			limit = { has_country_modifier = plebe_maquis_5 }
+			capital_scope = {
+				ROOT = {
+					acolytes_des_illustres = PREV
+				}
+				ROOT = {
+					acolytes_des_illustres = PREV
+				}
+				ROOT = {
+					acolytes_des_illustres = PREV
+				}
+				ROOT = {
+					acolytes_des_illustres = PREV
+				}
+				ROOT = {
+					acolytes_des_illustres = PREV
+				}
+				ROOT = {
+					acolytes_des_illustres = PREV
+				}
+				ROOT = {
+					acolytes_des_illustres_a_cheval = PREV
+				}
+				ROOT = {
+					batterie_laser = PREV
+				}
+				ROOT = {
+					batterie_laser = PREV
+				}
+				ROOT = {
+					batterie_laser = PREV
+				}
+			}
+		}
+		else = {
+			capital_scope = {
+				ROOT = {
+					acolytes_des_illustres = PREV
+				}
+				ROOT = {
+					acolytes_des_illustres = PREV
+				}
+				ROOT = {
+					acolytes_des_illustres = PREV
+				}
+				ROOT = {
+					acolytes_des_illustres = PREV
+				}
+				ROOT = {
+					batterie_laser = PREV
+				}
+			}
 		}
 		if = {
 			limit = {
@@ -532,11 +742,8 @@ country_event = {
 		trigger = {
 			NOT = { has_country_modifier = plebe_fortifications_5 }
 		}
-		name = "council_event.22b"
-		add_estate_loyalty = {
-   			estate = estate_plebe
- 			loyalty = 10
-		}
+		name = "council_event.23f"
+		add_prestige = 10
 		if = {
 			limit = {
 				NOT = { has_country_modifier = plebe_fortifications_1 }
@@ -584,12 +791,12 @@ country_event = {
 		}
 	}
 	option = {
-		name = "council_event.22c"
-		add_estate_loyalty = {
-   			estate = estate_plebe
- 			loyalty = 10
+		name = "council_event.23g"
+		if = {
+			limit = { has_country_modifier = plebe_effort_de_guerre_5 }
+			add_years_of_income = 2
 		}
-		add_years_of_income = 2
+		else = { add_years_of_income = 0.5 }
 		if = {
 			limit = {
 				NOT = { has_country_modifier = plebe_effort_de_guerre_1 }
@@ -642,182 +849,6 @@ country_event = {
 }
 
 country_event = {
-	id = council_events.23
-	title = "council_event.23t"
-	desc = "council_event.23d"
-	picture = CORRUPTION_eventPicture
-	
-	is_triggered_only = yes
-
-	option = {
-		name = "council_event.23a"
-		add_estate_loyalty = {
-   			estate = estate_plebe
- 			loyalty = 10
-		}
-		add_sailors = 100
-		if = {
-			limit = {
-				NOT = { has_country_modifier = plebe_marine_1 }
-			}
-			add_country_modifier = {
-				name = plebe_marine_1
-				duration = -1
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = { has_country_modifier = plebe_marine_2 }
-			}
-			add_country_modifier = {
-				name = plebe_marine_2
-				duration = -1
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = { has_country_modifier = plebe_marine_3 }
-			}
-			add_country_modifier = {
-				name = plebe_marine_3
-				duration = -1
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = { has_country_modifier = plebe_marine_4 }
-			}
-			add_country_modifier = {
-				name = plebe_marine_4
-				duration = -1
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = { has_country_modifier = plebe_marine_5 }
-			}
-			add_country_modifier = {
-				name = plebe_marine_5
-				duration = -1
-			}
-		}
-	}
-	option = {
-		trigger = {
-			NOT = { has_country_modifier = plebe_fatigue_de_guerre_5 }
-		}
-		name = "council_event.23b"
-		add_estate_loyalty = {
-   			estate = estate_plebe
- 			loyalty = 10
-		}
-		if = {
-			limit = {
-				NOT = { has_country_modifier = plebe_fatigue_de_guerre_1 }
-			}
-			add_country_modifier = {
-				name = plebe_fatigue_de_guerre_1
-				duration = -1
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = { has_country_modifier = plebe_fatigue_de_guerre_2 }
-			}
-			add_country_modifier = {
-				name = plebe_fatigue_de_guerre_2
-				duration = -1
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = { has_country_modifier = plebe_fatigue_de_guerre_3 }
-			}
-			add_country_modifier = {
-				name = plebe_fatigue_de_guerre_3
-				duration = -1
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = { has_country_modifier = plebe_fatigue_de_guerre_4 }
-			}
-			add_country_modifier = {
-				name = plebe_fatigue_de_guerre_4
-				duration = -1
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = { has_country_modifier = plebe_fatigue_de_guerre_5 }
-			}
-			add_country_modifier = {
-				name = plebe_fatigue_de_guerre_5
-				duration = -1
-			}
-		}
-	}
-	option = {
-		name = "council_event.23c"
-		trigger = {
-			NOT = { has_country_modifier = plebe_financement_des_generaux_5 }
-		}
-		add_estate_loyalty = {
-   			estate = estate_plebe
- 			loyalty = 10
-		}
-		if = {
-			limit = {
-				NOT = { has_country_modifier = plebe_financement_des_generaux_1 }
-			}
-			add_country_modifier = {
-				name = plebe_financement_des_generaux_1
-				duration = -1
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = { has_country_modifier = plebe_financement_des_generaux_2 }
-			}
-			add_country_modifier = {
-				name = plebe_financement_des_generaux_2
-				duration = -1
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = { has_country_modifier = plebe_financement_des_generaux_3 }
-			}
-			add_country_modifier = {
-				name = plebe_financement_des_generaux_3
-				duration = -1
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = { has_country_modifier = plebe_financement_des_generaux_4 }
-			}
-			add_country_modifier = {
-				name = plebe_financement_des_generaux_4
-				duration = -1
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = { has_country_modifier = plebe_financement_des_generaux_5 }
-			}
-			add_country_modifier = {
-				name = plebe_financement_des_generaux_5
-				duration = -1
-			}
-		}
-	}
-	option = {
-		name = "error_event.1t"
-	}
-}
-
-country_event = {
 	id = council_events.24
 	title = "council_event.24t"
 	desc = "council_event.24d"
@@ -826,16 +857,11 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
+		trigger = {
+			NOT = { has_country_modifier = plebe_ae_5 }
+		}
 		name = "council_event.24a"
-		add_estate_loyalty = {
-   			estate = estate_plebe
- 			loyalty = 10
-		}
-		if = {
-			limit = { has_country_modifier = plebe_ae_5 }
-			add_adm_power = 100
-		}
-		else = { add_adm_power = 50 }
+		add_adm_power = 50
 		if = {
 			limit = {
 				NOT = { has_country_modifier = plebe_ae_1 }
@@ -883,16 +909,11 @@ country_event = {
 		}
 	}
 	option = {
+		trigger = {
+			NOT = { has_country_modifier = plebe_province_warscore_cost_5 }
+		}
 		name = "council_event.24b"
-		add_estate_loyalty = {
-   			estate = estate_plebe
- 			loyalty = 10
-		}
-		if = {
-			limit = { has_country_modifier = plebe_province_warscore_cost_5 }
-			add_mil_power = 100
-		}
-		else = { add_mil_power = 50 }
+		add_mil_power = 50
 		if = {
 			limit = {
 				NOT = { has_country_modifier = plebe_province_warscore_cost_1 }
@@ -940,16 +961,11 @@ country_event = {
 		}
 	}
 	option = {
+		trigger = {
+			NOT = { has_country_modifier = plebe_unjustified_demands_5 }
+		}
 		name = "council_event.24c"
-		add_estate_loyalty = {
-   			estate = estate_plebe
- 			loyalty = 10
-		}
-		if = {
-			limit = { has_country_modifier = plebe_unjustified_demands_5 }
-			add_dip_power = 100
-		}
-		else = { add_dip_power = 50 }
+		add_dip_power = 50
 		if = {
 			limit = {
 				NOT = { has_country_modifier = plebe_unjustified_demands_1 }
@@ -997,25 +1013,18 @@ country_event = {
 		}
 	}
 	option = {
-		name = "error_event.1t"
-	}
-}
-
-country_event = {
-	id = council_events.25
-	title = "council_event.25t"
-	desc = "council_event.25d"
-	picture = CORRUPTION_eventPicture
-	
-	is_triggered_only = yes
-
-	option = {
-		name = "council_event.25a"
-		add_estate_loyalty = {
-   			estate = estate_plebe
- 			loyalty = 10
+		trigger = {
+			AND = {
+				NOT = { has_country_modifier = plebe_controle_sujets_5 }
+				NOT = { absolutism = 100 }
+			}
 		}
-		add_absolutism = 10
+		name = "council_event.24e"
+		if = {
+			limit = { has_country_modifier = plebe_controle_sujets_5 }
+			add_absolutism = 5
+		}
+		else = { add_absolutism = 20 }
 		if = {
 			limit = {
 				NOT = { has_country_modifier = plebe_controle_sujets_1 }
@@ -1063,12 +1072,18 @@ country_event = {
 		}
 	}
 	option = {
-		name = "council_event.25b"
-		add_estate_loyalty = {
-   			estate = estate_plebe
- 			loyalty = 10
+		trigger = {
+			AND = {
+				NOT = { has_country_modifier = plebe_espions_5 }
+				NOT = { corruption = 0 }
+			}
 		}
-		add_corruption = -2
+		name = "council_event.24f"
+		if = {
+			limit = { has_country_modifier = plebe_espions_5 }
+			add_corruption = -2
+		}
+		else = { add_corruption = -1 }
 		if = {
 			limit = {
 				NOT = { has_country_modifier = plebe_espions_1 }
@@ -1116,12 +1131,18 @@ country_event = {
 		}
 	}
 	option = {
-		name = "council_event.25c"
-		add_estate_loyalty = {
-   			estate = estate_plebe
- 			loyalty = 10
+		trigger = {
+			AND = {
+				NOT = { has_country_modifier = plebe_aide_marchands_5 }
+				NOT = { mercantilism = 100 }
+			}
 		}
-		add_mercantilism = 2
+		name = "council_event.24g"
+		if = {
+			limit = { has_country_modifier = plebe_aide_marchands_5 }
+			add_mercantilism = 2
+		}
+		else = { add_mercantilism = 1 }
 		if = {
 			limit = {
 				NOT = { has_country_modifier = plebe_aide_marchands_1 }

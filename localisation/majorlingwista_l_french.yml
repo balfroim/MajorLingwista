@@ -270,6 +270,9 @@
       twitch_event.15b:0 "C'est un incroyable marchand."
       twitch_event.15c:0 "Il colonisera de nouvelles terres pour nous."
       twitch_event.15e:0 "Il convertira les infidèles pour nous."
+      twitch_event.15f:0 "Il va équiper et former quelques natifs (infanterie) avec des armes futuristes !"
+      twitch_event.15g:0 "Il va équiper et former quelques natifs (cavalerie) avec des armes futuristes !"
+      twitch_event.15h:0 "Il va équiper et former quelques natifs (artillerie) avec des armes futuristes !"
    # SubGift (quelqu'un offre des abonnements dans le chat)
       twitch_event.2t:0 "Un subgift !"
       twitch_event.2d:0 "Quelqu'un a offert un abonnements à une ou plusieur personnes. Si plusieurs abonnements ont été offerts, l'évènement reviendra jusqu'à être apparu 5 ou 10 fois le cas échéant."

@@ -76,8 +76,14 @@ country_event = {
 	option = {
 		name = "majorie_event.03t"
 		add_government_reform = illuminatos_council_reform
-		kill_ruler = yes
-		add_stability = 1
+		add_republican_tradition = 50
+		if = {
+			limit = {
+				NOT = { has_country_flag = retour_sur_les_rails }
+			}
+			kill_ruler = yes
+		}
+		clr_country_flag = retour_sur_les_rails		
 	}
 }
 
@@ -175,6 +181,52 @@ country_event = {
 	}
 }
 
+#illuminatos en trop a réduire
+country_event = {
+	id = majorie_events.061
+	title = "majorie_event.01t"
+	desc = "majorie_event.01d"
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		ai = yes
+		has_reform = illuminatos_council_reform
+		NOT = { has_country_flag = illuminatos_renegats }
+		NOT = { has_country_flag = illuminatos_coloniaux }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "majorie_event.01t"
+		change_government = monarchy
+		set_country_flag = retour_sur_les_rails
+	}
+}
+country_event = {
+	id = majorie_events.062
+	title = "majorie_event.01t"
+	desc = "majorie_event.01d"
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		ai = yes
+		has_country_flag = retour_sur_les_rails
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "majorie_event.01t"
+		change_government = republic
+		clr_country_flag = retour_sur_les_rails		
+	}
+}
+
 #illuminatos traitres
 country_event = {
 	id = majorie_events.07
@@ -239,6 +291,110 @@ country_event = {
 			}
 		}
 		set_country_flag = illuminatos_alliance
+	}
+}
+
+#En cas de perte des réformes qui sont nécessaire au mod
+country_event = {
+	id = majorie_events.09
+	title = "majorie_event.02t"
+	desc = "majorie_event.02d"
+	picture = ANGRY_MOB_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		has_country_flag = modlingwista
+		OR = {
+			AND = {
+				NOT = { tag = LGW }
+				NOT = { has_reform = illuminatos_council_reform }
+			}
+			AND = {
+				tag = LGW
+				NOT = { has_reform = lingwista_monarchy_reform }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "majorie_event.03t"
+		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				NOT = { tag = LGW }
+			}
+			if = {
+				limit = { government = republic }
+				change_government = monarchy
+				country_event = {
+					id = majorie_events.091
+					days = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = { government = republic }
+				}
+				change_government = republic
+				set_country_flag = retour_sur_les_rails
+				country_event = {
+					id = majorie_events.03
+					days = 0
+				}
+			}
+		}
+		if = {
+			limit = { tag = LGW }
+			if = {
+				limit = { government = monarchy }
+				change_government = republic
+				country_event = {
+					id = majorie_events.091
+					days = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = { government = monarchy }
+				}
+				change_government = monarchy
+				country_event = {
+					id = majorie_events.04
+					days = 0
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = majorie_events.091
+	title = "majorie_event.02t"
+	desc = "majorie_event.02d"
+	picture = ANGRY_MOB_eventPicture
+
+	hidden = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { government = republic }
+				change_government = monarchy
+				add_government_reform = lingwista_monarchy_reform
+				add_legitimacy = 50
+			}
+		}
+		if = {
+			limit = { government = monarchy }
+				change_government = republic
+				add_government_reform = illuminatos_council_reform
+				add_republican_tradition = 50
+			}
+		}
 	}
 }
 
@@ -314,7 +470,8 @@ country_event = {
 	}
 }
 
-### Events 2X estates
+### Events 2X Estates
+#Illuminatos dans les colonies
 country_event = {
 	id = majorie_events.20
 	title = "majorie_event.20t"
@@ -336,11 +493,13 @@ country_event = {
 	}
 	option = {
 		name = "majorie_event.20t"
+		set_country_flag = illuminatos_coloniaux
 		remove_government_reform = colonial_government
 		add_government_reform = illuminatos_council_reform
 	}
 }
 
+#Estates Nesblog
 country_event = {
 	id = majorie_events.21
 	title = "majorie_event.21t"
@@ -372,6 +531,7 @@ country_event = {
 	}
 }
 
+#Estate Haute Marne
 country_event = {
 	id = majorie_events.22
 	title = "majorie_event.22t"
@@ -403,6 +563,7 @@ country_event = {
 	}
 }
 
+##Nombre d'Illuminatos (23 à 27)
 country_event = {
 	id = majorie_events.23
 	title = "majorie_event.23t"
@@ -416,10 +577,6 @@ country_event = {
 		}
 		NOT = {
 			has_country_modifier = rares_illuminatos_modifier
-		}
-		check_variable = {
-			which = ControleIlluminatos
-			value = 0
 		}
 		NOT = {
 			check_variable = {
@@ -659,9 +816,11 @@ country_event = {
 	desc = "majorie_event.27d"
 	picture = ANGRY_MOB_eventPicture
 
+	hidden = yes
+	
 	trigger = {
 		ai = no
-		has_global_flag = illuminatos_annexed
+		has_country_flag = illuminatos_annexed
 	}
 
 	mean_time_to_happen = {
@@ -671,11 +830,79 @@ country_event = {
 	option = {
 		name = "majorie_event.27t"
 		effect = {
-			subtract_variable = {
-				which = ControleIlluminatos
-				value = 1
+			clr_country_flag = illuminatos_annexed
+			if = {
+				limit = {
+					has_reform = illuminatos_council_reform
+					check_variable = {
+						which = ControleIlluminatos
+						value = 2
+					}
+				}
+				subtract_variable = {
+					which = ControleIlluminatos
+					value = 1
+				}
 			}
-			clr_global_flag = illuminatos_annexed
+			if = {
+				limit = {
+					has_reform = lingwista_monarchy_reform
+					check_variable = {
+						which = ControleIlluminatos
+						value = 1
+					}
+				}
+				subtract_variable = {
+					which = ControleIlluminatos
+					value = 1
+				}
+			}
+		}
+	}
+}
+
+##Estate Natifs
+country_event = {
+	id = majorie_events.28
+	title = "majorie_event.28t"
+	desc = "majorie_event.28d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+	name = "majorie_event.28t"
+		if = {
+			limit = { has_country_flag = natifs_conscription_force }
+			clr_country_flag = natifs_conscription_force
+			remove_estate_privilege = estate_natifs_conscription
+		}
+		if = {
+			limit = { has_country_flag = natifs_conscription_reduced }
+			clr_country_flag = natifs_conscription_reduced
+			remove_estate_privilege = estate_natifs_conscription_reduite
+		}
+	}
+}
+country_event = {
+	id = majorie_events.29
+	title = "majorie_event.29t"
+	desc = "majorie_event.29d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+	name = "majorie_event.29t"
+		if = {
+			limit = { has_country_flag = taxation_exceptionnelle }
+			clr_country_flag = taxation_exceptionnelle
+			remove_estate_privilege = estate_natifs_taxation_exceptionnelle
+		}
+		if = {
+			limit = { has_country_flag = taxation_reduite }
+			clr_country_flag = taxation_reduite
+			remove_estate_privilege = estate_natifs_taxation_reduite
 		}
 	}
 }
